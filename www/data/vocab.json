@@ -207,6 +207,110 @@
         { "word": "healthy", "pos": "adj.", "ipa": "ˈhelθi", "cn": "健康的", "eg": "Eat healthy food every day." },
         { "word": "relax", "pos": "v.", "ipa": "rɪˈlæks", "cn": "放松", "eg": "Music helps me relax." }
       ]
+    },
+    {
+      "id": "hs_topic_travel",
+      "title": "话题 · 旅行与交通",
+      "words": [
+        { "word": "journey", "pos": "n.", "ipa": "ˈdʒɜːni", "cn": "旅程", "eg": "We had a long journey by train." },
+        { "word": "tourist", "pos": "n.", "ipa": "ˈtʊərɪst", "cn": "游客", "eg": "The city attracts many tourists." },
+        { "word": "passport", "pos": "n.", "ipa": "ˈpɑːspɔːt", "cn": "护照", "eg": "Don't forget your passport." },
+        { "word": "luggage", "pos": "n.", "ipa": "ˈlʌɡɪdʒ", "cn": "行李", "eg": "She packed her luggage carefully." },
+        { "word": "destination", "pos": "n.", "ipa": "ˌdestɪˈneɪʃn", "cn": "目的地", "eg": "We finally reached our destination." },
+        { "word": "schedule", "pos": "n.", "ipa": "ˈʃedjuːl", "cn": "时间表", "eg": "The train runs on schedule." },
+        { "word": "delay", "pos": "n./v.", "ipa": "dɪˈleɪ", "cn": "延误", "eg": "The flight was delayed by fog." },
+        { "word": "transport", "pos": "n.", "ipa": "ˈtrænspɔːt", "cn": "交通运输", "eg": "Public transport is convenient here." },
+        { "word": "vehicle", "pos": "n.", "ipa": "ˈviːəkl", "cn": "交通工具", "eg": "No vehicles are allowed here." },
+        { "word": "traffic", "pos": "n.", "ipa": "ˈtræfɪk", "cn": "交通，车流", "eg": "The traffic is heavy at rush hour." },
+        { "word": "passenger", "pos": "n.", "ipa": "ˈpæsɪndʒə", "cn": "乘客", "eg": "The bus was full of passengers." },
+        { "word": "abroad", "pos": "adv.", "ipa": "əˈbrɔːd", "cn": "在国外", "eg": "She studied abroad for two years." },
+        { "word": "explore", "pos": "v.", "ipa": "ɪkˈsplɔː", "cn": "探索", "eg": "We explored the old town on foot." },
+        { "word": "adventure", "pos": "n.", "ipa": "ədˈventʃə", "cn": "冒险", "eg": "The trip was a great adventure." },
+        { "word": "scenery", "pos": "n.", "ipa": "ˈsiːnəri", "cn": "风景", "eg": "The mountain scenery is beautiful." },
+        { "word": "accommodation", "pos": "n.", "ipa": "əˌkɒməˈdeɪʃn", "cn": "住宿", "eg": "The hotel offers good accommodation." },
+        { "word": "reserve", "pos": "v.", "ipa": "rɪˈzɜːv", "cn": "预订", "eg": "I reserved a table for two." },
+        { "word": "depart", "pos": "v.", "ipa": "dɪˈpɑːt", "cn": "出发，离开", "eg": "The train departs at nine." },
+        { "word": "arrival", "pos": "n.", "ipa": "əˈraɪvl", "cn": "到达", "eg": "We waited for his arrival." },
+        { "word": "route", "pos": "n.", "ipa": "ruːt", "cn": "路线", "eg": "This is the shortest route home." }
+      ]
+    },
+    {
+      "id": "hs_topic_work",
+      "title": "话题 · 工作与职业",
+      "words": [
+        { "word": "profession", "pos": "n.", "ipa": "prəˈfeʃn", "cn": "职业", "eg": "Teaching is a noble profession." },
+        { "word": "employer", "pos": "n.", "ipa": "ɪmˈplɔɪə", "cn": "雇主", "eg": "Her employer is very kind." },
+        { "word": "employee", "pos": "n.", "ipa": "ɪmˈplɔɪiː", "cn": "雇员", "eg": "The company has 200 employees." },
+        { "word": "interview", "pos": "n./v.", "ipa": "ˈɪntəvjuː", "cn": "面试；采访", "eg": "He has a job interview tomorrow." },
+        { "word": "colleague", "pos": "n.", "ipa": "ˈkɒliːɡ", "cn": "同事", "eg": "My colleagues are friendly." },
+        { "word": "salary", "pos": "n.", "ipa": "ˈsæləri", "cn": "薪水", "eg": "The job offers a good salary." },
+        { "word": "task", "pos": "n.", "ipa": "tɑːsk", "cn": "任务", "eg": "She finished the task on time." },
+        { "word": "skill", "pos": "n.", "ipa": "skɪl", "cn": "技能", "eg": "Communication is a key skill." },
+        { "word": "experience", "pos": "n.", "ipa": "ɪkˈspɪəriəns", "cn": "经验，经历", "eg": "He has years of experience." },
+        { "word": "apply", "pos": "v.", "ipa": "əˈplaɪ", "cn": "申请；应用", "eg": "I applied for the position." },
+        { "word": "manage", "pos": "v.", "ipa": "ˈmænɪdʒ", "cn": "管理；设法", "eg": "She manages a large team." },
+        { "word": "cooperate", "pos": "v.", "ipa": "kəʊˈɒpəreɪt", "cn": "合作", "eg": "We must cooperate to succeed." },
+        { "word": "achieve", "pos": "v.", "ipa": "əˈtʃiːv", "cn": "取得，实现", "eg": "They achieved their goal." },
+        { "word": "promote", "pos": "v.", "ipa": "prəˈməʊt", "cn": "晋升；促进", "eg": "He was promoted to manager." },
+        { "word": "responsible", "pos": "adj.", "ipa": "rɪˈspɒnsəbl", "cn": "负责任的", "eg": "She is responsible for sales." },
+        { "word": "professional", "pos": "adj.", "ipa": "prəˈfeʃənl", "cn": "专业的", "eg": "He gave a professional performance." },
+        { "word": "efficient", "pos": "adj.", "ipa": "ɪˈfɪʃnt", "cn": "高效的", "eg": "She is an efficient worker." },
+        { "word": "deadline", "pos": "n.", "ipa": "ˈdedlaɪn", "cn": "截止时间", "eg": "We must meet the deadline." },
+        { "word": "achievement", "pos": "n.", "ipa": "əˈtʃiːvmənt", "cn": "成就", "eg": "It was a proud achievement." },
+        { "word": "opportunity", "pos": "n.", "ipa": "ˌɒpəˈtjuːnəti", "cn": "机会", "eg": "This is a great opportunity." }
+      ]
+    },
+    {
+      "id": "hs_topic_food_shopping",
+      "title": "话题 · 饮食与购物",
+      "words": [
+        { "word": "delicious", "pos": "adj.", "ipa": "dɪˈlɪʃəs", "cn": "美味的", "eg": "The soup is delicious." },
+        { "word": "flavour", "pos": "n.", "ipa": "ˈfleɪvə", "cn": "味道", "eg": "I like the flavour of lemon." },
+        { "word": "ingredient", "pos": "n.", "ipa": "ɪnˈɡriːdiənt", "cn": "原料，成分", "eg": "Flour is the main ingredient." },
+        { "word": "recipe", "pos": "n.", "ipa": "ˈresəpi", "cn": "食谱", "eg": "She followed the recipe carefully." },
+        { "word": "vegetable", "pos": "n.", "ipa": "ˈvedʒtəbl", "cn": "蔬菜", "eg": "Eat more fresh vegetables." },
+        { "word": "protein", "pos": "n.", "ipa": "ˈprəʊtiːn", "cn": "蛋白质", "eg": "Eggs are rich in protein." },
+        { "word": "customer", "pos": "n.", "ipa": "ˈkʌstəmə", "cn": "顾客", "eg": "The customer is always right." },
+        { "word": "purchase", "pos": "v./n.", "ipa": "ˈpɜːtʃəs", "cn": "购买", "eg": "She purchased a new coat." },
+        { "word": "discount", "pos": "n.", "ipa": "ˈdɪskaʊnt", "cn": "折扣", "eg": "They offer a 20% discount." },
+        { "word": "bargain", "pos": "n.", "ipa": "ˈbɑːɡɪn", "cn": "便宜货；讨价还价", "eg": "This coat was a real bargain." },
+        { "word": "afford", "pos": "v.", "ipa": "əˈfɔːd", "cn": "买得起", "eg": "I can't afford it." },
+        { "word": "quality", "pos": "n.", "ipa": "ˈkwɒləti", "cn": "质量", "eg": "The quality is excellent." },
+        { "word": "expensive", "pos": "adj.", "ipa": "ɪkˈspensɪv", "cn": "昂贵的", "eg": "The watch is too expensive." },
+        { "word": "brand", "pos": "n.", "ipa": "brænd", "cn": "品牌", "eg": "It is a famous brand." },
+        { "word": "refund", "pos": "n./v.", "ipa": "ˈriːfʌnd", "cn": "退款", "eg": "I asked for a refund." },
+        { "word": "receipt", "pos": "n.", "ipa": "rɪˈsiːt", "cn": "收据", "eg": "Keep your receipt, please." },
+        { "word": "consume", "pos": "v.", "ipa": "kənˈsjuːm", "cn": "消费；消耗", "eg": "We consume too much sugar." },
+        { "word": "menu", "pos": "n.", "ipa": "ˈmenjuː", "cn": "菜单", "eg": "May I see the menu?" },
+        { "word": "order", "pos": "v./n.", "ipa": "ˈɔːdə", "cn": "点餐；订购", "eg": "We ordered two coffees." },
+        { "word": "waste", "pos": "v./n.", "ipa": "weɪst", "cn": "浪费", "eg": "Don't waste food." }
+      ]
+    },
+    {
+      "id": "hs_topic_adj_2",
+      "title": "高频描述性形容词 (2)",
+      "words": [
+        { "word": "enormous", "pos": "adj.", "ipa": "ɪˈnɔːməs", "cn": "巨大的", "eg": "The building is enormous." },
+        { "word": "tiny", "pos": "adj.", "ipa": "ˈtaɪni", "cn": "极小的", "eg": "A tiny insect landed on my hand." },
+        { "word": "gentle", "pos": "adj.", "ipa": "ˈdʒentl", "cn": "温柔的", "eg": "She has a gentle voice." },
+        { "word": "fierce", "pos": "adj.", "ipa": "fɪəs", "cn": "凶猛的；激烈的", "eg": "There was fierce competition." },
+        { "word": "precious", "pos": "adj.", "ipa": "ˈpreʃəs", "cn": "珍贵的", "eg": "Time is precious." },
+        { "word": "ordinary", "pos": "adj.", "ipa": "ˈɔːdnri", "cn": "普通的", "eg": "It was an ordinary day." },
+        { "word": "remarkable", "pos": "adj.", "ipa": "rɪˈmɑːkəbl", "cn": "非凡的", "eg": "She made remarkable progress." },
+        { "word": "complex", "pos": "adj.", "ipa": "ˈkɒmpleks", "cn": "复杂的", "eg": "This is a complex problem." },
+        { "word": "obvious", "pos": "adj.", "ipa": "ˈɒbviəs", "cn": "明显的", "eg": "The mistake was obvious." },
+        { "word": "rapid", "pos": "adj.", "ipa": "ˈræpɪd", "cn": "迅速的", "eg": "There was rapid growth." },
+        { "word": "gradual", "pos": "adj.", "ipa": "ˈɡrædʒuəl", "cn": "逐渐的", "eg": "There was a gradual change." },
+        { "word": "flexible", "pos": "adj.", "ipa": "ˈfleksəbl", "cn": "灵活的", "eg": "The plan is flexible." },
+        { "word": "reliable", "pos": "adj.", "ipa": "rɪˈlaɪəbl", "cn": "可靠的", "eg": "He is a reliable partner." },
+        { "word": "typical", "pos": "adj.", "ipa": "ˈtɪpɪkl", "cn": "典型的", "eg": "It's a typical example." },
+        { "word": "practical", "pos": "adj.", "ipa": "ˈpræktɪkl", "cn": "实用的", "eg": "That's a practical idea." },
+        { "word": "curious", "pos": "adj.", "ipa": "ˈkjʊəriəs", "cn": "好奇的", "eg": "I'm curious about it." },
+        { "word": "anxious", "pos": "adj.", "ipa": "ˈæŋkʃəs", "cn": "焦急的", "eg": "She felt anxious." },
+        { "word": "awful", "pos": "adj.", "ipa": "ˈɔːfl", "cn": "糟糕的", "eg": "The weather was awful." },
+        { "word": "splendid", "pos": "adj.", "ipa": "ˈsplendɪd", "cn": "极好的", "eg": "We had a splendid time." },
+        { "word": "aware", "pos": "adj.", "ipa": "əˈweə", "cn": "意识到的", "eg": "Be aware of the risks." }
+      ]
     }
   ]
 }
