@@ -1,0 +1,8 @@
+{
+  "appId": "com.gaozhong.lksk",
+  "appName": "高中全科复习",
+  "webDir": "www",
+  "android": {
+    "allowMixedContent": true
+  }
+}

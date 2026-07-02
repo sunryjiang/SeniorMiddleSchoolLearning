@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>高中理科复习</title>
+  <link rel="stylesheet" href="style.css?v=1" />
+  <style>
+    body { background: var(--bg); }
+    .app-home {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: calc(env(safe-area-inset-top, 0px) + 28px) 20px
+               calc(env(safe-area-inset-bottom, 0px) + 28px);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .ah-hero { text-align: center; margin-bottom: 26px; }
+    .ah-hero h1 { margin: 0; font-size: 26px; color: var(--blue-900); letter-spacing: 1px; }
+    .ah-hero .ah-sub { margin-top: 8px; font-size: 14px; color: var(--gray-500); letter-spacing: 3px; }
+    .ah-cards { display: flex; flex-direction: column; gap: 16px; flex: 1; }
+    .ah-card {
+      display: flex; align-items: center; gap: 18px;
+      padding: 22px 20px; border-radius: 20px; color: #fff; text-decoration: none;
+      box-shadow: 0 8px 22px rgba(31, 59, 115, 0.18);
+      -webkit-tap-highlight-color: transparent;
+      transition: transform .12s ease, box-shadow .12s ease;
+    }
+    .ah-card:active { transform: scale(0.98); box-shadow: 0 4px 12px rgba(31,59,115,0.2); }
+    .ah-card .ah-icon {
+      font-size: 38px; width: 62px; height: 62px; flex: none;
+      display: flex; align-items: center; justify-content: center;
+      background: rgba(255,255,255,0.2); border-radius: 16px;
+    }
+    .ah-card .ah-text { flex: 1; }
+    .ah-card h2 { margin: 0 0 4px; font-size: 21px; }
+    .ah-card p { margin: 0; font-size: 13px; opacity: 0.92; line-height: 1.5; }
+    .ah-card .ah-go { font-size: 26px; opacity: 0.85; flex: none; }
+    .card-math    { background: linear-gradient(135deg, #2e5b9e, #1f3b73); }
+    .card-physics { background: linear-gradient(135deg, #7b52c0, #4b2e86); }
+    .card-chem    { background: linear-gradient(135deg, #1a8a4a, #0f6a38); }
+    .card-bio     { background: linear-gradient(135deg, #e0872f, #c0641c); }
+    .card-english { background: linear-gradient(135deg, #b5539c, #7d2f6b); }
+    .card-chinese { background: linear-gradient(135deg, #d1495b, #9e2a3c); }
+    .ah-foot { margin-top: 24px; text-align: center; font-size: 12px; color: var(--gray-500); }
+  </style>
+</head>
+<body>
+  <main class="app-home">
+    <div class="ah-hero">
+      <h1>高中 · 全科复习</h1>
+      <div class="ah-sub">语文 · 数学 · 英语 · 物理 · 化学 · 生物</div>
+    </div>
+
+    <div class="ah-cards">
+      <a class="ah-card card-math" href="subject.html?subject=math">
+        <div class="ah-icon">📐</div>
+        <div class="ah-text"><h2>数学</h2><p>函数 · 几何 · 概率统计 · 知识点讲解与练习</p></div>
+        <div class="ah-go">›</div>
+      </a>
+      <a class="ah-card card-physics" href="subject.html?subject=physics">
+        <div class="ah-icon">🧲</div>
+        <div class="ah-text"><h2>物理</h2><p>力学 · 电磁学 · 热学 · 光学 · 公式与例题</p></div>
+        <div class="ah-go">›</div>
+      </a>
+      <a class="ah-card card-chem" href="subject.html?subject=chemistry">
+        <div class="ah-icon">⚗️</div>
+        <div class="ah-text"><h2>化学</h2><p>元素 · 反应 · 有机 · 实验 · 方程式与考点</p></div>
+        <div class="ah-go">›</div>
+      </a>
+      <a class="ah-card card-bio" href="subject.html?subject=biology">
+        <div class="ah-icon">🧬</div>
+        <div class="ah-text"><h2>生物</h2><p>细胞 · 遗传 · 生态 · 人体 · 概念与图解</p></div>
+        <div class="ah-go">›</div>
+      </a>
+      <a class="ah-card card-english" href="english.html">
+        <div class="ah-icon">🔤</div>
+        <div class="ah-text"><h2>英语</h2><p>语法 · 单词 · 阅读 · 写作 · 题型 · 听力</p></div>
+        <div class="ah-go">›</div>
+      </a>
+    </div>
+
+    <div class="ah-foot">高中理科全科复习 · 离线学习</div>
+  </main>
+
+  <script src="hw-back.js"></script>
+</body>
+</html>

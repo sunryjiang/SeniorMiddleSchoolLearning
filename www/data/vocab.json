@@ -1,0 +1,56 @@
+{
+  "units": [
+    {
+      "id": "hs_core_verbs_1",
+      "title": "高频核心词 · 动词 (1)",
+      "words": [
+        { "word": "achieve", "pos": "v.", "ipa": "əˈtʃiːv", "cn": "实现，达到", "eg": "She worked hard to achieve her goal." },
+        { "word": "acquire", "pos": "v.", "ipa": "əˈkwaɪə", "cn": "获得，习得", "eg": "Children acquire language quickly." },
+        { "word": "adapt", "pos": "v.", "ipa": "əˈdæpt", "cn": "适应；改编", "eg": "It takes time to adapt to a new environment." },
+        { "word": "admire", "pos": "v.", "ipa": "ədˈmaɪə", "cn": "钦佩，欣赏", "eg": "I admire her courage." },
+        { "word": "afford", "pos": "v.", "ipa": "əˈfɔːd", "cn": "负担得起", "eg": "We can't afford a new car." },
+        { "word": "analyse", "pos": "v.", "ipa": "ˈænəlaɪz", "cn": "分析", "eg": "We need to analyse the data carefully." },
+        { "word": "appreciate", "pos": "v.", "ipa": "əˈpriːʃieɪt", "cn": "感激；欣赏", "eg": "I really appreciate your help." },
+        { "word": "arrange", "pos": "v.", "ipa": "əˈreɪndʒ", "cn": "安排，布置", "eg": "Let's arrange a meeting next week." },
+        { "word": "assume", "pos": "v.", "ipa": "əˈsjuːm", "cn": "假定，认为", "eg": "I assume you have read the book." },
+        { "word": "attach", "pos": "v.", "ipa": "əˈtætʃ", "cn": "附上；连接", "eg": "Please attach the file to your email." },
+        { "word": "avoid", "pos": "v.", "ipa": "əˈvɔɪd", "cn": "避免", "eg": "You should avoid making the same mistake." },
+        { "word": "behave", "pos": "v.", "ipa": "bɪˈheɪv", "cn": "举止，表现", "eg": "The children behaved very well." },
+        { "word": "benefit", "pos": "v./n.", "ipa": "ˈbenɪfɪt", "cn": "受益；好处", "eg": "Exercise benefits your health." },
+        { "word": "compare", "pos": "v.", "ipa": "kəmˈpeə", "cn": "比较", "eg": "Compare your answers with your partner's." },
+        { "word": "consider", "pos": "v.", "ipa": "kənˈsɪdə", "cn": "考虑，认为", "eg": "We should consider all the options." },
+        { "word": "contain", "pos": "v.", "ipa": "kənˈteɪn", "cn": "包含，容纳", "eg": "This box contains old photos." },
+        { "word": "contribute", "pos": "v.", "ipa": "kənˈtrɪbjuːt", "cn": "贡献；促成", "eg": "Everyone can contribute to protecting the environment." },
+        { "word": "describe", "pos": "v.", "ipa": "dɪˈskraɪb", "cn": "描述", "eg": "Can you describe the man you saw?" },
+        { "word": "develop", "pos": "v.", "ipa": "dɪˈveləp", "cn": "发展，开发", "eg": "The city has developed rapidly." },
+        { "word": "encourage", "pos": "v.", "ipa": "ɪnˈkʌrɪdʒ", "cn": "鼓励", "eg": "My teacher encouraged me to try again." }
+      ]
+    },
+    {
+      "id": "hs_core_adj_1",
+      "title": "高频核心词 · 形容词 (1)",
+      "words": [
+        { "word": "abstract", "pos": "adj.", "ipa": "ˈæbstrækt", "cn": "抽象的", "eg": "Beauty is an abstract idea." },
+        { "word": "accurate", "pos": "adj.", "ipa": "ˈækjərət", "cn": "准确的", "eg": "The report gives an accurate description." },
+        { "word": "aware", "pos": "adj.", "ipa": "əˈweə", "cn": "意识到的", "eg": "She is aware of the danger." },
+        { "word": "brief", "pos": "adj.", "ipa": "briːf", "cn": "简短的", "eg": "He gave a brief introduction." },
+        { "word": "confident", "pos": "adj.", "ipa": "ˈkɒnfɪdənt", "cn": "自信的", "eg": "She feels confident about the exam." },
+        { "word": "curious", "pos": "adj.", "ipa": "ˈkjʊəriəs", "cn": "好奇的", "eg": "Children are curious about everything." },
+        { "word": "efficient", "pos": "adj.", "ipa": "ɪˈfɪʃnt", "cn": "高效的", "eg": "We need a more efficient method." },
+        { "word": "essential", "pos": "adj.", "ipa": "ɪˈsenʃl", "cn": "必要的，本质的", "eg": "Water is essential to life." },
+        { "word": "familiar", "pos": "adj.", "ipa": "fəˈmɪliə", "cn": "熟悉的", "eg": "This song sounds familiar to me." },
+        { "word": "generous", "pos": "adj.", "ipa": "ˈdʒenərəs", "cn": "慷慨的", "eg": "It was generous of you to help." },
+        { "word": "obvious", "pos": "adj.", "ipa": "ˈɒbviəs", "cn": "明显的", "eg": "It is obvious that he is lying." },
+        { "word": "particular", "pos": "adj.", "ipa": "pəˈtɪkjələ", "cn": "特定的；特别的", "eg": "Is there a particular reason?" },
+        { "word": "permanent", "pos": "adj.", "ipa": "ˈpɜːmənənt", "cn": "永久的", "eg": "He found a permanent job." },
+        { "word": "reliable", "pos": "adj.", "ipa": "rɪˈlaɪəbl", "cn": "可靠的", "eg": "She is a reliable friend." },
+        { "word": "significant", "pos": "adj.", "ipa": "sɪɡˈnɪfɪkənt", "cn": "重要的，显著的", "eg": "There was a significant change." },
+        { "word": "sufficient", "pos": "adj.", "ipa": "səˈfɪʃnt", "cn": "足够的", "eg": "We have sufficient time to finish." },
+        { "word": "typical", "pos": "adj.", "ipa": "ˈtɪpɪkl", "cn": "典型的", "eg": "This is a typical English village." },
+        { "word": "unique", "pos": "adj.", "ipa": "juˈniːk", "cn": "独特的", "eg": "Each person has a unique fingerprint." },
+        { "word": "urgent", "pos": "adj.", "ipa": "ˈɜːdʒənt", "cn": "紧急的", "eg": "This is an urgent matter." },
+        { "word": "valuable", "pos": "adj.", "ipa": "ˈvæljuəbl", "cn": "有价值的", "eg": "Thank you for your valuable advice." }
+      ]
+    }
+  ]
+}

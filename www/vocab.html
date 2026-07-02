@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>背单词 · 高中英语</title>
+  <link rel="stylesheet" href="style.css?v=4" />
+</head>
+<body>
+  <header class="topbar">
+    <button id="backBtn" class="top-back" aria-label="返回">←</button>
+    <button id="menuToggle" class="menu-toggle" aria-label="目录">☰</button>
+    <div class="brand">
+      <span class="brand-title">背单词</span>
+      <span class="brand-sub">高中英语</span>
+    </div>
+  </header>
+
+  <nav class="mod-bar">
+    <a href="english.html">英语首页</a>
+    <a href="subject.html?subject=en-grammar&back=english.html">语法</a>
+    <a href="vocab.html" class="active">背单词</a>
+    <a href="reading.html">阅读</a>
+    <a href="subject.html?subject=en-writing&back=english.html">写作</a>
+    <a href="subject.html?subject=en-exam&back=english.html">题型</a>
+    <a href="listening.html">听力</a>
+    <a href="subject.html?subject=en-phrases&back=english.html">短语</a>
+  </nav>
+
+  <div id="overlay" class="overlay"></div>
+
+  <main class="vocab-wrap">
+    <aside id="vocabSide" class="vocab-side">
+      <h3>选择单元</h3>
+      <div id="unitList" class="unit-list"></div>
+    </aside>
+
+    <section class="vocab-main">
+      <div id="vocabToolbar" class="vocab-toolbar hidden">
+        <div class="vt-info">
+          <span id="vtTitle" class="vt-title"></span>
+          <span id="vtProgress" class="vt-progress"></span>
+        </div>
+        <div class="vt-controls">
+          <label class="vt-check"><input type="checkbox" id="autoPlay" checked /> 翻卡自动读</label>
+          <label class="vt-check"><input type="checkbox" id="showCn" checked /> 显示中文</label>
+        </div>
+      </div>
+
+      <div id="cardArea" class="card-area">
+        <div class="vocab-empty">点左上角 ☰ 选择一个单元开始背单词</div>
+      </div>
+
+      <div id="cardControls" class="card-controls hidden">
+        <button id="prevBtn" class="cc-btn">← 上一个</button>
+        <button id="speakBtn" class="cc-btn primary">🔊 朗读</button>
+        <button id="flipBtn" class="cc-btn">翻面（看释义）</button>
+        <button id="knownBtn" class="cc-btn ok">✓ 认识</button>
+        <button id="nextBtn" class="cc-btn">下一个 →</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="hw-back.js"></script>
+  <script src="tts-bridge.js"></script>
+  <script src="vocab.js?v=1"></script>
+</body>
+</html>

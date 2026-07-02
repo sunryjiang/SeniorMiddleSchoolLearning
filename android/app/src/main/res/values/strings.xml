@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">高中理科复习</string>
+    <string name="title_activity_main">高中理科复习</string>
+    <string name="package_name">com.gaozhong.lksk</string>
+    <string name="custom_url_scheme">com.gaozhong.lksk</string>
+</resources>

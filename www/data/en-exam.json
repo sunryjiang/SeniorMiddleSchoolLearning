@@ -1,0 +1,194 @@
+{
+  "subject": "英语题型专练",
+  "categories": [
+    "完形填空",
+    "语法填空",
+    "七选五"
+  ],
+  "items": [
+    {
+      "id": "1.1",
+      "category": "完形填空",
+      "subcategory": "解题技巧",
+      "title": "完形填空解题策略",
+      "sections": [
+        {
+          "heading": "知识点",
+          "blocks": [
+            { "kind": "para", "text": "完形填空（约 15 题）以记叙文为主，考查在语境中辨析词义和把握逻辑的能力，重点是“上下文”。" }
+          ]
+        },
+        {
+          "heading": "原理与方法",
+          "blocks": [
+            { "kind": "sub", "text": "四大解题依据" },
+            { "kind": "bullet", "text": "① 上下文语境：答案往往在前后句里能找到暗示（复现/呼应）。" },
+            { "kind": "bullet", "text": "② 逻辑关系：转折(but/however)、因果(so/because)、并列、递进决定选词。" },
+            { "kind": "bullet", "text": "③ 固定搭配与习惯用法：动词+介词、形容词+介词等。" },
+            { "kind": "bullet", "text": "④ 情感基调：记叙文常有情感线，选词要与人物情绪一致。" },
+            { "kind": "note", "text": "做题三步：先跳读全文抓主线和情感；再逐空结合上下文选择；最后复读检验通顺。首句一般不设空，是重要线索，务必读懂。" }
+          ]
+        },
+        {
+          "heading": "例题详解",
+          "blocks": [
+            { "kind": "eg", "label": "例1（逻辑关系）", "text": "He studied very hard, ______ he still failed. (A. so  B. but  C. and)", "solution": ["“努力学习”与“仍失败”是转折关系。", "答案：B. but。"] },
+            { "kind": "eg", "label": "例2（上下文复现）", "text": "She loves animals. She keeps three ______ at home. (A. books  B. pets  C. plants)", "solution": ["由“爱动物”可推出家里养的是宠物。", "答案：B. pets。"] }
+          ]
+        }
+      ],
+      "exercises": [
+        { "q": "It was raining hard, ______ we stayed at home.（因果，填 so/but）", "answer": "so", "tip": "下雨→待在家，因果", "level": "中档" },
+        { "q": "He was tired, ______ he kept working.（转折，填 but/so）", "answer": "but", "tip": "累却继续，转折", "level": "中档" },
+        { "q": "完形首句通常（设空/不设空）？", "answer": "不设空", "tip": "首句是线索", "level": "基础" }
+      ]
+    },
+    {
+      "id": "1.2",
+      "category": "完形填空",
+      "subcategory": "词义辨析",
+      "title": "完形高频近义词辨析",
+      "sections": [
+        {
+          "heading": "知识点",
+          "blocks": [
+            {
+              "kind": "table",
+              "headers": ["词", "辨析"],
+              "rows": [
+                ["look/see/watch", "look 看的动作；see 看见结果；watch 观看（动态）"],
+                ["speak/say/talk/tell", "speak 说语言；say + 内容；talk 交谈；tell sb sth 告诉"],
+                ["hope/wish", "hope 可实现的希望；wish 常表难实现的愿望"],
+                ["hard/hardly", "hard 努力地；hardly 几乎不（否定）"]
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "原理与方法",
+          "blocks": [
+            { "kind": "note", "text": "近义词辨析看“搭配对象 + 语义侧重 + 感情色彩”。多积累动词+介词搭配（如 look for 寻找、look after 照顾、look forward to 期待）。" }
+          ]
+        },
+        {
+          "heading": "例题详解",
+          "blocks": [
+            { "kind": "eg", "label": "例1", "text": "Please ______ after the baby while I'm out. (look/watch)", "solution": ["“照顾”用 look after。", "答案：look。"] }
+          ]
+        }
+      ],
+      "exercises": [
+        { "q": "词义辨析：I can ______ hardly believe it — 表示“几乎不”用 hard 还是 hardly？", "answer": "hardly", "tip": "hardly=几乎不", "level": "中档" },
+        { "q": "搭配：I'm looking ______ to the holiday.（期待，填介词）", "answer": "forward", "tip": "look forward to", "level": "较难" },
+        { "q": "He ______ me an interesting story.（告诉，填 told/said）", "answer": "told", "tip": "tell sb sth", "level": "中档" }
+      ]
+    },
+    {
+      "id": "2.1",
+      "category": "语法填空",
+      "subcategory": "有提示词",
+      "title": "语法填空（给词填空）",
+      "sections": [
+        {
+          "heading": "知识点",
+          "blocks": [
+            { "kind": "para", "text": "语篇型语法填空（约 10 题），一部分给出括号内的词，要求用其适当形式填空。" }
+          ]
+        },
+        {
+          "heading": "原理与方法",
+          "blocks": [
+            { "kind": "bullet", "text": "给动词：判断作谓语（→时态语态、主谓一致）还是非谓语（→doing/done/to do）。" },
+            { "kind": "bullet", "text": "给形容词/副词：修饰名词用形容词，修饰动词/形容词用副词；有比较对象变比较级/最高级。" },
+            { "kind": "bullet", "text": "给名词：考虑单复数、名词化（-tion/-ment/-ness）。" },
+            { "kind": "note", "text": "先看句子有没有谓语：若已有谓语，所给动词多半用非谓语；若缺谓语，则变时态语态。这是判断的第一步。" }
+          ]
+        },
+        {
+          "heading": "例题详解",
+          "blocks": [
+            { "kind": "eg", "label": "例1（谓语→时态语态）", "text": "It is reported that the bridge ______ (build) last year.", "solution": ["句子缺谓语，桥“被建造”且 last year 是过去，用一般过去时被动。", "答案：was built。"] },
+            { "kind": "eg", "label": "例2（非谓语）", "text": "The boy ______ (sit) there is my cousin.", "solution": ["句子已有谓语 is，所给动词作定语，男孩“坐着”是主动进行，用现在分词。", "答案：sitting。"] }
+          ]
+        }
+      ],
+      "exercises": [
+        { "q": "The problem ______ (discuss) at yesterday's meeting was difficult.（非谓语，被动）", "answer": "discussed", "tip": "被讨论,过去分词作定语", "level": "较难" },
+        { "q": "He runs much ______ (fast) than me.（比较级）", "answer": "faster", "tip": "than→比较级", "level": "中档" },
+        { "q": "The teacher asked us ______ (keep) quiet.（ask sb to do）", "answer": "to keep", "tip": "ask sb to do", "level": "中档" },
+        { "q": "With the development ______ (science), life is easier.（名词，介词后）", "answer": "of science", "tip": "of+名词" , "level": "较难" }
+      ]
+    },
+    {
+      "id": "2.2",
+      "category": "语法填空",
+      "subcategory": "无提示词",
+      "title": "语法填空（未给词填空）",
+      "sections": [
+        {
+          "heading": "知识点",
+          "blocks": [
+            { "kind": "bullet", "text": "未给词的空多填“功能词”：冠词、介词、连词、代词、关系词、比较级的 than 等。" }
+          ]
+        },
+        {
+          "heading": "原理与方法",
+          "blocks": [
+            { "kind": "bullet", "text": "空在名词前→可能填冠词(a/an/the)或形容词性物主代词。" },
+            { "kind": "bullet", "text": "空在名词/代词前且句子成分完整→介词。" },
+            { "kind": "bullet", "text": "连接两个句子→连词(and/but/because/when)或关系词(which/that/who/where)。" },
+            { "kind": "note", "text": "判断从句缺什么：缺主/宾语用 which/who/that；缺状语用 when/where/why；名词性从句表“是否”用 whether。" }
+          ]
+        },
+        {
+          "heading": "例题详解",
+          "blocks": [
+            { "kind": "eg", "label": "例1（关系词）", "text": "This is the village ______ I was born.", "solution": ["先行词 village 指地点，从句不缺主宾（缺地点状语）。", "答案：where。"] },
+            { "kind": "eg", "label": "例2（介词）", "text": "He is good ______ playing basketball.", "solution": ["be good at 固定搭配。", "答案：at。"] }
+          ]
+        }
+      ],
+      "exercises": [
+        { "q": "It took me an hour ______ finish the work.（to do）", "answer": "to", "tip": "it takes sb time to do", "level": "中档" },
+        { "q": "I have a friend ______ mother is a teacher.（所属关系词）", "answer": "whose", "tip": "whose+名词", "level": "较难" },
+        { "q": "She is interested ______ music.（填介词）", "answer": "in", "tip": "be interested in", "level": "基础" },
+        { "q": "Water is important ______ all living things.（填介词，对…重要）", "answer": "to/for", "tip": "important to/for", "level": "中档" }
+      ]
+    },
+    {
+      "id": "3.1",
+      "category": "七选五",
+      "subcategory": "解题技巧",
+      "title": "七选五阅读补全",
+      "sections": [
+        {
+          "heading": "知识点",
+          "blocks": [
+            { "kind": "para", "text": "七选五（5 题）：从 7 个选项中选 5 个还原到文章空缺处（2 个为干扰项），考查语篇结构。" }
+          ]
+        },
+        {
+          "heading": "原理与方法",
+          "blocks": [
+            { "kind": "bullet", "text": "位于段首的空→多为该段主旨句（总起）。位于段中/段尾→多为过渡句或细节。" },
+            { "kind": "bullet", "text": "抓“路标词”：选项或空前后的代词(this/they)、关联词(however/for example)、同义复现能帮助定位。" },
+            { "kind": "bullet", "text": "小标题类选项常与段落主题对应；含 first/second/finally 的选项注意顺序。" },
+            { "kind": "note", "text": "先读全文抓结构，再逐空看“前后句衔接”；代词指代和词汇复现是最强线索。最后用排除法确认，检查逻辑是否连贯。" }
+          ]
+        },
+        {
+          "heading": "例题详解",
+          "blocks": [
+            { "kind": "eg", "label": "例1（代词线索）", "text": "空后出现 \"They are cheap and healthy.\" 该空最可能引入什么？", "solution": ["They 指代复数名词，空处应提到某种复数事物（如 vegetables）。", "据 They 的指代回原文找对应复数名词即可定位。"] }
+          ]
+        }
+      ],
+      "exercises": [
+        { "q": "七选五共有几个选项？（填数字）", "answer": "7", "tip": "7选5", "level": "基础" },
+        { "q": "七选五有几个干扰项（多余选项）？", "answer": "2", "tip": "7-5=2", "level": "基础" },
+        { "q": "位于段首的空通常是该段的 ______ 句（主旨/细节）？", "answer": "主旨", "tip": "段首多为主旨句", "level": "中档" },
+        { "q": "定位空缺最强的线索之一是代词的 ______（指代）和词汇复现。", "answer": "指代", "tip": "代词指代", "level": "较难" }
+      ]
+    }
+  ]
+}

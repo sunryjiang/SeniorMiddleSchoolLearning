@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>英语 · 高中全科复习</title>
+  <link rel="stylesheet" href="style.css?v=4" />
+  <style>
+    body { background: var(--bg); }
+    .app-home {
+      max-width: 680px; margin: 0 auto;
+      padding: calc(env(safe-area-inset-top, 0px) + 20px) 20px
+               calc(env(safe-area-inset-bottom, 0px) + 28px);
+      min-height: 100vh; display: flex; flex-direction: column;
+    }
+    .eh-top { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; }
+    .eh-back { text-decoration: none; color: var(--blue-700); font-size: 15px; }
+    .ah-hero { text-align: center; margin-bottom: 22px; }
+    .ah-hero h1 { margin: 0; font-size: 25px; color: var(--blue-900); letter-spacing: 1px; }
+    .ah-hero .ah-sub { margin-top: 6px; font-size: 13px; color: var(--gray-500); letter-spacing: 2px; }
+    .ah-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .ah-card {
+      display: flex; align-items: center; gap: 14px; padding: 18px 16px; border-radius: 18px;
+      color: #fff; text-decoration: none; box-shadow: 0 8px 22px rgba(31, 59, 115, 0.16);
+      -webkit-tap-highlight-color: transparent; transition: transform .12s ease, box-shadow .12s ease;
+    }
+    .ah-card:active { transform: scale(0.98); }
+    .ah-card .ah-icon { font-size: 30px; width: 50px; height: 50px; flex: none; display: flex; align-items: center; justify-content: center; background: rgba(255,255,255,0.2); border-radius: 14px; }
+    .ah-card .ah-text { flex: 1; min-width: 0; }
+    .ah-card h2 { margin: 0 0 3px; font-size: 18px; }
+    .ah-card p { margin: 0; font-size: 12px; opacity: 0.92; line-height: 1.45; }
+    .card-grammar   { background: linear-gradient(135deg, #2e5b9e, #1f3b73); }
+    .card-vocab     { background: linear-gradient(135deg, #e0872f, #c0641c); }
+    .card-reading   { background: linear-gradient(135deg, #1a8a4a, #0f6a38); }
+    .card-writing   { background: linear-gradient(135deg, #b5539c, #7d2f6b); }
+    .card-exam      { background: linear-gradient(135deg, #d1495b, #9e2a3c); }
+    .card-listening { background: linear-gradient(135deg, #3a86a8, #1f5d78); }
+    .card-phrases   { background: linear-gradient(135deg, #6b8e23, #4a6318); }
+    .ah-setting { margin-top: 22px; display: flex; align-items: center; justify-content: center; gap: 10px; font-size: 14px; color: var(--gray-700); flex-wrap: wrap; }
+    .ah-setting select { padding: 7px 12px; border-radius: 10px; border: 1px solid var(--gray-200); background: #fff; font-size: 14px; color: var(--blue-900); }
+    .ah-test { padding: 7px 14px; border-radius: 10px; border: 1px solid var(--blue-500); background: var(--blue-050); color: var(--blue-700); font-size: 14px; cursor: pointer; }
+    .tts-info { margin-top: 10px; text-align: center; font-size: 12.5px; color: var(--gray-500); padding: 0 10px; }
+    .tts-info.tts-warn { color: #b3541e; font-weight: 600; }
+    .tts-help { max-width: 560px; margin: 14px auto 0; background: #fff; border: 1px solid var(--gray-200); border-radius: 12px; padding: 6px 16px; font-size: 13.5px; color: var(--gray-700); }
+    .tts-help summary { cursor: pointer; color: var(--blue-700); font-weight: 600; padding: 8px 0; }
+    .tts-help ol { margin: 6px 0 12px; padding-left: 20px; }
+    .tts-help li { margin: 5px 0; line-height: 1.6; }
+    .ah-foot { margin-top: 18px; text-align: center; font-size: 12px; color: var(--gray-500); }
+    @media (max-width: 420px) { .ah-cards { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <main class="app-home">
+    <div class="eh-top"><a class="eh-back" href="index.html">← 返回全科首页</a></div>
+    <div class="ah-hero">
+      <h1>高中英语 · 全能提升</h1>
+      <div class="ah-sub">GRAMMAR · WORDS · READING · WRITING</div>
+    </div>
+
+    <div class="ah-cards">
+      <a class="ah-card card-grammar" href="subject.html?subject=en-grammar&back=english.html">
+        <div class="ah-icon">📘</div>
+        <div class="ah-text"><h2>语法精讲</h2><p>时态·从句·非谓语·虚拟语气 讲解+练习</p></div>
+      </a>
+      <a class="ah-card card-vocab" href="vocab.html">
+        <div class="ah-icon">🃏</div>
+        <div class="ah-text"><h2>背单词</h2><p>高考核心词汇 卡片记忆 音标+朗读</p></div>
+      </a>
+      <a class="ah-card card-reading" href="reading.html">
+        <div class="ah-icon">📖</div>
+        <div class="ah-text"><h2>分级阅读</h2><p>题材阅读 中英对照+生词+理解题</p></div>
+      </a>
+      <a class="ah-card card-writing" href="subject.html?subject=en-writing&back=english.html">
+        <div class="ah-icon">✍️</div>
+        <div class="ah-text"><h2>写作</h2><p>应用文模板 + 读后续写技巧+范文</p></div>
+      </a>
+      <a class="ah-card card-exam" href="subject.html?subject=en-exam&back=english.html">
+        <div class="ah-icon">🎯</div>
+        <div class="ah-text"><h2>题型专练</h2><p>完形填空·语法填空·七选五 技巧</p></div>
+      </a>
+      <a class="ah-card card-listening" href="listening.html">
+        <div class="ah-icon">🎧</div>
+        <div class="ah-text"><h2>听力</h2><p>对话/短文录音 + 理解题（可点读）</p></div>
+      </a>
+      <a class="ah-card card-phrases" href="subject.html?subject=en-phrases&back=english.html">
+        <div class="ah-icon">🔗</div>
+        <div class="ah-text"><h2>高频短语</h2><p>固定搭配·动词短语·介词搭配</p></div>
+      </a>
+    </div>
+
+    <div class="ah-setting">
+      <label for="accentSel">🔊 朗读口音</label>
+      <select id="accentSel">
+        <option value="en-US">美式发音 (US)</option>
+        <option value="en-GB">英式发音 (UK)</option>
+      </select>
+      <button id="ttsTest" class="ah-test" type="button">试听发音</button>
+    </div>
+    <div id="ttsInfo" class="tts-info"></div>
+
+    <details class="tts-help">
+      <summary>发音生硬 / 读不准？点这里（重要）</summary>
+      <p>发音质量取决于手机的“文字转语音(TTS)引擎”。安装一次 <b>Google 语音引擎</b> 即可获得自然英美发音：</p>
+      <ol>
+        <li>应用商店安装 <b>“Speech Services by Google”</b>。</li>
+        <li>手机 <b>设置 → 系统 → 语言和输入法 → 文字转语音输出</b>，首选引擎改为 <b>Google</b>。</li>
+        <li>安装语音数据，下载 <b>English (US/UK)</b>（选“高质量”）。</li>
+        <li>回本页选口音，点“试听发音”确认。</li>
+      </ol>
+    </details>
+
+    <div class="ah-foot">高中英语 · 离线学习</div>
+  </main>
+
+  <script src="hw-back.js"></script>
+  <script>
+    (function () {
+      var sel = document.getElementById("accentSel");
+      function accent() { try { return localStorage.getItem("ttsAccent") || "en-US"; } catch (e) { return "en-US"; } }
+      if (sel) {
+        sel.value = accent();
+        sel.addEventListener("change", function () { try { localStorage.setItem("ttsAccent", sel.value); } catch (e) {} detect(); });
+      }
+      var Cap = window.Capacitor;
+      var isNative = !!(Cap && Cap.isNativePlatform && Cap.isNativePlatform());
+      var TTS = isNative && Cap.Plugins ? Cap.Plugins.TextToSpeech : null;
+      var info = document.getElementById("ttsInfo");
+      var testBtn = document.getElementById("ttsTest");
+      function norm(s) { return (s || "").toLowerCase().replace(/_/g, "-"); }
+      function detect() {
+        if (!info) return;
+        if (!TTS) { info.textContent = "（在浏览器中打开，使用系统语音）"; return; }
+        TTS.getSupportedVoices().then(function (r) {
+          var vs = (r && r.voices) || [];
+          var acc = norm(accent());
+          var en = vs.filter(function (v) { return norm(v.lang).indexOf("en") === 0; });
+          if (!en.length) { info.className = "tts-info tts-warn"; info.textContent = "⚠ 未检测到英语语音，请按下方说明安装 Google 语音引擎。"; return; }
+          var pick = en.filter(function (v) { return norm(v.lang) === acc; })[0] || en[0];
+          var name = (pick.name || pick.voiceURI || "").toString();
+          if (/espeak|pico|formant/i.test(name)) { info.className = "tts-info tts-warn"; info.textContent = "⚠ 当前英语音色偏机械（" + name + "）。建议安装 Google 语音引擎。"; }
+          else { info.className = "tts-info"; info.textContent = "当前英语音色：" + name; }
+        }).catch(function () {});
+      }
+      if (testBtn) testBtn.addEventListener("click", function () {
+        if (!TTS) { alert("请在手机 App 中试听。"); return; }
+        TTS.stop().catch(function () {});
+        TTS.speak({ text: "This is a pronunciation test.", lang: accent(), rate: 0.9, pitch: 1.0, volume: 1.0, category: "playback" }).catch(function () {});
+      });
+      detect();
+    })();
+  </script>
+</body>
+</html>

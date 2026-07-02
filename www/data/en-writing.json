@@ -1,0 +1,356 @@
+{
+  "subject": "英语写作",
+  "categories": [
+    "应用文写作",
+    "读后续写",
+    "写作提分"
+  ],
+  "items": [
+    {
+      "id": "1.1",
+      "category": "应用文写作",
+      "subcategory": "总论",
+      "title": "应用文写作总论与评分要点",
+      "sections": [
+        {
+          "heading": "知识点",
+          "blocks": [
+            { "kind": "para", "text": "新高考应用文约 80 词，满分 15 分。常见文体：书信/邮件、通知、演讲稿、发言稿、倡议书、报道、日记等。" },
+            { "kind": "bullet", "text": "评分三大关键：① 要点齐全（题目要求的每一点都写到）；② 语言准确、句式多样；③ 结构清晰、格式规范、书写工整。" }
+          ]
+        },
+        {
+          "heading": "原理与方法",
+          "blocks": [
+            { "kind": "sub", "text": "万能三段式结构" },
+            { "kind": "bullet", "text": "开头段：点明写信目的（1 句）。" },
+            { "kind": "bullet", "text": "主体段：分点展开，逻辑连接（占最大篇幅）。" },
+            { "kind": "bullet", "text": "结尾段：总结 / 期待回复 / 致谢（1–2 句）。" },
+            { "kind": "note", "text": "审题四问：写给谁（人称/语气）？什么文体（格式）？几个要点（不漏点）？什么时态（活动未发生用将来时，介绍已发生用过去时）？要点先列提纲再动笔。" }
+          ]
+        },
+        {
+          "heading": "例题详解",
+          "blocks": [
+            { "kind": "eg", "label": "结构示范（建议信）", "text": "Dear Li Hua, / I am writing to give you some advice on… / First,… Second,… Besides,… / I hope these suggestions help. / Yours, / Wang Ming", "solution": ["开头亮目的 → 主体分点(First/Second/Besides) → 结尾期待/致意。", "落款 Yours, + 署名。"] }
+          ]
+        }
+      ],
+      "exercises": [
+        { "q": "应用文评分第一关键是要点是否 ______（齐全/华丽）？", "answer": "齐全", "tip": "要点齐全最重要", "level": "基础" },
+        { "q": "介绍将要举办的活动，主要用什么时态？（一般______时）", "answer": "将来", "tip": "活动未发生用将来时", "level": "中档" },
+        { "q": "应用文的基本结构是（几段式，填数字）______ 段式？", "answer": "三/3", "tip": "开头-主体-结尾", "level": "基础" }
+      ]
+    },
+    {
+      "id": "1.2",
+      "category": "应用文写作",
+      "subcategory": "书信邮件",
+      "title": "书信/邮件的格式与常用句式",
+      "sections": [
+        {
+          "heading": "知识点",
+          "blocks": [
+            { "kind": "bullet", "text": "称呼：Dear + 名字/头衔（Dear Sir or Madam）。结尾落款：Yours sincerely / Best wishes / Yours, + 署名（题目通常给定 Li Hua）。" }
+          ]
+        },
+        {
+          "heading": "原理与方法",
+          "blocks": [
+            { "kind": "sub", "text": "开头句（表明目的）" },
+            { "kind": "bullet", "text": "I am writing to invite you to… 我写信是想邀请你…" },
+            { "kind": "bullet", "text": "I am writing to express my sincere gratitude for… 我写信是想表达对…的诚挚感谢。" },
+            { "kind": "bullet", "text": "I am writing to apply for… 我写信是想申请…" },
+            { "kind": "sub", "text": "结尾句" },
+            { "kind": "bullet", "text": "I would appreciate it if you could… 如果你能…我将不胜感激。" },
+            { "kind": "bullet", "text": "I am looking forward to your reply. 期待你的回复。" },
+            { "kind": "note", "text": "开头忌用 How are you? 之类闲聊；开门见山点目的。人名、地名等隐私信息一律用题目给定的（如 Li Hua），不要写真实姓名。" }
+          ]
+        },
+        {
+          "heading": "例题详解",
+          "blocks": [
+            { "kind": "eg", "label": "常用开头（背诵）", "text": "I am writing to tell you something about our school life.", "solution": ["“我写信是想告诉你一些关于我们校园生活的事。”", "I am writing to + do 是万能开头。"] },
+            { "kind": "eg", "label": "常用结尾（背诵）", "text": "I am looking forward to hearing from you soon.", "solution": ["“期待尽快收到你的回信。”", "look forward to 后接 doing。"] }
+          ]
+        }
+      ],
+      "exercises": [
+        { "q": "书信开头亮明目的：I am writing to ______ you to my birthday party.（邀请）", "answer": "invite", "tip": "invite sb to", "level": "中档" },
+        { "q": "结尾套语：I am looking forward to ______ (hear) from you.（填正确形式）", "answer": "hearing", "tip": "look forward to+doing", "level": "较难" },
+        { "q": "正式信件不知收信人姓名时称呼用：Dear ______ or Madam.", "answer": "Sir", "tip": "Dear Sir or Madam", "level": "中档" },
+        { "q": "表达感激：I am writing to express my ______ for your help.（感谢，名词）", "answer": "gratitude/thanks", "tip": "express gratitude", "level": "较难" }
+      ]
+    },
+    {
+      "id": "1.3",
+      "category": "应用文写作",
+      "subcategory": "常见文体",
+      "title": "建议信 (A Letter of Suggestion)",
+      "sections": [
+        {
+          "heading": "知识点",
+          "blocks": [
+            { "kind": "bullet", "text": "建议信用于就某问题提出建议，语气委婉、真诚。常见于对外国朋友学中文、改善健康、提高成绩等给建议。" }
+          ]
+        },
+        {
+          "heading": "原理与方法",
+          "blocks": [
+            { "kind": "sub", "text": "提建议的高级句式" },
+            { "kind": "bullet", "text": "It would be a good idea to… / Why not do…? / I would suggest that you (should) do…" },
+            { "kind": "bullet", "text": "If I were you, I would… / You are supposed to…" },
+            { "kind": "note", "text": "分点用 First / Second / What's more / In addition 连接；建议要具体、可操作，最后表达祝愿（I'm sure you will make great progress）。" }
+          ]
+        },
+        {
+          "heading": "例题详解",
+          "blocks": [
+            { "kind": "eg", "label": "范文（给外国朋友学中文的建议）", "text": "Dear Chris, Knowing that you are learning Chinese, I am glad to offer some advice. First, it is important to speak as much as possible, even if you make mistakes. Second, watching Chinese films with subtitles can improve your listening. What's more, making Chinese friends will give you a real language environment. I'm sure that with practice you will make great progress. Yours, Li Hua", "solution": ["开头：得知你在学中文，很高兴给些建议。", "主体分点：多开口说；看带字幕的中文电影练听力；结交中国朋友营造语境。", "结尾：相信勤加练习你会大有长进。"] }
+          ]
+        }
+      ],
+      "exercises": [
+        { "q": "委婉建议句型：Why not ______ (do) more speaking?（填正确形式）", "answer": "do", "tip": "Why not+动词原形", "level": "中档" },
+        { "q": "If I ______ you, I would practise every day.（虚拟，建议）", "answer": "were", "tip": "If I were you", "level": "较难" },
+        { "q": "分点连接词，除 First、Second 外，可用 What's ______ 表递进。", "answer": "more", "tip": "What's more", "level": "基础" }
+      ]
+    },
+    {
+      "id": "1.4",
+      "category": "应用文写作",
+      "subcategory": "常见文体",
+      "title": "通知与演讲稿 (Notice & Speech)",
+      "sections": [
+        {
+          "heading": "知识点",
+          "blocks": [
+            { "kind": "bullet", "text": "通知：标题 NOTICE 居中；正文说明活动的时间、地点、内容、对象、注意事项；落款单位。" },
+            { "kind": "bullet", "text": "演讲稿：开头问候（Good morning, everyone. It's a great honour to…）；主体分点；结尾感谢（Thank you for listening!）。" }
+          ]
+        },
+        {
+          "heading": "原理与方法",
+          "blocks": [
+            { "kind": "note", "text": "通知语言简洁、要素齐全（5W：when/where/what/who/how）。演讲稿要有对象感和号召力，多用 we/let's、祈使句和排比。" }
+          ]
+        },
+        {
+          "heading": "例题详解",
+          "blocks": [
+            { "kind": "eg", "label": "演讲稿开头/结尾（背诵）", "text": "Good morning, everyone! It's a great honour for me to stand here and share my ideas. … That's all. Thank you for listening!", "solution": ["开头：问候 + 表荣幸。", "结尾：That's all. Thank you for listening!"] }
+          ]
+        }
+      ],
+      "exercises": [
+        { "q": "通知的标题一般写作（大写）______，居中。", "answer": "NOTICE/notice", "tip": "标题NOTICE", "level": "基础" },
+        { "q": "演讲稿结尾常用：Thank you for ______ (listen)!（填正确形式）", "answer": "listening", "tip": "for+doing", "level": "中档" },
+        { "q": "演讲开头表荣幸：It's a great ______ to be here.（荣幸，名词）", "answer": "honour/honor", "tip": "a great honour", "level": "较难" }
+      ]
+    },
+    {
+      "id": "2.1",
+      "category": "读后续写",
+      "subcategory": "总论",
+      "title": "读后续写总论与评分",
+      "sections": [
+        {
+          "heading": "知识点",
+          "blocks": [
+            { "kind": "para", "text": "读后续写：给出约 350 词的短文和两段开头，续写约 150 词、两个段落，满分 25 分。" },
+            { "kind": "bullet", "text": "评分看：与原文情节的连贯性、与所给段首句的衔接、语言的丰富与准确、以及内容的合理与积极。" }
+          ]
+        },
+        {
+          "heading": "原理与方法",
+          "blocks": [
+            { "kind": "sub", "text": "动笔前四步" },
+            { "kind": "bullet", "text": "① 通读原文，圈出人物、时间、地点、关键情节和情感基调。" },
+            { "kind": "bullet", "text": "② 分析两段段首句，判断各段要写的方向。" },
+            { "kind": "bullet", "text": "③ 构思情节：矛盾如何发展、如何解决、结局要积极向上。" },
+            { "kind": "bullet", "text": "④ 铺设“伏笔照应”：多用原文出现过的人物和线索，首尾呼应。" },
+            { "kind": "note", "text": "人称与时态要与原文一致（一般用第三人称、过去时）。主题多为“正能量”：善良、勇气、坚持、感恩、家庭。" }
+          ]
+        },
+        {
+          "heading": "例题详解",
+          "blocks": [
+            { "kind": "eg", "label": "谋篇示范", "text": "Para 1 首句给出后：先承接上文情境，再推进一个小高潮（发现/决定/行动）。 Para 2 首句给出后：写结果与情感升华，点出主题。", "solution": ["第一段：承接—推进—小高潮。", "第二段：结果—情感—主题升华。"] }
+          ]
+        }
+      ],
+      "exercises": [
+        { "q": "读后续写要求续写几个段落？（填数字）", "answer": "2/两/二", "tip": "两段", "level": "基础" },
+        { "q": "续写的人称、时态要与原文保持 ______（一致/相反）？", "answer": "一致", "tip": "人称时态一致", "level": "中档" },
+        { "q": "读后续写的结局基调通常应是 ______（积极/消极）的。", "answer": "积极", "tip": "正能量结局", "level": "基础" }
+      ]
+    },
+    {
+      "id": "2.2",
+      "category": "读后续写",
+      "subcategory": "描写技巧",
+      "title": "心理·动作·环境描写与高级词块",
+      "sections": [
+        {
+          "heading": "知识点",
+          "blocks": [
+            { "kind": "bullet", "text": "读后续写靠“细节描写”得分：动作细节、心理活动、环境烘托，让情节“有画面”。" }
+          ]
+        },
+        {
+          "heading": "原理与方法",
+          "blocks": [
+            {
+              "kind": "table",
+              "headers": ["描写类型", "高级词块示例"],
+              "rows": [
+                ["心理（紧张）", "My heart was racing / pounding. 我的心怦怦直跳"],
+                ["心理（激动）", "Tears of joy welled up in my eyes. 喜悦的泪水涌上眼眶"],
+                ["动作（快速）", "I dashed / rushed towards… 我冲向…"],
+                ["动作（颤抖）", "With trembling hands, I… 我用颤抖的双手…"],
+                ["环境（烘托）", "The wind howled through the trees. 风在树间呼啸"]
+              ]
+            },
+            { "kind": "note", "text": "多用“动作+伴随状语/分词”让句子有层次：Hearing the news, he jumped up with excitement. 善用副词、比喻和五感描写。" }
+          ]
+        },
+        {
+          "heading": "例题详解",
+          "blocks": [
+            { "kind": "eg", "label": "细节升级示范", "text": "普通句：I was afraid. → 升级：My legs went weak and my heart pounded against my chest.", "solution": ["把“我害怕”写成身体反应，画面感更强。", "读后续写多做这种“情绪→身体反应”的转化。"] }
+          ]
+        }
+      ],
+      "exercises": [
+        { "q": "表示“心怦怦跳”：My heart was ______ .（跳动，填 -ing 动词）", "answer": "pounding/racing/beating fast", "tip": "heart pounding/racing", "level": "较难" },
+        { "q": "表示“冲向”：I ______ towards the door.（冲，过去式）", "answer": "dashed/rushed", "tip": "dash/rush towards", "level": "中档" },
+        { "q": "分词作状语增色：______ (hear) the news, he jumped up.（听到消息，现在分词）", "answer": "Hearing", "tip": "现在分词作状语", "level": "较难" }
+      ]
+    },
+    {
+      "id": "2.3",
+      "category": "读后续写",
+      "subcategory": "范文赏析",
+      "title": "读后续写范文片段赏析",
+      "sections": [
+        {
+          "heading": "知识点",
+          "blocks": [
+            { "kind": "para", "text": "以“暴风雪中被陌生人相助”为背景，示范两段续写的语言与情节处理。" }
+          ]
+        },
+        {
+          "heading": "原理与方法",
+          "blocks": [
+            { "kind": "note", "text": "注意：① 段首句自然承接；② 动作/心理/环境交织；③ 结尾点题（善意与感恩）。" }
+          ]
+        },
+        {
+          "heading": "例题详解",
+          "blocks": [
+            { "kind": "eg", "label": "范文 Para 1", "text": "Just then, a truck pulled over beside us. A kind-faced man rolled down the window and asked if we needed help. Relief washed over me as I explained our situation. Without hesitation, he offered to tow our car to the nearest town.", "solution": ["承接被困情境 → 陌生人出现 → 心理(relief) → 行动(offered to tow)。", "词块：pull over 靠边停车；relief washed over me 松了口气；without hesitation 毫不犹豫。"] },
+            { "kind": "eg", "label": "范文 Para 2", "text": "Safely back on the road, I couldn't stop thanking him. He simply smiled and said, \"We all need a hand sometimes.\" That night, I learned that a stranger's kindness can warm the coldest winter. From then on, I promised to pass that warmth on to others.", "solution": ["结果(safely back) → 对话点题 → 感悟升华(kindness warms winter) → 呼应主题(pass warmth on)。"] }
+          ]
+        }
+      ],
+      "exercises": [
+        { "q": "词块“靠边停车”：pull ______ .", "answer": "over", "tip": "pull over", "level": "中档" },
+        { "q": "词块“毫不犹豫”：without ______ .", "answer": "hesitation", "tip": "without hesitation", "level": "较难" },
+        { "q": "结尾点题“把温暖传递下去”：pass the warmth ______ .", "answer": "on", "tip": "pass on", "level": "中档" }
+      ]
+    },
+    {
+      "id": "3.1",
+      "category": "写作提分",
+      "subcategory": "高级句型",
+      "title": "让作文加分的高级句型",
+      "sections": [
+        {
+          "heading": "知识点",
+          "blocks": [
+            {
+              "kind": "table",
+              "headers": ["句型", "示例"],
+              "rows": [
+                ["强调句", "It is teamwork that matters most. 最重要的是团队合作"],
+                ["倒装", "Only in this way can we succeed. 只有这样我们才能成功"],
+                ["非谓语作状语", "Faced with difficulties, we should never give up. 面对困难，我们绝不应放弃"],
+                ["定语从句", "Reading is a hobby that benefits us a lot. 阅读是一种大有裨益的爱好"],
+                ["主语从句(it)", "It is important that we (should) protect nature. 保护自然很重要"]
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "原理与方法",
+          "blocks": [
+            { "kind": "note", "text": "全文有 2–3 个高级句式即可显著提分，切忌堆砌导致语法出错。先保证正确，再追求高级。" }
+          ]
+        },
+        {
+          "heading": "例题详解",
+          "blocks": [
+            { "kind": "eg", "label": "普通句升级", "text": "普通：We can succeed only in this way. → 倒装升级：Only in this way can we succeed.", "solution": ["Only + 状语置于句首，主句部分倒装（can we succeed）。"] }
+          ]
+        }
+      ],
+      "exercises": [
+        { "q": "倒装升级：Only in this way ______ we achieve our goal.（填助动词）", "answer": "can", "tip": "Only+状语句首倒装", "level": "较难" },
+        { "q": "非谓语作状语：______ (face) with difficulties, we kept trying.（面对，过去分词）", "answer": "Faced", "tip": "be faced with→Faced", "level": "较难" },
+        { "q": "强调句：It is teamwork ______ matters most.（填 that）", "answer": "that", "tip": "强调句It is...that", "level": "中档" }
+      ]
+    },
+    {
+      "id": "3.2",
+      "category": "写作提分",
+      "subcategory": "连接与词块",
+      "title": "连接词与高级词块替换",
+      "sections": [
+        {
+          "heading": "知识点",
+          "blocks": [
+            {
+              "kind": "table",
+              "headers": ["功能", "连接词/词块"],
+              "rows": [
+                ["递进", "What's more, Furthermore, In addition, Besides"],
+                ["转折", "However, Nevertheless, On the contrary"],
+                ["因果", "Therefore, As a result, Consequently"],
+                ["举例", "For example, For instance, such as"],
+                ["总结", "In conclusion, All in all, To sum up"]
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "原理与方法",
+          "blocks": [
+            {
+              "kind": "table",
+              "headers": ["普通词", "高级替换"],
+              "rows": [
+                ["important", "essential / significant / crucial"],
+                ["good", "beneficial / rewarding / valuable"],
+                ["many", "numerous / a great number of"],
+                ["think", "hold the view / be convinced"],
+                ["help", "be of great help / benefit"]
+              ]
+            },
+            { "kind": "note", "text": "连接词让文章逻辑清楚；高级词块让语言出彩。但要用得自然、准确，不生搬硬套。" }
+          ]
+        },
+        {
+          "heading": "例题详解",
+          "blocks": [
+            { "kind": "eg", "label": "替换示范", "text": "普通：It is very important. → 升级：It is of great significance.", "solution": ["important → of great significance / essential。"] }
+          ]
+        }
+      ],
+      "exercises": [
+        { "q": "表示总结的连接词（三词，短语）：To ______ up.", "answer": "sum", "tip": "To sum up", "level": "基础" },
+        { "q": "important 的高级替换（以 c 开头，至关重要的）：______ .", "answer": "crucial", "tip": "crucial/critical", "level": "较难" },
+        { "q": "表示因果“因此”（以 T 开头）：______ , we should act now.", "answer": "Therefore", "tip": "Therefore", "level": "中档" }
+      ]
+    }
+  ]
+}

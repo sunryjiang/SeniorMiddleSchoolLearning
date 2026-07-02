@@ -1,0 +1,329 @@
+{
+  "items": [
+    {
+      "day": 1, "week": 1, "group": "记叙文", "level": 2, "theme": "成长 · 励志",
+      "title": "A Lesson from Failure",
+      "sentences": [
+        { "en": "When I was fifteen, I failed an important math exam.", "cn": "十五岁时，我一次重要的数学考试没及格。" },
+        { "en": "At first, I felt so ashamed that I wanted to give up.", "cn": "起初，我羞愧得想要放弃。" },
+        { "en": "My teacher noticed my low spirits and talked to me after class.", "cn": "老师注意到我情绪低落，课后找我谈话。" },
+        { "en": "\"Failure is not the opposite of success,\" she said. \"It is part of it.\"", "cn": "“失败不是成功的反面，”她说，“它是成功的一部分。”" },
+        { "en": "Her words encouraged me to look at my mistakes carefully.", "cn": "她的话鼓励我去认真审视自己的错误。" },
+        { "en": "I began to review every problem I had got wrong.", "cn": "我开始复习每一道做错的题。" },
+        { "en": "Gradually, I understood the topics that had confused me.", "cn": "渐渐地，我弄懂了曾经困扰我的知识点。" },
+        { "en": "In the next exam, I made great progress and even enjoyed math.", "cn": "在下一次考试中，我取得了很大进步，甚至开始喜欢数学了。" },
+        { "en": "Now I believe that every failure hides a chance to grow.", "cn": "如今我相信，每一次失败都藏着一个成长的机会。" }
+      ],
+      "words": [
+        { "word": "ashamed", "pos": "adj.", "ipa": "əˈʃeɪmd", "cn": "羞愧的" },
+        { "word": "opposite", "pos": "n./adj.", "ipa": "ˈɒpəzɪt", "cn": "反面；相反的" },
+        { "word": "encourage", "pos": "v.", "ipa": "ɪnˈkʌrɪdʒ", "cn": "鼓励" },
+        { "word": "gradually", "pos": "adv.", "ipa": "ˈɡrædʒuəli", "cn": "逐渐地" },
+        { "word": "confuse", "pos": "v.", "ipa": "kənˈfjuːz", "cn": "使困惑" },
+        { "word": "progress", "pos": "n.", "ipa": "ˈprəʊɡres", "cn": "进步" }
+      ],
+      "questions": [
+        { "q": "How old was the writer when he failed the exam? (用数字回答)", "a": "15/fifteen", "tip": "When I was fifteen" },
+        { "q": "According to the teacher, failure is part of ______ .", "a": "success", "tip": "It is part of it (success)" },
+        { "q": "What did the writer review after the talk? (每道做错的 ______)", "a": "problem/problems", "tip": "review every problem I had got wrong" }
+      ]
+    },
+    {
+      "day": 2, "week": 1, "group": "记叙文", "level": 2, "theme": "善意 · 温暖",
+      "title": "The Kindness of a Stranger",
+      "sentences": [
+        { "en": "One cold winter evening, I missed the last bus home.", "cn": "一个寒冷的冬夜，我错过了回家的末班车。" },
+        { "en": "I stood at the empty stop, worried and freezing.", "cn": "我站在空荡荡的车站，又担心又冻得发抖。" },
+        { "en": "An old man walking his dog stopped and asked what was wrong.", "cn": "一位遛狗的老人停下来，问我出了什么事。" },
+        { "en": "After hearing my story, he offered to drive me home.", "cn": "听完我的经历后，他主动提出开车送我回家。" },
+        { "en": "I hesitated, but his kind smile made me feel safe.", "cn": "我犹豫了一下，但他和善的微笑让我感到安心。" },
+        { "en": "On the way, he told me that strangers had once helped him too.", "cn": "路上，他告诉我，从前也曾有陌生人帮助过他。" },
+        { "en": "\"Kindness should be passed on,\" he said with a warm voice.", "cn": "“善意应该被传递下去，”他用温暖的声音说。" },
+        { "en": "That night I learned that a small act can light up someone's world.", "cn": "那晚我懂得，一个小小的举动就能照亮别人的世界。" }
+      ],
+      "words": [
+        { "word": "freezing", "pos": "adj.", "ipa": "ˈfriːzɪŋ", "cn": "极冷的" },
+        { "word": "offer", "pos": "v.", "ipa": "ˈɒfə", "cn": "主动提出" },
+        { "word": "hesitate", "pos": "v.", "ipa": "ˈhezɪteɪt", "cn": "犹豫" },
+        { "word": "stranger", "pos": "n.", "ipa": "ˈstreɪndʒə", "cn": "陌生人" },
+        { "word": "pass on", "pos": "phr.", "ipa": "pɑːs ɒn", "cn": "传递下去" }
+      ],
+      "questions": [
+        { "q": "Why couldn't the writer go home at first? (missed the last ______)", "a": "bus", "tip": "missed the last bus home" },
+        { "q": "Who offered to help the writer?", "a": "an old man/the old man/old man", "tip": "An old man walking his dog" },
+        { "q": "What should be passed on according to the old man?", "a": "kindness", "tip": "Kindness should be passed on" }
+      ]
+    },
+    {
+      "day": 3, "week": 2, "group": "说明文 · 科技", "level": 3, "theme": "人工智能",
+      "title": "How AI Is Changing Our Lives",
+      "sentences": [
+        { "en": "Artificial intelligence, or AI, is no longer science fiction.", "cn": "人工智能（AI）不再是科幻小说里的东西。" },
+        { "en": "It is already part of our daily lives in many ways.", "cn": "它已经以多种方式成为我们日常生活的一部分。" },
+        { "en": "When you search online, AI helps decide which results you see.", "cn": "当你上网搜索时，AI 帮助决定你看到哪些结果。" },
+        { "en": "Smart assistants can set alarms, answer questions and play music.", "cn": "智能助手可以设置闹钟、回答问题并播放音乐。" },
+        { "en": "In hospitals, AI helps doctors read images and find diseases earlier.", "cn": "在医院里，AI 帮助医生读片、更早发现疾病。" },
+        { "en": "However, the rise of AI also brings new challenges.", "cn": "然而，AI 的兴起也带来了新的挑战。" },
+        { "en": "Some people worry that machines may replace human workers.", "cn": "有些人担心机器可能会取代人类工人。" },
+        { "en": "Experts argue that we should learn to work together with AI.", "cn": "专家认为，我们应当学会与 AI 协作。" },
+        { "en": "Used wisely, AI can free us to do more creative work.", "cn": "如果使用得当，AI 能把我们解放出来去做更有创造性的工作。" }
+      ],
+      "words": [
+        { "word": "artificial", "pos": "adj.", "ipa": "ˌɑːtɪˈfɪʃl", "cn": "人工的" },
+        { "word": "intelligence", "pos": "n.", "ipa": "ɪnˈtelɪdʒəns", "cn": "智能" },
+        { "word": "assistant", "pos": "n.", "ipa": "əˈsɪstənt", "cn": "助手" },
+        { "word": "challenge", "pos": "n.", "ipa": "ˈtʃælɪndʒ", "cn": "挑战" },
+        { "word": "replace", "pos": "v.", "ipa": "rɪˈpleɪs", "cn": "取代" },
+        { "word": "creative", "pos": "adj.", "ipa": "kriˈeɪtɪv", "cn": "有创造力的" }
+      ],
+      "questions": [
+        { "q": "What does AI stand for? (Artificial ______)", "a": "intelligence", "tip": "Artificial intelligence" },
+        { "q": "In hospitals, AI helps doctors read ______ and find diseases earlier.", "a": "images", "tip": "AI helps doctors read images" },
+        { "q": "Experts think we should learn to ______ with AI. (work ______)", "a": "work together/cooperate/work with", "tip": "work together with AI" }
+      ]
+    },
+    {
+      "day": 4, "week": 3, "group": "议论文", "level": 4, "theme": "观点 · 论述",
+      "title": "Should Students Use Smartphones at School?",
+      "sentences": [
+        { "en": "Whether students should use smartphones at school is widely debated.", "cn": "学生是否应在学校使用智能手机，人们对此争论不休。" },
+        { "en": "Those in favour say phones are useful learning tools.", "cn": "支持者认为手机是有用的学习工具。" },
+        { "en": "With a phone, students can look up information instantly.", "cn": "有了手机，学生可以即时查阅信息。" },
+        { "en": "They can also stay in touch with their parents when necessary.", "cn": "必要时他们还能与父母保持联系。" },
+        { "en": "On the other hand, opponents point out serious problems.", "cn": "另一方面，反对者指出了严重的问题。" },
+        { "en": "Phones can easily distract students from their studies.", "cn": "手机很容易使学生从学习中分心。" },
+        { "en": "Moreover, spending too long on screens may harm their health.", "cn": "而且，屏幕使用时间过长可能损害他们的健康。" },
+        { "en": "In my opinion, phones should be allowed but properly managed.", "cn": "在我看来，手机应被允许使用，但要妥善管理。" },
+        { "en": "Only in this way can we enjoy the benefits while avoiding the harm.", "cn": "只有这样，我们才能享受好处、同时避免危害。" }
+      ],
+      "words": [
+        { "word": "debate", "pos": "v./n.", "ipa": "dɪˈbeɪt", "cn": "争论" },
+        { "word": "in favour", "pos": "phr.", "ipa": "ɪn ˈfeɪvə", "cn": "赞成" },
+        { "word": "instantly", "pos": "adv.", "ipa": "ˈɪnstəntli", "cn": "立即地" },
+        { "word": "opponent", "pos": "n.", "ipa": "əˈpəʊnənt", "cn": "反对者" },
+        { "word": "distract", "pos": "v.", "ipa": "dɪˈstrækt", "cn": "使分心" },
+        { "word": "properly", "pos": "adv.", "ipa": "ˈprɒpəli", "cn": "恰当地" }
+      ],
+      "questions": [
+        { "q": "Supporters think phones are useful learning ______ .", "a": "tools", "tip": "phones are useful learning tools" },
+        { "q": "One problem is that phones can ______ students from their studies.", "a": "distract", "tip": "distract students from their studies" },
+        { "q": "The writer's opinion: phones should be allowed but properly ______ .", "a": "managed", "tip": "allowed but properly managed" }
+      ]
+    },
+    {
+      "day": 5, "week": 4, "group": "文化", "level": 3, "theme": "中国传统文化",
+      "title": "The Spring Festival",
+      "sentences": [
+        { "en": "The Spring Festival is the most important holiday in China.", "cn": "春节是中国最重要的节日。" },
+        { "en": "It marks the beginning of a new year on the lunar calendar.", "cn": "它标志着农历新年的开始。" },
+        { "en": "Before the festival, families clean their houses thoroughly.", "cn": "节前，家家户户都要彻底打扫房屋。" },
+        { "en": "People put up red couplets and paper cuttings for good luck.", "cn": "人们贴上红色的对联和剪纸以求好运。" },
+        { "en": "On New Year's Eve, the whole family gathers for a big dinner.", "cn": "除夕夜，全家团聚，共进丰盛的晚餐。" },
+        { "en": "Children receive lucky money in red envelopes from their elders.", "cn": "孩子们会收到长辈装在红包里的压岁钱。" },
+        { "en": "Fireworks light up the sky to drive away bad luck.", "cn": "烟花点亮天空，以驱走厄运。" },
+        { "en": "Above all, the festival is a time for family and reunion.", "cn": "最重要的是，这个节日是关于家庭与团圆的时刻。" }
+      ],
+      "words": [
+        { "word": "lunar", "pos": "adj.", "ipa": "ˈluːnə", "cn": "农历的，月亮的" },
+        { "word": "thoroughly", "pos": "adv.", "ipa": "ˈθʌrəli", "cn": "彻底地" },
+        { "word": "couplet", "pos": "n.", "ipa": "ˈkʌplət", "cn": "对联" },
+        { "word": "gather", "pos": "v.", "ipa": "ˈɡæðə", "cn": "聚集" },
+        { "word": "envelope", "pos": "n.", "ipa": "ˈenvələʊp", "cn": "信封" },
+        { "word": "reunion", "pos": "n.", "ipa": "ˌriːˈjuːniən", "cn": "团聚" }
+      ],
+      "questions": [
+        { "q": "The Spring Festival is the most important ______ in China.", "a": "holiday/festival", "tip": "the most important holiday" },
+        { "q": "Children receive lucky money in red ______ .", "a": "envelopes/envelope", "tip": "lucky money in red envelopes" },
+        { "q": "Above all, the festival is a time for family and ______ .", "a": "reunion", "tip": "a time for family and reunion" }
+      ]
+    },
+    {
+      "day": 6, "week": 1, "group": "记叙文", "level": 2, "theme": "勇气 · 坚持",
+      "title": "A Race Against Time",
+      "sentences": [
+        { "en": "The final match of the school sports meeting was about to begin.", "cn": "校运会的最后一场比赛即将开始。" },
+        { "en": "As the last runner of our relay team, I felt the pressure building up.", "cn": "作为接力队的最后一棒，我感到压力越来越大。" },
+        { "en": "When I took the baton, our team was in third place.", "cn": "当我接过接力棒时，我们队排在第三。" },
+        { "en": "I told myself not to give up and pushed forward with all my strength.", "cn": "我告诉自己不要放弃，用尽全力向前冲。" },
+        { "en": "Step by step, I caught up with the runner ahead of me.", "cn": "一步一步，我追上了前面的选手。" },
+        { "en": "The crowd was cheering loudly as I crossed the finish line first.", "cn": "当我第一个冲过终点线时，人群大声欢呼。" },
+        { "en": "We won the race, but what I truly gained was the courage to try.", "cn": "我们赢得了比赛，但我真正收获的是尝试的勇气。" }
+      ],
+      "words": [
+        { "word": "relay", "pos": "n.", "ipa": "ˈriːleɪ", "cn": "接力赛" },
+        { "word": "baton", "pos": "n.", "ipa": "ˈbætɒn", "cn": "接力棒" },
+        { "word": "pressure", "pos": "n.", "ipa": "ˈpreʃə", "cn": "压力" },
+        { "word": "cheer", "pos": "v.", "ipa": "tʃɪə", "cn": "欢呼" }
+      ],
+      "questions": [
+        { "q": "What position was the team in when the writer took the baton? (third/______ place)", "a": "third/3rd", "tip": "in third place" },
+        { "q": "Who crossed the finish line first?", "a": "I/the writer/me", "tip": "I crossed the finish line first" },
+        { "q": "What did the writer truly gain? (the ______ to try)", "a": "courage", "tip": "the courage to try" }
+      ]
+    },
+    {
+      "day": 7, "week": 1, "group": "记叙文", "level": 2, "theme": "成长 · 责任",
+      "title": "My First Part-time Job",
+      "sentences": [
+        { "en": "Last summer, I got my first part-time job at a small bookshop.", "cn": "去年夏天，我在一家小书店找到了第一份兼职。" },
+        { "en": "At first, I found it hard to remember where every book belonged.", "cn": "起初，我很难记住每本书该放在哪里。" },
+        { "en": "My manager was patient and taught me how to serve customers politely.", "cn": "我的经理很耐心，教我如何礼貌地服务顾客。" },
+        { "en": "One day, an old lady couldn't find a book for her grandson.", "cn": "有一天，一位老太太找不到给孙子的一本书。" },
+        { "en": "I spent half an hour helping her until she left with a big smile.", "cn": "我花了半小时帮她，直到她带着灿烂的微笑离开。" },
+        { "en": "That summer taught me the value of patience and hard work.", "cn": "那个夏天让我懂得了耐心和努力的价值。" }
+      ],
+      "words": [
+        { "word": "part-time", "pos": "adj.", "ipa": "ˌpɑːtˈtaɪm", "cn": "兼职的" },
+        { "word": "manager", "pos": "n.", "ipa": "ˈmænɪdʒə", "cn": "经理" },
+        { "word": "patient", "pos": "adj.", "ipa": "ˈpeɪʃnt", "cn": "耐心的" },
+        { "word": "value", "pos": "n.", "ipa": "ˈvæljuː", "cn": "价值" }
+      ],
+      "questions": [
+        { "q": "Where did the writer work? (a ______)", "a": "bookshop/bookstore", "tip": "at a small bookshop" },
+        { "q": "Who taught the writer to serve customers? (the ______)", "a": "manager", "tip": "My manager taught me" },
+        { "q": "The summer taught the writer the value of patience and hard ______ .", "a": "work", "tip": "patience and hard work" }
+      ]
+    },
+    {
+      "day": 8, "week": 2, "group": "说明文 · 科技", "level": 3, "theme": "健康",
+      "title": "Why Sleep Matters",
+      "sentences": [
+        { "en": "Many students stay up late, believing they can catch up on sleep later.", "cn": "许多学生熬夜，以为以后可以补觉。" },
+        { "en": "However, scientists say that sleep is essential for the brain.", "cn": "然而，科学家指出睡眠对大脑至关重要。" },
+        { "en": "During sleep, the brain sorts and stores what we have learned.", "cn": "在睡眠中，大脑会整理并储存我们学过的东西。" },
+        { "en": "A lack of sleep can weaken memory and reduce concentration.", "cn": "缺乏睡眠会削弱记忆力、降低注意力。" },
+        { "en": "Teenagers are advised to sleep about eight hours every night.", "cn": "建议青少年每晚睡大约八小时。" },
+        { "en": "Good habits, such as avoiding screens before bed, improve sleep quality.", "cn": "良好的习惯，比如睡前不看屏幕，能提高睡眠质量。" },
+        { "en": "In short, enough sleep is not a waste of time but an investment in health.", "cn": "简言之，充足的睡眠不是浪费时间，而是对健康的投资。" }
+      ],
+      "words": [
+        { "word": "essential", "pos": "adj.", "ipa": "ɪˈsenʃl", "cn": "必不可少的" },
+        { "word": "store", "pos": "v.", "ipa": "stɔː", "cn": "储存" },
+        { "word": "concentration", "pos": "n.", "ipa": "ˌkɒnsnˈtreɪʃn", "cn": "注意力" },
+        { "word": "investment", "pos": "n.", "ipa": "ɪnˈvestmənt", "cn": "投资" }
+      ],
+      "questions": [
+        { "q": "During sleep, the brain sorts and ______ what we have learned.", "a": "stores", "tip": "sorts and stores" },
+        { "q": "How many hours should teenagers sleep? (about ______)", "a": "eight/8", "tip": "about eight hours" },
+        { "q": "Enough sleep is an ______ in health.", "a": "investment", "tip": "an investment in health" }
+      ]
+    },
+    {
+      "day": 9, "week": 2, "group": "说明文 · 科技", "level": 3, "theme": "自然",
+      "title": "The Amazing World of Bees",
+      "sentences": [
+        { "en": "Bees are small insects, but they play a huge role in nature.", "cn": "蜜蜂是小昆虫，但在自然界中扮演着巨大的角色。" },
+        { "en": "As they move from flower to flower, they carry pollen with them.", "cn": "当它们在花朵间穿梭时，会带走花粉。" },
+        { "en": "This process, called pollination, helps plants produce fruits and seeds.", "cn": "这个过程叫作授粉，能帮助植物结出果实和种子。" },
+        { "en": "About one third of the food we eat depends on bees.", "cn": "我们所吃食物的大约三分之一依赖蜜蜂。" },
+        { "en": "Sadly, the number of bees is falling because of pollution and climate change.", "cn": "遗憾的是，由于污染和气候变化，蜜蜂的数量正在下降。" },
+        { "en": "Scientists warn that protecting bees means protecting our own food supply.", "cn": "科学家警告，保护蜜蜂就是保护我们自己的食物来源。" }
+      ],
+      "words": [
+        { "word": "insect", "pos": "n.", "ipa": "ˈɪnsekt", "cn": "昆虫" },
+        { "word": "pollen", "pos": "n.", "ipa": "ˈpɒlən", "cn": "花粉" },
+        { "word": "pollination", "pos": "n.", "ipa": "ˌpɒlɪˈneɪʃn", "cn": "授粉" },
+        { "word": "supply", "pos": "n.", "ipa": "səˈplaɪ", "cn": "供给" }
+      ],
+      "questions": [
+        { "q": "The process by which bees help plants is called ______ .", "a": "pollination", "tip": "called pollination" },
+        { "q": "About one ______ of our food depends on bees. (分数的分母词)", "a": "third", "tip": "about one third" },
+        { "q": "Why is the number of bees falling? (pollution and ______ change)", "a": "climate", "tip": "pollution and climate change" }
+      ]
+    },
+    {
+      "day": 10, "week": 3, "group": "议论文", "level": 4, "theme": "观点 · 论述",
+      "title": "Is Online Learning Better?",
+      "sentences": [
+        { "en": "In recent years, online learning has become increasingly popular.", "cn": "近年来，在线学习越来越流行。" },
+        { "en": "Supporters believe it offers flexibility and saves travelling time.", "cn": "支持者认为它提供了灵活性，并节省了通勤时间。" },
+        { "en": "Students can study at their own pace and review lessons whenever they like.", "cn": "学生可以按自己的节奏学习，随时回看课程。" },
+        { "en": "Critics, however, argue that online learning lacks face-to-face interaction.", "cn": "然而，批评者认为在线学习缺乏面对面的互动。" },
+        { "en": "Without a teacher nearby, some students find it hard to stay focused.", "cn": "身边没有老师，一些学生很难保持专注。" },
+        { "en": "Personally, I think online learning works best as a supplement to classroom teaching.", "cn": "就个人而言，我认为在线学习作为课堂教学的补充最为有效。" },
+        { "en": "By combining both, students can enjoy flexibility without losing guidance.", "cn": "把二者结合，学生既能享受灵活性，又不失指导。" }
+      ],
+      "words": [
+        { "word": "flexibility", "pos": "n.", "ipa": "ˌfleksəˈbɪləti", "cn": "灵活性" },
+        { "word": "interaction", "pos": "n.", "ipa": "ˌɪntərˈækʃn", "cn": "互动" },
+        { "word": "focused", "pos": "adj.", "ipa": "ˈfəʊkəst", "cn": "专注的" },
+        { "word": "supplement", "pos": "n.", "ipa": "ˈsʌplɪmənt", "cn": "补充" }
+      ],
+      "questions": [
+        { "q": "Supporters say online learning offers ______ and saves time.", "a": "flexibility", "tip": "offers flexibility" },
+        { "q": "Critics argue it lacks face-to-face ______ .", "a": "interaction", "tip": "lacks face-to-face interaction" },
+        { "q": "The writer thinks online learning works best as a ______ to classroom teaching.", "a": "supplement", "tip": "as a supplement" }
+      ]
+    },
+    {
+      "day": 11, "week": 3, "group": "议论文", "level": 4, "theme": "观点 · 论述",
+      "title": "The Power of Teamwork",
+      "sentences": [
+        { "en": "It is often said that no one can succeed entirely on their own.", "cn": "人们常说，没有人能完全靠自己成功。" },
+        { "en": "Teamwork allows people to combine their different strengths.", "cn": "团队合作让人们能够结合各自不同的长处。" },
+        { "en": "When members share ideas, problems are solved more creatively.", "cn": "当成员分享想法时，问题会得到更有创意的解决。" },
+        { "en": "Moreover, working together builds trust and friendship.", "cn": "而且，共同协作能建立信任和友谊。" },
+        { "en": "Of course, good teamwork requires clear communication and respect.", "cn": "当然，良好的团队合作需要清晰的沟通和尊重。" },
+        { "en": "Each member should listen carefully and value others' opinions.", "cn": "每个成员都应认真倾听、重视他人的意见。" },
+        { "en": "In conclusion, teamwork is a key to achieving what individuals cannot.", "cn": "总之，团队合作是实现个人无法完成之事的关键。" }
+      ],
+      "words": [
+        { "word": "combine", "pos": "v.", "ipa": "kəmˈbaɪn", "cn": "结合" },
+        { "word": "strength", "pos": "n.", "ipa": "streŋθ", "cn": "长处，力量" },
+        { "word": "communication", "pos": "n.", "ipa": "kəˌmjuːnɪˈkeɪʃn", "cn": "沟通" },
+        { "word": "respect", "pos": "n.", "ipa": "rɪˈspekt", "cn": "尊重" }
+      ],
+      "questions": [
+        { "q": "Teamwork lets people combine their different ______ .", "a": "strengths/strength", "tip": "combine their different strengths" },
+        { "q": "Good teamwork requires clear communication and ______ .", "a": "respect", "tip": "communication and respect" },
+        { "q": "The writer concludes teamwork is a ______ to achieving more. (以 k 开头)", "a": "key", "tip": "a key to achieving" }
+      ]
+    },
+    {
+      "day": 12, "week": 4, "group": "文化", "level": 3, "theme": "中国传统文化",
+      "title": "Tea Culture in China",
+      "sentences": [
+        { "en": "Tea has been a part of Chinese life for thousands of years.", "cn": "茶已经是中国人生活的一部分，历时数千年。" },
+        { "en": "According to legend, tea was discovered by an ancient emperor.", "cn": "据传说，茶是由一位古代帝王发现的。" },
+        { "en": "Today, there are many kinds of tea, such as green, black and oolong.", "cn": "如今有许多种茶，如绿茶、红茶和乌龙茶。" },
+        { "en": "Chinese people often serve tea to welcome guests and show respect.", "cn": "中国人常以茶待客，以示尊重。" },
+        { "en": "Drinking tea is believed to be good for health and helps people relax.", "cn": "人们认为喝茶有益健康，还能帮助放松。" },
+        { "en": "More than a drink, tea carries the value of harmony and politeness.", "cn": "茶不仅是一种饮品，更承载着和谐与礼貌的价值。" }
+      ],
+      "words": [
+        { "word": "legend", "pos": "n.", "ipa": "ˈledʒənd", "cn": "传说" },
+        { "word": "emperor", "pos": "n.", "ipa": "ˈempərə", "cn": "皇帝" },
+        { "word": "welcome", "pos": "v.", "ipa": "ˈwelkəm", "cn": "欢迎" },
+        { "word": "harmony", "pos": "n.", "ipa": "ˈhɑːməni", "cn": "和谐" }
+      ],
+      "questions": [
+        { "q": "According to legend, tea was discovered by an ancient ______ .", "a": "emperor", "tip": "discovered by an ancient emperor" },
+        { "q": "Chinese people serve tea to welcome guests and show ______ .", "a": "respect", "tip": "show respect" },
+        { "q": "Tea carries the value of ______ and politeness. (和谐)", "a": "harmony", "tip": "the value of harmony" }
+      ]
+    },
+    {
+      "day": 13, "week": 4, "group": "文化", "level": 3, "theme": "中国传统文化",
+      "title": "The Mid-Autumn Festival",
+      "sentences": [
+        { "en": "The Mid-Autumn Festival falls on the fifteenth day of the eighth lunar month.", "cn": "中秋节在农历八月十五。" },
+        { "en": "On this day, the moon is believed to be at its roundest and brightest.", "cn": "这一天，月亮被认为最圆最亮。" },
+        { "en": "Family members gather together to admire the full moon.", "cn": "家人团聚在一起赏满月。" },
+        { "en": "Eating mooncakes is the most important custom of the festival.", "cn": "吃月饼是这个节日最重要的习俗。" },
+        { "en": "The round shape of the moon and mooncakes symbolizes reunion.", "cn": "月亮和月饼的圆形象征着团圆。" },
+        { "en": "People who are far from home also miss their families on this night.", "cn": "远离家乡的人在这一夜也会思念家人。" }
+      ],
+      "words": [
+        { "word": "admire", "pos": "v.", "ipa": "ədˈmaɪə", "cn": "欣赏" },
+        { "word": "custom", "pos": "n.", "ipa": "ˈkʌstəm", "cn": "习俗" },
+        { "word": "symbolize", "pos": "v.", "ipa": "ˈsɪmbəlaɪz", "cn": "象征" },
+        { "word": "reunion", "pos": "n.", "ipa": "ˌriːˈjuːniən", "cn": "团圆" }
+      ],
+      "questions": [
+        { "q": "The most important custom is eating ______ .", "a": "mooncakes/mooncake", "tip": "Eating mooncakes" },
+        { "q": "The round shape symbolizes ______ .", "a": "reunion", "tip": "symbolizes reunion" },
+        { "q": "The festival falls on the fifteenth day of the ______ lunar month. (第几，序数词)", "a": "eighth/8th", "tip": "the eighth lunar month" }
+      ]
+    }
+  ]
+}

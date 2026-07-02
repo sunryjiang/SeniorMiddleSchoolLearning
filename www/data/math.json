@@ -1,0 +1,3106 @@
+{
+  "subject": "数学",
+  "categories": [
+    "集合与常用逻辑用语",
+    "一元二次函数、方程和不等式",
+    "函数的概念与性质",
+    "指数函数与对数函数",
+    "三角函数",
+    "平面向量及其应用",
+    "复数",
+    "立体几何初步",
+    "统计",
+    "概率",
+    "空间向量与立体几何",
+    "直线和圆的方程",
+    "圆锥曲线的方程",
+    "数列",
+    "一元函数的导数及其应用",
+    "计数原理",
+    "随机变量及其分布",
+    "成对数据的统计分析"
+  ],
+  "items": [
+    {
+      "id": "1.1",
+      "category": "集合与常用逻辑用语",
+      "subcategory": "集合及其运算",
+      "title": "集合的概念与表示",
+      "sections": [
+        {
+          "heading": "知识点",
+          "blocks": [
+            { "kind": "para", "text": "把某些确定的、不同的对象看成一个整体，就构成一个集合，其中每个对象叫做元素。" },
+            { "kind": "sub", "text": "集合中元素的三个特性" },
+            { "kind": "bullet", "text": "确定性：给定元素，要么属于该集合，要么不属于，二者必居其一。" },
+            { "kind": "bullet", "text": "互异性：集合中的元素互不相同（同一元素不重复出现）。" },
+            { "kind": "bullet", "text": "无序性：集合中元素的排列次序无关，如 $\\{1,2\\}=\\{2,1\\}$。" },
+            { "kind": "sub", "text": "元素与集合的关系、常用数集符号" },
+            { "kind": "para", "text": "元素 $a$ 属于集合 $A$ 记作 $a\\in A$，不属于记作 $a\\notin A$。" },
+            {
+              "kind": "table",
+              "headers": ["符号", "含义"],
+              "rows": [
+                ["$\\mathbf{N}$", "自然数集（含 0）"],
+                ["$\\mathbf{N}^{*}$ 或 $\\mathbf{N}_{+}$", "正整数集"],
+                ["$\\mathbf{Z}$", "整数集"],
+                ["$\\mathbf{Q}$", "有理数集"],
+                ["$\\mathbf{R}$", "实数集"]
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "原理与方法",
+          "blocks": [
+            { "kind": "para", "text": "集合的三种表示方法：" },
+            { "kind": "bullet", "text": "列举法：把元素一一列出，如 $A=\\{1,2,3\\}$。" },
+            { "kind": "bullet", "text": "描述法：用共同特征表示，如 $B=\\{x\\mid x^{2}-1=0\\}$，读作“所有满足 $x^2-1=0$ 的 $x$ 组成的集合”。" },
+            { "kind": "bullet", "text": "图示法（Venn 图）：用封闭曲线的内部表示集合。" },
+            { "kind": "note", "text": "描述法务必看清代表元素：$\\{x\\mid y=x^2\\}$ 表示自变量 $x$ 的取值（即 $\\mathbf{R}$）；$\\{y\\mid y=x^2\\}$ 表示函数值的范围（即 $[0,+\\infty)$）；$\\{(x,y)\\mid y=x^2\\}$ 表示点集。三者含义完全不同。" }
+          ]
+        },
+        {
+          "heading": "例题详解",
+          "blocks": [
+            {
+              "kind": "eg",
+              "label": "例1（元素的互异性）",
+              "text": "已知集合 $A=\\{2,\\,a,\\,a^{2}-2a\\}$，求实数 $a$ 应满足的条件。",
+              "solution": [
+                "由互异性，三个元素两两不等：",
+                "$a\\ne 2$，$a^2-2a\\ne 2$，$a^2-2a\\ne a$。",
+                "由 $a^2-2a\\ne a$ 得 $a^2-3a\\ne0$，即 $a\\ne0$ 且 $a\\ne3$。",
+                "由 $a^2-2a\\ne2$ 得 $a\\ne1\\pm\\sqrt3$。",
+                "故 $a\\ne 0,\\;2,\\;3,\\;1\\pm\\sqrt3$。"
+              ]
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        { "q": "集合 $\\{x\\mid x^2-3x+2=0\\}$ 用列举法表示为？（形如 {1,2}）", "answer": "{1,2}", "tip": "解方程得 x=1 或 x=2", "level": "基础" },
+        { "q": "已知 $A=\\{x\\mid x=2k+1,\\,k\\in\\mathbf{Z}\\}$，判断 5 是否属于 A（填 是/否）？", "answer": "是", "tip": "5=2×2+1，是奇数", "level": "基础" },
+        { "q": "若集合 $\\{1,\\,a\\}$ 中恰有 2 个元素，则实数 a 不能取的值是？", "answer": "1", "tip": "由互异性 a≠1", "level": "中档" }
+      ]
+    },
+    {
+      "id": "1.2",
+      "category": "集合与常用逻辑用语",
+      "subcategory": "集合及其运算",
+      "title": "集合间的基本关系",
+      "sections": [
+        {
+          "heading": "知识点",
+          "blocks": [
+            { "kind": "para", "text": "若集合 $A$ 中任意一个元素都是集合 $B$ 的元素，则称 $A$ 是 $B$ 的子集，记作 $A\\subseteq B$（或 $B\\supseteq A$）。" },
+            { "kind": "bullet", "text": "真子集：$A\\subseteq B$ 且 $A\\ne B$，记作 $A\\subsetneqq B$。" },
+            { "kind": "bullet", "text": "集合相等：$A\\subseteq B$ 且 $B\\subseteq A$ $\\Leftrightarrow$ $A=B$。" },
+            { "kind": "bullet", "text": "空集 $\\varnothing$：不含任何元素的集合，它是任何集合的子集，是任何非空集合的真子集。" }
+          ]
+        },
+        {
+          "heading": "原理与方法",
+          "blocks": [
+            { "kind": "sub", "text": "子集个数规律（高频考点）" },
+            { "kind": "para", "text": "若集合 $A$ 含有 $n$ 个元素，则：" },
+            { "kind": "formula", "text": "\\text{子集个数}=2^{n},\\quad \\text{真子集个数}=2^{n}-1,\\quad \\text{非空真子集个数}=2^{n}-2" },
+            { "kind": "note", "text": "含参数的包含关系（如 $A\\subseteq B$）常需分类讨论，尤其别忘了 $A=\\varnothing$ 的情形，这是最易漏解之处。" }
+          ]
+        },
+        {
+          "heading": "例题详解",
+          "blocks": [
+            {
+              "kind": "eg",
+              "label": "例2（由包含关系求参数，含空集讨论）",
+              "text": "设 $A=\\{x\\mid 1\\le x\\le 2\\}$，$B=\\{x\\mid x\\le a\\}$，若 $A\\subseteq B$，求 $a$ 的取值范围。",
+              "solution": [
+                "$A\\subseteq B$ 要求 $A$ 中最大的数 $2$ 也满足 $x\\le a$，",
+                "即需 $a\\ge 2$。",
+                "故 $a$ 的取值范围为 $a\\ge 2$，即 $[2,+\\infty)$。"
+              ]
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        { "q": "集合 $\\{a,b,c\\}$ 的子集共有几个？", "answer": "8", "tip": "2^3=8", "level": "基础" },
+        { "q": "集合 $\\{1,2,3,4\\}$ 的非空真子集共有几个？", "answer": "14", "tip": "2^4-2=14", "level": "中档" },
+        { "q": "已知 $A=\\{x\\mid x<a\\}$，$B=\\{x\\mid x<1\\}$，若 $B\\subseteq A$，则 a 的取值范围是（形如 a≥1）？", "answer": "a≥1", "tip": "B 的上界 1 需不超过 a", "level": "中档" }
+      ]
+    },
+    {
+      "id": "1.3",
+      "category": "集合与常用逻辑用语",
+      "subcategory": "集合及其运算",
+      "title": "集合的基本运算（交、并、补）",
+      "sections": [
+        {
+          "heading": "知识点",
+          "blocks": [
+            { "kind": "para", "text": "交集：$A\\cap B=\\{x\\mid x\\in A \\text{ 且 } x\\in B\\}$；并集：$A\\cup B=\\{x\\mid x\\in A \\text{ 或 } x\\in B\\}$。" },
+            { "kind": "para", "text": "在全集 $U$ 中，$A$ 的补集：$\\complement_{U}A=\\{x\\mid x\\in U \\text{ 且 } x\\notin A\\}$。" },
+            {
+              "kind": "svg",
+              "caption": "图1  Venn 图：两圆重叠部分为 A∩B，两圆并起来为 A∪B",
+              "svg": "<svg viewBox='0 0 300 180' xmlns='http://www.w3.org/2000/svg'><rect x='4' y='4' width='292' height='172' rx='8' fill='#ffffff' stroke='#9aa7bd'/><text x='16' y='26' font-size='15' fill='#555'>U</text><circle cx='120' cy='96' r='62' fill='#3f7fd0' fill-opacity='0.28' stroke='#2e5b9e'/><circle cx='185' cy='96' r='62' fill='#e0872f' fill-opacity='0.28' stroke='#c0641c'/><text x='78' y='101' font-size='18' fill='#1f3b73'>A</text><text x='214' y='101' font-size='18' fill='#8a4a10'>B</text><text x='137' y='101' font-size='12' fill='#333'>A∩B</text></svg>"
+            }
+          ]
+        },
+        {
+          "heading": "原理与方法",
+          "blocks": [
+            { "kind": "sub", "text": "常用运算性质与德摩根律" },
+            { "kind": "formula", "text": "A\\cap A=A,\\quad A\\cup A=A,\\quad A\\cap\\varnothing=\\varnothing,\\quad A\\cup\\varnothing=A" },
+            { "kind": "formula", "text": "\\complement_{U}(A\\cap B)=(\\complement_{U}A)\\cup(\\complement_{U}B)" },
+            { "kind": "formula", "text": "\\complement_{U}(A\\cup B)=(\\complement_{U}A)\\cap(\\complement_{U}B)" },
+            { "kind": "note", "text": "涉及区间的交并补，画数轴是最稳妥的方法；注意端点能否取到（$\\le$ 用实心、$<$ 用空心）。" }
+          ]
+        },
+        {
+          "heading": "例题详解",
+          "blocks": [
+            {
+              "kind": "eg",
+              "label": "例3（区间的交并补运算）",
+              "text": "已知全集 $U=\\mathbf{R}$，$A=\\{x\\mid -1\\le x<3\\}$，$B=\\{x\\mid x>1\\}$。求 $A\\cap B$、$A\\cup B$、$\\complement_{U}A$。",
+              "solution": [
+                "$A\\cap B$：既 $\\ge -1$ 且 $<3$，又 $>1$，取交为 $\\{x\\mid 1<x<3\\}$，即 $(1,3)$。",
+                "$A\\cup B$：$\\ge -1$ 的部分与 $>1$ 的部分合并为 $\\{x\\mid x\\ge -1\\}$，即 $[-1,+\\infty)$。",
+                "$\\complement_{U}A$：$A=[-1,3)$ 的补集为 $\\{x\\mid x<-1 \\text{ 或 } x\\ge 3\\}$，即 $(-\\infty,-1)\\cup[3,+\\infty)$。"
+              ]
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        { "q": "已知 $A=\\{1,2,3\\}$，$B=\\{2,3,4\\}$，则 $A\\cap B$=？（形如 {2,3}）", "answer": "{2,3}", "tip": "取公共元素", "level": "基础" },
+        { "q": "已知 $A=\\{1,2,3\\}$，$B=\\{2,3,4\\}$，则 $A\\cup B$=？", "answer": "{1,2,3,4}", "tip": "合并去重", "level": "基础" },
+        { "q": "设 U=R，$A=\\{x\\mid x\\ge 2\\}$，则 $\\complement_U A$=（用区间表示）？", "answer": "(-∞,2)", "tip": "补集取 x<2", "level": "中档" }
+      ]
+    },
+    {
+      "id": "1.4",
+      "category": "集合与常用逻辑用语",
+      "subcategory": "常用逻辑用语",
+      "title": "充分条件与必要条件",
+      "sections": [
+        {
+          "heading": "知识点",
+          "blocks": [
+            { "kind": "para", "text": "对命题“若 $p$，则 $q$”，若 $p\\Rightarrow q$ 成立，则称 $p$ 是 $q$ 的充分条件，$q$ 是 $p$ 的必要条件。" },
+            {
+              "kind": "table",
+              "headers": ["逻辑关系", "p 是 q 的"],
+              "rows": [
+                ["$p\\Rightarrow q$ 但 $q\\nRightarrow p$", "充分不必要条件"],
+                ["$q\\Rightarrow p$ 但 $p\\nRightarrow q$", "必要不充分条件"],
+                ["$p\\Leftrightarrow q$", "充要条件"],
+                ["$p\\nRightarrow q$ 且 $q\\nRightarrow p$", "既不充分也不必要"]
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "原理与方法",
+          "blocks": [
+            { "kind": "sub", "text": "用集合判断（小范围 ⇒ 大范围）" },
+            { "kind": "para", "text": "设 $p$：$x\\in A$，$q$：$x\\in B$。则：" },
+            { "kind": "bullet", "text": "$A\\subseteq B$ $\\Leftrightarrow$ $p$ 是 $q$ 的充分条件；" },
+            { "kind": "bullet", "text": "$B\\subseteq A$ $\\Leftrightarrow$ $p$ 是 $q$ 的必要条件；" },
+            { "kind": "bullet", "text": "$A=B$ $\\Leftrightarrow$ $p$ 是 $q$ 的充要条件。" },
+            { "kind": "note", "text": "口诀：“充分”对应“范围小（子集）”，“必要”对应“范围大”。谁能推出谁，谁就是前者的充分条件。" }
+          ]
+        },
+        {
+          "heading": "例题详解",
+          "blocks": [
+            {
+              "kind": "eg",
+              "label": "例4（充分必要条件的判断）",
+              "text": "判断 $p$：$x>2$ 是 $q$：$x>1$ 的什么条件？",
+              "solution": [
+                "记 $A=\\{x\\mid x>2\\}$，$B=\\{x\\mid x>1\\}$。",
+                "显然 $A\\subsetneqq B$，即 $p\\Rightarrow q$ 但 $q\\nRightarrow p$。",
+                "故 $p$ 是 $q$ 的充分不必要条件。"
+              ]
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        { "q": "“$x=1$”是“$x^2=1$”的（填：充分不必要/必要不充分/充要/既不充分也不必要）条件？", "answer": "充分不必要", "tip": "x=1⇒x²=1，但 x²=1 时 x 还可能为 -1", "level": "中档" },
+        { "q": "“两个三角形全等”是“两个三角形面积相等”的____条件？", "answer": "充分不必要", "tip": "全等必面积等，面积等不一定全等", "level": "中档" },
+        { "q": "“$a>b$”是“$a+c>b+c$”的____条件？", "answer": "充要", "tip": "两边同加 c 是等价变形", "level": "基础" }
+      ]
+    },
+    {
+      "id": "1.5",
+      "category": "集合与常用逻辑用语",
+      "subcategory": "常用逻辑用语",
+      "title": "全称量词与存在量词及其否定",
+      "sections": [
+        {
+          "heading": "知识点",
+          "blocks": [
+            { "kind": "para", "text": "全称量词“所有/任意”记作 $\\forall$；存在量词“存在/至少一个”记作 $\\exists$。" },
+            { "kind": "bullet", "text": "全称命题：$\\forall x\\in M,\\ p(x)$。" },
+            { "kind": "bullet", "text": "存在命题：$\\exists x\\in M,\\ p(x)$。" }
+          ]
+        },
+        {
+          "heading": "原理与方法",
+          "blocks": [
+            { "kind": "sub", "text": "含量词命题的否定（改量词 + 否结论）" },
+            { "kind": "formula", "text": "\\neg(\\forall x\\in M,\\ p(x))\\;\\Leftrightarrow\\;\\exists x\\in M,\\ \\neg p(x)" },
+            { "kind": "formula", "text": "\\neg(\\exists x\\in M,\\ p(x))\\;\\Leftrightarrow\\;\\forall x\\in M,\\ \\neg p(x)" },
+            { "kind": "note", "text": "否定时“$\\forall$ 变 $\\exists$、$\\exists$ 变 $\\forall$”，同时把结论取反；范围 $M$ 不变。常见反例：$\\ge$ 的否定是 $<$，不是 $\\le$。" }
+          ]
+        },
+        {
+          "heading": "例题详解",
+          "blocks": [
+            {
+              "kind": "eg",
+              "label": "例5（全称命题的否定）",
+              "text": "写出命题“$\\forall x\\in\\mathbf{R},\\ x^{2}+1>0$”的否定。",
+              "solution": [
+                "把 $\\forall$ 改为 $\\exists$，把结论 $>0$ 取反为 $\\le 0$：",
+                "否定为“$\\exists x\\in\\mathbf{R},\\ x^{2}+1\\le 0$”。",
+                "（原命题为真，其否定为假，符合逻辑。）"
+              ]
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        { "q": "命题“$\\exists x\\in\\mathbf{R},\\ x^2<0$”的否定是“$\\forall x\\in\\mathbf{R},\\ x^2$____0”（填不等号，如 ≥）？", "answer": "≥", "tip": "存在变任意，<0 取反为 ≥0", "level": "中档" },
+        { "q": "命题“所有质数都是奇数”的否定是“____质数不是奇数”（填 存在/所有）？", "answer": "存在", "tip": "全称否定为存在", "level": "基础" }
+      ]
+    },
+
+    {
+      "id": "2.1",
+      "category": "一元二次函数、方程和不等式",
+      "subcategory": "不等式的性质与基本不等式",
+      "title": "等式性质与不等式的性质",
+      "sections": [
+        {
+          "heading": "知识点",
+          "blocks": [
+            { "kind": "para", "text": "比较两数大小的基本方法——作差法：" },
+            { "kind": "formula", "text": "a-b>0\\Leftrightarrow a>b,\\quad a-b=0\\Leftrightarrow a=b,\\quad a-b<0\\Leftrightarrow a<b" }
+          ]
+        },
+        {
+          "heading": "原理与方法",
+          "blocks": [
+            { "kind": "sub", "text": "不等式的基本性质" },
+            { "kind": "bullet", "text": "对称性：$a>b\\Leftrightarrow b<a$；传递性：$a>b,\\ b>c\\Rightarrow a>c$。" },
+            { "kind": "bullet", "text": "可加性：$a>b\\Rightarrow a+c>b+c$。" },
+            { "kind": "bullet", "text": "可乘性：$a>b,\\ c>0\\Rightarrow ac>bc$；$a>b,\\ c<0\\Rightarrow ac<bc$（乘负数变号！）。" },
+            { "kind": "bullet", "text": "同向可加：$a>b,\\ c>d\\Rightarrow a+c>b+d$。同向（正）可乘：$a>b>0,\\ c>d>0\\Rightarrow ac>bd$。" },
+            { "kind": "note", "text": "两大易错：① 不等式两边乘/除以负数必须变号；② 同向不等式只能相加、不能相减，不能相除。" }
+          ]
+        },
+        {
+          "heading": "例题详解",
+          "blocks": [
+            {
+              "kind": "eg",
+              "label": "例1（作差比较大小）",
+              "text": "比较 $x^{2}+3$ 与 $3x$ 的大小（$x\\in\\mathbf{R}$）。",
+              "solution": [
+                "作差：$(x^2+3)-3x=x^2-3x+3$。",
+                "配方：$=\\left(x-\\dfrac{3}{2}\\right)^{2}+\\dfrac{3}{4}\\ge \\dfrac{3}{4}>0$。",
+                "故对任意实数 $x$，恒有 $x^{2}+3>3x$。"
+              ]
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        { "q": "若 $a>b$，$c<0$，则 $ac$____$bc$（填 > 或 <）？", "answer": "<", "tip": "乘负数变号", "level": "基础" },
+        { "q": "比较 $2x^2+1$ 与 $2x$ 的大小，恒有 $2x^2+1$____$2x$（填 >、< 或 =）？", "answer": ">", "tip": "作差=2(x-½)²+½>0", "level": "中档" }
+      ]
+    },
+    {
+      "id": "2.2",
+      "category": "一元二次函数、方程和不等式",
+      "subcategory": "不等式的性质与基本不等式",
+      "title": "基本不等式",
+      "sections": [
+        {
+          "heading": "知识点",
+          "blocks": [
+            { "kind": "para", "text": "当 $a>0,\\ b>0$ 时，有基本不等式：" },
+            { "kind": "formula", "text": "\\sqrt{ab}\\le \\frac{a+b}{2}\\quad(\\text{当且仅当 } a=b \\text{ 时取等号})" },
+            { "kind": "para", "text": "其中 $\\dfrac{a+b}{2}$ 称为算术平均数，$\\sqrt{ab}$ 称为几何平均数。" }
+          ]
+        },
+        {
+          "heading": "原理与方法",
+          "blocks": [
+            { "kind": "sub", "text": "求最值的“一正、二定、三相等”" },
+            { "kind": "bullet", "text": "一正：各项必须为正数。" },
+            { "kind": "bullet", "text": "二定：和为定值时积有最大值；积为定值时和有最小值。" },
+            { "kind": "bullet", "text": "三相等：必须验证等号能取到（即 $a=b$ 有解）。" },
+            { "kind": "formula", "text": "a+b\\ge 2\\sqrt{ab}\\ (\\text{积定求和最小});\\quad ab\\le\\left(\\frac{a+b}{2}\\right)^{2}\\ (\\text{和定求积最大})" },
+            { "kind": "note", "text": "常见变形：$x+\\dfrac{1}{x}\\ge 2\\ (x>0)$。若忽略“一正”条件，对 $x<0$ 直接套用会得到错误结论。" }
+          ]
+        },
+        {
+          "heading": "例题详解",
+          "blocks": [
+            {
+              "kind": "eg",
+              "label": "例2（基本不等式求最值）",
+              "text": "已知 $x>0$，求 $y=x+\\dfrac{4}{x}$ 的最小值，并指出此时 $x$ 的值。",
+              "solution": [
+                "因为 $x>0$，$\\dfrac{4}{x}>0$（一正），且 $x\\cdot\\dfrac{4}{x}=4$ 为定值（二定）。",
+                "由基本不等式：$y=x+\\dfrac{4}{x}\\ge 2\\sqrt{x\\cdot\\dfrac{4}{x}}=2\\sqrt4=4$。",
+                "等号成立须 $x=\\dfrac{4}{x}$，即 $x^2=4,\\ x=2$（三相等，成立）。",
+                "故最小值为 $4$，此时 $x=2$。"
+              ]
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        { "q": "已知 $x>0$，则 $x+\\dfrac{9}{x}$ 的最小值是？", "answer": "6", "tip": "2√9=6，x=3 时取等", "level": "中档" },
+        { "q": "已知 $x>0,\\ y>0$ 且 $x+y=8$，则 $xy$ 的最大值是？", "answer": "16", "tip": "和定 xy≤(8/2)²=16", "level": "中档" },
+        { "q": "$x>1$ 时，$x+\\dfrac{1}{x-1}$ 的最小值是？", "answer": "3", "tip": "凑 (x-1)+1/(x-1)+1≥2+1=3", "level": "较难" }
+      ]
+    },
+    {
+      "id": "2.3",
+      "category": "一元二次函数、方程和不等式",
+      "subcategory": "二次函数与一元二次不等式",
+      "title": "一元二次不等式的解法",
+      "sections": [
+        {
+          "heading": "知识点",
+          "blocks": [
+            { "kind": "para", "text": "形如 $ax^{2}+bx+c>0\\ (a\\ne 0)$ 的不等式称为一元二次不等式。其解集与二次函数 $y=ax^{2}+bx+c$ 的图象紧密相关。" },
+            {
+              "kind": "svg",
+              "caption": "图1  a>0 时抛物线开口向上，与 x 轴交于 x₁、x₂；图象在 x 轴上方即 y>0",
+              "svg": "<svg viewBox='0 0 300 200' xmlns='http://www.w3.org/2000/svg'><line x1='20' y1='150' x2='285' y2='150' stroke='#333' stroke-width='1.5'/><line x1='150' y1='18' x2='150' y2='188' stroke='#c9d3e2'/><path d='M62 42 Q150 262 238 42' fill='none' stroke='#2e5b9e' stroke-width='2.5'/><circle cx='96' cy='150' r='3.5' fill='#c00000'/><circle cx='204' cy='150' r='3.5' fill='#c00000'/><text x='86' y='168' font-size='13' fill='#c00000'>x₁</text><text x='196' y='168' font-size='13' fill='#c00000'>x₂</text><text x='268' y='145' font-size='13'>x</text><text x='156' y='30' font-size='13'>y</text></svg>"
+            }
+          ]
+        },
+        {
+          "heading": "原理与方法",
+          "blocks": [
+            { "kind": "sub", "text": "解法三步（先化 a>0）与“大于取两边、小于取中间”" },
+            { "kind": "para", "text": "设 $a>0$，判别式 $\\Delta=b^{2}-4ac$：" },
+            {
+              "kind": "table",
+              "headers": ["Δ", "ax²+bx+c>0 的解集", "ax²+bx+c<0 的解集"],
+              "rows": [
+                ["Δ>0（两根 x₁<x₂）", "$\\{x\\mid x<x_1 \\text{ 或 } x>x_2\\}$", "$\\{x\\mid x_1<x<x_2\\}$"],
+                ["Δ=0（重根 x₀）", "$\\{x\\mid x\\ne x_0\\}$", "$\\varnothing$"],
+                ["Δ<0（无实根）", "$\\mathbf{R}$", "$\\varnothing$"]
+              ]
+            },
+            { "kind": "note", "text": "若二次项系数为负，先两边乘 $-1$ 化为正（记得变号）再解。口诀：开口向上时，“> 0 取两根之外，< 0 取两根之间”。" }
+          ]
+        },
+        {
+          "heading": "例题详解",
+          "blocks": [
+            {
+              "kind": "eg",
+              "label": "例3（标准型求解）",
+              "text": "解不等式 $x^{2}-x-6>0$。",
+              "solution": [
+                "因式分解：$x^2-x-6=(x-3)(x+2)$。",
+                "对应方程两根 $x_1=-2,\\ x_2=3$，开口向上。",
+                "“大于取两边”，解集为 $\\{x\\mid x<-2 \\text{ 或 } x>3\\}$。"
+              ]
+            },
+            {
+              "kind": "eg",
+              "label": "例4（二次项系数为负）",
+              "text": "解不等式 $-2x^{2}+4x-2\\ge 0$。",
+              "solution": [
+                "两边乘 $-1$（变号）：$2x^2-4x+2\\le 0$，即 $x^2-2x+1\\le 0$。",
+                "$(x-1)^2\\le 0$，而平方非负，只能等于 $0$。",
+                "故解集为 $\\{x\\mid x=1\\}=\\{1\\}$。"
+              ]
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        { "q": "不等式 $x^2-4<0$ 的解集是（用区间表示）？", "answer": "(-2,2)", "tip": "小于取中间，-2<x<2", "level": "基础" },
+        { "q": "不等式 $x^2-5x+6\\ge 0$ 的解集是？", "answer": "(-∞,2]∪[3,+∞)", "tip": "根为2、3，大于等于取两边", "level": "中档" },
+        { "q": "不等式 $x^2+2x+3>0$ 的解集是？", "answer": "R", "tip": "Δ=4-12<0，开口向上恒正", "level": "中档" },
+        { "q": "若关于 x 的不等式 $x^2-ax+4<0$ 的解集为空集，则 a 的取值范围是（形如 [-4,4]）？", "answer": "[-4,4]", "tip": "需 Δ=a²-16≤0", "level": "较难" }
+      ]
+    },
+
+    {
+      "id": "3.1",
+      "category": "函数的概念与性质",
+      "subcategory": "函数及其表示",
+      "title": "函数的概念、定义域与值域",
+      "sections": [
+        {
+          "heading": "知识点",
+          "blocks": [
+            { "kind": "para", "text": "设 $A,B$ 是非空实数集，若按某种对应关系 $f$，$A$ 中每一个 $x$ 都有 $B$ 中唯一的 $y$ 与之对应，则称 $f:A\\to B$ 为从 $A$ 到 $B$ 的函数，记作 $y=f(x),\\ x\\in A$。" },
+            { "kind": "bullet", "text": "定义域：自变量 $x$ 的取值集合 $A$。" },
+            { "kind": "bullet", "text": "值域：函数值 $y=f(x)$ 的取值集合。" },
+            { "kind": "bullet", "text": "同一函数：定义域相同且对应关系相同（与用什么字母无关）。" }
+          ]
+        },
+        {
+          "heading": "原理与方法",
+          "blocks": [
+            { "kind": "sub", "text": "求定义域的常见限制" },
+            { "kind": "bullet", "text": "分式：分母 $\\ne 0$。" },
+            { "kind": "bullet", "text": "偶次根式：被开方数 $\\ge 0$。" },
+            { "kind": "bullet", "text": "对数：真数 $>0$，底数 $>0$ 且 $\\ne 1$。" },
+            { "kind": "bullet", "text": "零次幂：底数 $\\ne 0$。多个限制取交集。" },
+            { "kind": "note", "text": "抽象复合函数定义域：已知 $f(x)$ 定义域为 $[a,b]$，求 $f(g(x))$ 的定义域时，令 $a\\le g(x)\\le b$ 反解 $x$；“括号内整体范围一致”是关键。" }
+          ]
+        },
+        {
+          "heading": "例题详解",
+          "blocks": [
+            {
+              "kind": "eg",
+              "label": "例1（求定义域）",
+              "text": "求函数 $f(x)=\\dfrac{\\sqrt{x+1}}{x-2}$ 的定义域。",
+              "solution": [
+                "根式要求 $x+1\\ge 0$，即 $x\\ge -1$；",
+                "分母要求 $x-2\\ne 0$，即 $x\\ne 2$。",
+                "取交集：$\\{x\\mid x\\ge -1 \\text{ 且 } x\\ne 2\\}$，即 $[-1,2)\\cup(2,+\\infty)$。"
+              ]
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        { "q": "函数 $f(x)=\\sqrt{x-3}$ 的定义域是（用区间表示）？", "answer": "[3,+∞)", "tip": "被开方数≥0", "level": "基础" },
+        { "q": "函数 $f(x)=\\dfrac{1}{x+2}$ 的定义域是？", "answer": "(-∞,-2)∪(-2,+∞)", "tip": "分母≠0，x≠-2", "level": "基础" },
+        { "q": "已知 $f(x)$ 的定义域为 $[0,4]$，则 $f(2x)$ 的定义域是？", "answer": "[0,2]", "tip": "令0≤2x≤4得0≤x≤2", "level": "较难" }
+      ]
+    },
+    {
+      "id": "3.2",
+      "category": "函数的概念与性质",
+      "subcategory": "函数的性质",
+      "title": "函数的单调性与最值",
+      "sections": [
+        {
+          "heading": "知识点",
+          "blocks": [
+            { "kind": "para", "text": "设函数 $f(x)$ 的定义域为 $I$，区间 $D\\subseteq I$。对 $D$ 内任意 $x_1<x_2$：" },
+            { "kind": "bullet", "text": "若恒有 $f(x_1)<f(x_2)$，则 $f(x)$ 在 $D$ 上单调递增；" },
+            { "kind": "bullet", "text": "若恒有 $f(x_1)>f(x_2)$，则 $f(x)$ 在 $D$ 上单调递减。" },
+            {
+              "kind": "svg",
+              "caption": "图1  单调递增：当 x₁<x₂ 时 f(x₁)<f(x₂)，图象从左到右上升",
+              "svg": "<svg viewBox='0 0 300 180' xmlns='http://www.w3.org/2000/svg'><line x1='30' y1='150' x2='285' y2='150' stroke='#333' stroke-width='1.3'/><line x1='45' y1='20' x2='45' y2='165' stroke='#333' stroke-width='1.3'/><path d='M55 146 C120 138 175 100 270 34' fill='none' stroke='#2e5b9e' stroke-width='2.4'/><line x1='110' y1='150' x2='110' y2='128' stroke='#bbb' stroke-dasharray='3 3'/><line x1='45' y1='128' x2='110' y2='128' stroke='#bbb' stroke-dasharray='3 3'/><line x1='205' y1='150' x2='205' y2='72' stroke='#bbb' stroke-dasharray='3 3'/><line x1='45' y1='72' x2='205' y2='72' stroke='#bbb' stroke-dasharray='3 3'/><text x='104' y='164' font-size='11'>x₁</text><text x='199' y='164' font-size='11'>x₂</text><text x='16' y='132' font-size='10'>f(x₁)</text><text x='16' y='76' font-size='10'>f(x₂)</text><text x='232' y='58' font-size='12' fill='#2e5b9e'>递增</text><text x='274' y='146' font-size='11'>x</text></svg>"
+            }
+          ]
+        },
+        {
+          "heading": "原理与方法",
+          "blocks": [
+            { "kind": "sub", "text": "定义法证明单调性（取值—作差—定号—结论）" },
+            { "kind": "bullet", "text": "取值：在区间内任取 $x_1<x_2$；" },
+            { "kind": "bullet", "text": "作差：计算 $f(x_1)-f(x_2)$ 并因式分解；" },
+            { "kind": "bullet", "text": "定号：判断差的正负；结论：据定义下结论。" },
+            { "kind": "note", "text": "复合函数 $y=f(g(x))$ 单调性遵循“同增异减”；求最值/值域常转化为求单调区间。“单调区间”要写区间，不能用并集连接不同单调区间（如不能写 $(-\\infty,0)\\cup(0,+\\infty)$ 为一个减区间）。" }
+          ]
+        },
+        {
+          "heading": "例题详解",
+          "blocks": [
+            {
+              "kind": "eg",
+              "label": "例2（定义法证明单调性）",
+              "text": "证明函数 $f(x)=x+\\dfrac{1}{x}$ 在 $(1,+\\infty)$ 上单调递增。",
+              "solution": [
+                "任取 $1<x_1<x_2$，作差：",
+                "$f(x_1)-f(x_2)=(x_1-x_2)+\\left(\\dfrac{1}{x_1}-\\dfrac{1}{x_2}\\right)=(x_1-x_2)+\\dfrac{x_2-x_1}{x_1x_2}$",
+                "$=(x_1-x_2)\\left(1-\\dfrac{1}{x_1x_2}\\right)=(x_1-x_2)\\cdot\\dfrac{x_1x_2-1}{x_1x_2}$。",
+                "因 $1<x_1<x_2$，故 $x_1-x_2<0$，$x_1x_2>1\\Rightarrow x_1x_2-1>0$，$x_1x_2>0$。",
+                "所以 $f(x_1)-f(x_2)<0$，即 $f(x_1)<f(x_2)$，$f(x)$ 在 $(1,+\\infty)$ 上单调递增。"
+              ]
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        { "q": "函数 $f(x)=-2x+1$ 在 R 上是单调（增/减）？", "answer": "减", "tip": "k=-2<0", "level": "基础" },
+        { "q": "二次函数 $f(x)=x^2-4x+1$ 的单调递增区间是？", "answer": "[2,+∞)", "tip": "对称轴 x=2，开口向上", "level": "中档" },
+        { "q": "$f(x)=\\dfrac{1}{x}$ 在 $(0,+\\infty)$ 上单调（增/减）？", "answer": "减", "tip": "反比例函数在正半轴递减", "level": "基础" }
+      ]
+    },
+    {
+      "id": "3.3",
+      "category": "函数的概念与性质",
+      "subcategory": "函数的性质",
+      "title": "函数的奇偶性",
+      "sections": [
+        {
+          "heading": "知识点",
+          "blocks": [
+            { "kind": "para", "text": "设 $f(x)$ 的定义域关于原点对称：" },
+            { "kind": "bullet", "text": "若对任意 $x$ 都有 $f(-x)=f(x)$，则 $f(x)$ 为偶函数，图象关于 $y$ 轴对称；" },
+            { "kind": "bullet", "text": "若对任意 $x$ 都有 $f(-x)=-f(x)$，则 $f(x)$ 为奇函数，图象关于原点对称。" }
+          ]
+        },
+        {
+          "heading": "原理与方法",
+          "blocks": [
+            { "kind": "sub", "text": "判断步骤与常用结论" },
+            { "kind": "bullet", "text": "第一步：先看定义域是否关于原点对称，不对称则为非奇非偶。" },
+            { "kind": "bullet", "text": "第二步：算 $f(-x)$ 与 $f(x)$、$-f(x)$ 比较。" },
+            { "kind": "bullet", "text": "若 $f(x)$ 是奇函数且在 $x=0$ 有定义，则必有 $f(0)=0$。" },
+            { "kind": "note", "text": "奇±奇=奇，偶±偶=偶；奇×奇=偶，偶×偶=偶，奇×偶=奇。用 $f(0)=0$ 求参数是高频题型，但须先确认 $0$ 在定义域内。" }
+          ]
+        },
+        {
+          "heading": "例题详解",
+          "blocks": [
+            {
+              "kind": "eg",
+              "label": "例3（利用奇函数求参数）",
+              "text": "已知 $f(x)=x^{3}+(a-1)x^{2}+x$ 是奇函数，求实数 $a$。",
+              "solution": [
+                "定义域为 $\\mathbf{R}$，关于原点对称。",
+                "奇函数要求 $f(-x)=-f(x)$。",
+                "$f(-x)=-x^3+(a-1)x^2-x$，$-f(x)=-x^3-(a-1)x^2-x$。",
+                "对比得 $(a-1)x^2=-(a-1)x^2$，即 $a-1=0$，故 $a=1$。"
+              ]
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        { "q": "函数 $f(x)=x^3$ 是（奇/偶/非奇非偶）函数？", "answer": "奇", "tip": "f(-x)=-x³=-f(x)", "level": "基础" },
+        { "q": "函数 $f(x)=x^2+1$ 是（奇/偶/非奇非偶）函数？", "answer": "偶", "tip": "f(-x)=f(x)", "level": "基础" },
+        { "q": "若奇函数 $f(x)$ 在 $x=0$ 处有定义，则 $f(0)$=？", "answer": "0", "tip": "奇函数过原点", "level": "中档" }
+      ]
+    },
+
+    {
+      "id": "4.1",
+      "category": "指数函数与对数函数",
+      "subcategory": "指数与指数函数",
+      "title": "指数幂的运算（根式与分数指数幂）",
+      "sections": [
+        {
+          "heading": "知识点",
+          "blocks": [
+            { "kind": "para", "text": "若 $x^{n}=a$（$n>1,\\ n\\in\\mathbf{N}^{*}$），则 $x$ 叫做 $a$ 的 $n$ 次方根。正数的偶次方根有两个（互为相反数），记为 $\\pm\\sqrt[n]{a}$；奇次方根只有一个。" },
+            { "kind": "sub", "text": "根式的性质" },
+            { "kind": "formula", "text": "(\\sqrt[n]{a})^{n}=a;\\qquad \\sqrt[n]{a^{n}}=\\begin{cases}a, & n\\text{ 为奇数}\\\\ |a|, & n\\text{ 为偶数}\\end{cases}" },
+            { "kind": "sub", "text": "分数指数幂（$a>0$）" },
+            { "kind": "formula", "text": "a^{\\frac{m}{n}}=\\sqrt[n]{a^{m}},\\qquad a^{-\\frac{m}{n}}=\\frac{1}{\\sqrt[n]{a^{m}}}\\ (m,n\\in\\mathbf{N}^{*},\\ n>1)" }
+          ]
+        },
+        {
+          "heading": "原理与方法",
+          "blocks": [
+            { "kind": "sub", "text": "有理数指数幂的运算法则（$a>0,\\ b>0$）" },
+            { "kind": "formula", "text": "a^{r}\\cdot a^{s}=a^{r+s},\\quad (a^{r})^{s}=a^{rs},\\quad (ab)^{r}=a^{r}b^{r}" },
+            { "kind": "note", "text": "化简的两条主线：① 把根式统一化成分数指数幂再运算；② 底数尽量化成同底（如 $4=2^2,\\ 8=2^3$）。注意 $\\sqrt[n]{a^n}$ 当 $n$ 为偶数时要带绝对值，这是最常见的失分点。" }
+          ]
+        },
+        {
+          "heading": "例题详解",
+          "blocks": [
+            {
+              "kind": "eg",
+              "label": "例1（根式化简）",
+              "text": "化简 $\\sqrt{(a-2)^{2}}+\\sqrt[3]{(a-2)^{3}}$（$a<2$）。",
+              "solution": [
+                "$\\sqrt{(a-2)^2}=|a-2|$，因 $a<2$，故 $a-2<0$，$|a-2|=2-a$。",
+                "$\\sqrt[3]{(a-2)^3}=a-2$（奇次根，直接去根号）。",
+                "原式 $=(2-a)+(a-2)=0$。"
+              ]
+            },
+            {
+              "kind": "eg",
+              "label": "例2（分数指数幂运算）",
+              "text": "计算 $8^{\\frac{2}{3}}+\\left(\\dfrac{1}{27}\\right)^{-\\frac{1}{3}}-\\left(\\dfrac{1}{2}\\right)^{-2}$。",
+              "solution": [
+                "$8^{\\frac{2}{3}}=(2^3)^{\\frac{2}{3}}=2^{2}=4$。",
+                "$\\left(\\dfrac{1}{27}\\right)^{-\\frac13}=(3^{-3})^{-\\frac13}=3^{1}=3$。",
+                "$\\left(\\dfrac12\\right)^{-2}=2^{2}=4$。",
+                "原式 $=4+3-4=3$。"
+              ]
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        { "q": "计算 $16^{\\frac{1}{2}}$=？", "answer": "4", "tip": "√16=4", "level": "基础" },
+        { "q": "计算 $27^{\\frac{2}{3}}$=？", "answer": "9", "tip": "(3³)^(2/3)=3²=9", "level": "基础" },
+        { "q": "计算 $\\left(\\dfrac{1}{4}\\right)^{-\\frac{1}{2}}$=？", "answer": "2", "tip": "(2^-2)^(-1/2)=2", "level": "中档" },
+        { "q": "化简 $\\sqrt{a^2}$（其中 a<0），结果用 a 表示为？", "answer": "-a", "tip": "√(a²)=|a|=-a", "level": "中档" },
+        { "q": "计算 $2^{\\frac{1}{2}}\\times 2^{\\frac{3}{2}}$=？", "answer": "4", "tip": "指数相加 2^2=4", "level": "中档" }
+      ]
+    },
+    {
+      "id": "4.2",
+      "category": "指数函数与对数函数",
+      "subcategory": "指数与指数函数",
+      "title": "指数函数及其性质",
+      "sections": [
+        {
+          "heading": "知识点",
+          "blocks": [
+            { "kind": "para", "text": "形如 $y=a^{x}$（$a>0$ 且 $a\\ne 1$）的函数叫做指数函数，定义域为 $\\mathbf{R}$，值域为 $(0,+\\infty)$。" },
+            {
+              "kind": "svg",
+              "caption": "图1  指数函数图象：均过定点 (0,1)；a>1 递增，0<a<1 递减",
+              "svg": "<svg viewBox='0 0 300 190' xmlns='http://www.w3.org/2000/svg'><line x1='25' y1='160' x2='285' y2='160' stroke='#333' stroke-width='1.3'/><line x1='150' y1='20' x2='150' y2='180' stroke='#333' stroke-width='1.3'/><polyline points='45,158 80,156 115,151 150,143 185,126 220,92 237,64 255,24' fill='none' stroke='#2e5b9e' stroke-width='2.2'/><polyline points='45,24 63,64 80,92 115,126 150,143 185,151 220,156 255,158' fill='none' stroke='#c0641c' stroke-width='2.2'/><circle cx='150' cy='143' r='3' fill='#c00000'/><text x='154' y='140' font-size='11' fill='#c00000'>(0,1)</text><text x='240' y='40' font-size='12' fill='#2e5b9e'>a&gt;1</text><text x='40' y='40' font-size='12' fill='#c0641c'>0&lt;a&lt;1</text><text x='270' y='156' font-size='12'>x</text><text x='156' y='30' font-size='12'>y</text></svg>"
+            }
+          ]
+        },
+        {
+          "heading": "原理与方法",
+          "blocks": [
+            {
+              "kind": "table",
+              "headers": ["性质", "a>1", "0<a<1"],
+              "rows": [
+                ["定义域", "$\\mathbf{R}$", "$\\mathbf{R}$"],
+                ["值域", "$(0,+\\infty)$", "$(0,+\\infty)$"],
+                ["单调性", "增函数", "减函数"],
+                ["定点", "过 (0,1)", "过 (0,1)"]
+              ]
+            },
+            { "kind": "sub", "text": "比较大小的三种手段" },
+            { "kind": "bullet", "text": "同底数：构造同一指数函数，用单调性比较指数大小。" },
+            { "kind": "bullet", "text": "同指数：用幂函数或图象（底大图高）比较。" },
+            { "kind": "bullet", "text": "既不同底也不同指：借助中间量 $1$（即 $a^0$）过渡。" },
+            { "kind": "note", "text": "$a^x>0$ 恒成立（图象恒在 x 轴上方），故形如 $a^x=负数$ 无解；解 $a^{f(x)}=a^{g(x)}$ 时，$a>0,a\\ne1$ 可直接得 $f(x)=g(x)$。" }
+          ]
+        },
+        {
+          "heading": "例题详解",
+          "blocks": [
+            {
+              "kind": "eg",
+              "label": "例1（比较大小）",
+              "text": "比较 $0.8^{-0.1}$ 与 $0.8^{-0.2}$ 的大小。",
+              "solution": [
+                "同底数 $0.8\\in(0,1)$，$y=0.8^x$ 是减函数。",
+                "指数 $-0.1>-0.2$，减函数“指数大则函数值小”。",
+                "故 $0.8^{-0.1}<0.8^{-0.2}$。"
+              ]
+            },
+            {
+              "kind": "eg",
+              "label": "例2（借助中间量 1）",
+              "text": "比较 $a=1.7^{0.3}$，$b=0.9^{3.1}$，$c=1$ 的大小。",
+              "solution": [
+                "$a=1.7^{0.3}$：底 $>1$、指数 $>0$，故 $a>1.7^0=1$。",
+                "$b=0.9^{3.1}$：底 $\\in(0,1)$、指数 $>0$，故 $b<0.9^0=1$。",
+                "所以 $b<c<a$，即 $0.9^{3.1}<1<1.7^{0.3}$。"
+              ]
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        { "q": "指数函数 $y=a^x$ 的图象都经过的定点坐标是（形如 (0,1)）？", "answer": "(0,1)", "tip": "a^0=1", "level": "基础" },
+        { "q": "函数 $y=3^x$ 的值域是（用区间表示）？", "answer": "(0,+∞)", "tip": "指数函数值域恒为正", "level": "基础" },
+        { "q": "比较大小：$2^{0.5}$____$2^{0.6}$（填 > 或 <）？", "answer": "<", "tip": "底>1递增，指数小则值小", "level": "基础" },
+        { "q": "比较大小：$0.5^{2}$____$0.5^{3}$（填 > 或 <）？", "answer": ">", "tip": "底∈(0,1)递减，指数小则值大", "level": "中档" },
+        { "q": "方程 $2^{x}=8$ 的解 x=？", "answer": "3", "tip": "8=2³", "level": "基础" },
+        { "q": "若 $3^{x-1}=9$，则 x=？", "answer": "3", "tip": "x-1=2", "level": "中档" }
+      ]
+    },
+    {
+      "id": "4.3",
+      "category": "指数函数与对数函数",
+      "subcategory": "对数与对数函数",
+      "title": "对数的概念与运算",
+      "sections": [
+        {
+          "heading": "知识点",
+          "blocks": [
+            { "kind": "para", "text": "若 $a^{x}=N$（$a>0,\\ a\\ne 1,\\ N>0$），则 $x=\\log_{a}N$，即“指数式 $\\Leftrightarrow$ 对数式”。" },
+            { "kind": "formula", "text": "a^{x}=N\\;\\Longleftrightarrow\\;x=\\log_{a}N" },
+            { "kind": "bullet", "text": "常用对数：$\\lg N=\\log_{10}N$；自然对数：$\\ln N=\\log_{e}N$。" },
+            { "kind": "bullet", "text": "两个恒等式：$\\log_{a}1=0$，$\\log_{a}a=1$，$a^{\\log_{a}N}=N$。" }
+          ]
+        },
+        {
+          "heading": "原理与方法",
+          "blocks": [
+            { "kind": "sub", "text": "对数运算法则（$a>0,a\\ne1,\\ M>0,\\ N>0$）" },
+            { "kind": "formula", "text": "\\log_{a}(MN)=\\log_{a}M+\\log_{a}N" },
+            { "kind": "formula", "text": "\\log_{a}\\frac{M}{N}=\\log_{a}M-\\log_{a}N,\\qquad \\log_{a}M^{n}=n\\log_{a}M" },
+            { "kind": "sub", "text": "换底公式" },
+            { "kind": "formula", "text": "\\log_{a}N=\\frac{\\log_{c}N}{\\log_{c}a}\\;(c>0,c\\ne1);\\qquad \\log_{a}b\\cdot\\log_{b}a=1" },
+            { "kind": "note", "text": "真数必须为正！运算前先确认定义域。$\\log_a M^n=n\\log_a M$ 只在 $M>0$ 时成立；遇到 $\\log_a M^2$ 应写成 $2\\log_a|M|$。" }
+          ]
+        },
+        {
+          "heading": "例题详解",
+          "blocks": [
+            {
+              "kind": "eg",
+              "label": "例1（对数式与指数式互化、恒等式）",
+              "text": "求值：$\\log_{2}8+\\lg 100+3^{\\log_{3}5}$。",
+              "solution": [
+                "$\\log_2 8=\\log_2 2^3=3$。",
+                "$\\lg 100=\\lg 10^2=2$。",
+                "$3^{\\log_3 5}=5$（对数恒等式）。",
+                "原式 $=3+2+5=10$。"
+              ]
+            },
+            {
+              "kind": "eg",
+              "label": "例2（对数运算法则）",
+              "text": "计算 $\\lg 25+\\lg 4-\\lg 2+\\lg 5$。",
+              "solution": [
+                "$\\lg 25+\\lg 4=\\lg(25\\times4)=\\lg 100=2$。",
+                "$-\\lg 2+\\lg 5=\\lg\\dfrac{5}{2}$……换个思路更简：",
+                "原式 $=\\lg\\dfrac{25\\times4\\times5}{2}=\\lg\\dfrac{500}{2}=\\lg 250=\\lg(1000/4)$，",
+                "更直接：$\\lg 25+\\lg 4=2$，$\\lg5-\\lg2=\\lg2.5$，合计 $2+\\lg 2.5$。",
+                "注：本题也可先合并 $\\lg2+\\lg5=\\lg10=1$ 类结构，练习时以化同底、凑 $\\lg10$ 为主。"
+              ]
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        { "q": "$\\log_{3}9$=？", "answer": "2", "tip": "9=3²", "level": "基础" },
+        { "q": "$\\lg 1000$=？", "answer": "3", "tip": "1000=10³", "level": "基础" },
+        { "q": "$\\log_{2}1$=？", "answer": "0", "tip": "log_a 1=0", "level": "基础" },
+        { "q": "$2^{\\log_{2}7}$=？", "answer": "7", "tip": "对数恒等式", "level": "中档" },
+        { "q": "$\\lg 2+\\lg 5$=？", "answer": "1", "tip": "lg(2×5)=lg10=1", "level": "中档" },
+        { "q": "已知 $\\log_{2}3=a$，用 a 表示 $\\log_{2}9$=？", "answer": "2a", "tip": "log2 9=2log2 3", "level": "较难" }
+      ]
+    },
+    {
+      "id": "4.4",
+      "category": "指数函数与对数函数",
+      "subcategory": "对数与对数函数",
+      "title": "对数函数及其性质",
+      "sections": [
+        {
+          "heading": "知识点",
+          "blocks": [
+            { "kind": "para", "text": "形如 $y=\\log_{a}x$（$a>0$ 且 $a\\ne 1$）的函数叫做对数函数，定义域为 $(0,+\\infty)$，值域为 $\\mathbf{R}$。它与指数函数 $y=a^{x}$ 互为反函数，图象关于直线 $y=x$ 对称。" },
+            {
+              "kind": "svg",
+              "caption": "图1  对数函数图象：均过定点 (1,0)；a>1 递增，0<a<1 递减",
+              "svg": "<svg viewBox='0 0 300 190' xmlns='http://www.w3.org/2000/svg'><line x1='140' y1='105' x2='285' y2='105' stroke='#333' stroke-width='1.3'/><line x1='150' y1='20' x2='150' y2='180' stroke='#333' stroke-width='1.3'/><polyline points='152,171 154,149 157,127 164,105 178,83 206,61 262,39' fill='none' stroke='#2e5b9e' stroke-width='2.2'/><polyline points='152,39 154,61 157,83 164,105 178,127 206,149 262,171' fill='none' stroke='#c0641c' stroke-width='2.2'/><circle cx='164' cy='105' r='3' fill='#c00000'/><text x='166' y='118' font-size='11' fill='#c00000'>(1,0)</text><text x='250' y='34' font-size='12' fill='#2e5b9e'>a&gt;1</text><text x='250' y='180' font-size='12' fill='#c0641c'>0&lt;a&lt;1</text><text x='272' y='101' font-size='12'>x</text><text x='156' y='30' font-size='12'>y</text></svg>"
+            }
+          ]
+        },
+        {
+          "heading": "原理与方法",
+          "blocks": [
+            {
+              "kind": "table",
+              "headers": ["性质", "a>1", "0<a<1"],
+              "rows": [
+                ["定义域", "$(0,+\\infty)$", "$(0,+\\infty)$"],
+                ["值域", "$\\mathbf{R}$", "$\\mathbf{R}$"],
+                ["单调性", "增函数", "减函数"],
+                ["定点", "过 (1,0)", "过 (1,0)"]
+              ]
+            },
+            { "kind": "note", "text": "求含 $\\log_a f(x)$ 的定义域，务必先令真数 $f(x)>0$。比较对数大小时先判断底 $a$ 与 1 的关系确定增减，再比真数；必要时用中间量 0（$\\log_a 1$）或 1（$\\log_a a$）。" }
+          ]
+        },
+        {
+          "heading": "例题详解",
+          "blocks": [
+            {
+              "kind": "eg",
+              "label": "例1（求定义域）",
+              "text": "求函数 $y=\\log_{2}(x-1)$ 的定义域。",
+              "solution": [
+                "真数需为正：$x-1>0$，得 $x>1$。",
+                "故定义域为 $(1,+\\infty)$。"
+              ]
+            },
+            {
+              "kind": "eg",
+              "label": "例2（比较对数大小）",
+              "text": "比较 $\\log_{2}3$ 与 $\\log_{2}5$，以及 $\\log_{0.5}3$ 与 $\\log_{0.5}5$。",
+              "solution": [
+                "$y=\\log_2 x$ 底 $>1$ 递增，真数 $3<5$，故 $\\log_2 3<\\log_2 5$。",
+                "$y=\\log_{0.5}x$ 底 $\\in(0,1)$ 递减，真数 $3<5$，故 $\\log_{0.5}3>\\log_{0.5}5$。"
+              ]
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        { "q": "对数函数 $y=\\log_a x$ 的图象都过的定点坐标是？", "answer": "(1,0)", "tip": "log_a 1=0", "level": "基础" },
+        { "q": "函数 $y=\\log_2 x$ 的定义域是（用区间表示）？", "answer": "(0,+∞)", "tip": "真数>0", "level": "基础" },
+        { "q": "函数 $y=\\lg(x+2)$ 的定义域是？", "answer": "(-2,+∞)", "tip": "x+2>0", "level": "中档" },
+        { "q": "比较大小：$\\log_3 2$____$\\log_3 4$（填 > 或 <）？", "answer": "<", "tip": "底>1递增", "level": "基础" },
+        { "q": "比较大小：$\\log_{0.3}2$____$\\log_{0.3}5$（填 > 或 <）？", "answer": ">", "tip": "底∈(0,1)递减", "level": "中档" },
+        { "q": "$y=\\log_2 x$ 与 $y=2^x$ 的图象关于直线____对称（填方程）？", "answer": "y=x", "tip": "互为反函数", "level": "较难" }
+      ]
+    },
+
+    {
+      "id": "5.1",
+      "category": "三角函数",
+      "subcategory": "任意角与三角函数概念",
+      "title": "任意角与弧度制",
+      "sections": [
+        {
+          "heading": "知识点",
+          "blocks": [
+            { "kind": "para", "text": "角可推广为任意角：逆时针旋转为正角，顺时针为负角，不旋转为零角。与角 $\\alpha$ 终边相同的角的集合为 $\\{\\beta\\mid\\beta=\\alpha+k\\cdot360^{\\circ},\\ k\\in\\mathbf{Z}\\}$。" },
+            { "kind": "sub", "text": "弧度制" },
+            { "kind": "para", "text": "长度等于半径的弧所对的圆心角为 1 弧度（1 rad）。" },
+            { "kind": "formula", "text": "180^{\\circ}=\\pi\\ \\text{rad},\\qquad 1^{\\circ}=\\frac{\\pi}{180}\\ \\text{rad},\\qquad 1\\ \\text{rad}=\\left(\\frac{180}{\\pi}\\right)^{\\circ}" }
+          ]
+        },
+        {
+          "heading": "原理与方法",
+          "blocks": [
+            { "kind": "sub", "text": "弧长与扇形面积公式（$\\alpha$ 为弧度）" },
+            { "kind": "formula", "text": "l=|\\alpha|\\,r,\\qquad S=\\frac{1}{2}lr=\\frac{1}{2}|\\alpha|\\,r^{2}" },
+            { "kind": "note", "text": "使用弧长/扇形面积公式时，圆心角必须用弧度制，切勿用角度直接代入。象限角判断：先把角化到 $[0,360^\\circ)$ 或 $[0,2\\pi)$ 内。" }
+          ]
+        },
+        {
+          "heading": "例题详解",
+          "blocks": [
+            {
+              "kind": "eg",
+              "label": "例1（角度弧度互化）",
+              "text": "把 $120^{\\circ}$ 化为弧度，把 $\\dfrac{3\\pi}{4}$ 化为角度。",
+              "solution": [
+                "$120^\\circ=120\\times\\dfrac{\\pi}{180}=\\dfrac{2\\pi}{3}$。",
+                "$\\dfrac{3\\pi}{4}=\\dfrac{3\\pi}{4}\\times\\dfrac{180^\\circ}{\\pi}=135^\\circ$。"
+              ]
+            },
+            {
+              "kind": "eg",
+              "label": "例2（弧长与扇形面积）",
+              "text": "已知扇形半径 $r=2$，圆心角 $\\alpha=\\dfrac{\\pi}{3}$，求弧长 $l$ 与面积 $S$。",
+              "solution": [
+                "$l=|\\alpha|r=\\dfrac{\\pi}{3}\\times2=\\dfrac{2\\pi}{3}$。",
+                "$S=\\dfrac12 lr=\\dfrac12\\times\\dfrac{2\\pi}{3}\\times2=\\dfrac{2\\pi}{3}$。"
+              ]
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        { "q": "$90^\\circ$ 化为弧度是（用含 π 的式子，如 π/2）？", "answer": "π/2", "tip": "90×π/180", "level": "基础" },
+        { "q": "$\\dfrac{\\pi}{6}$ 化为角度是（填数字，单位度）？", "answer": "30", "tip": "π/6×180/π=30°", "level": "基础" },
+        { "q": "与 $30^\\circ$ 终边相同的角可表示为 $30^\\circ+k\\cdot$____（填数字，单位度）？", "answer": "360", "tip": "终边相同差360°整数倍", "level": "基础" },
+        { "q": "半径为 3、圆心角为 2 弧度的扇形，弧长 l=？", "answer": "6", "tip": "l=|α|r=2×3", "level": "中档" },
+        { "q": "半径为 2、圆心角为 1 弧度的扇形面积 S=？", "answer": "2", "tip": "S=½|α|r²=½×1×4", "level": "中档" }
+      ]
+    },
+    {
+      "id": "5.2",
+      "category": "三角函数",
+      "subcategory": "任意角与三角函数概念",
+      "title": "三角函数的定义、符号与同角关系",
+      "sections": [
+        {
+          "heading": "知识点",
+          "blocks": [
+            { "kind": "para", "text": "设角 $\\alpha$ 终边上任一点 $P(x,y)$，$r=\\sqrt{x^{2}+y^{2}}>0$，则：" },
+            { "kind": "formula", "text": "\\sin\\alpha=\\frac{y}{r},\\quad \\cos\\alpha=\\frac{x}{r},\\quad \\tan\\alpha=\\frac{y}{x}\\ (x\\ne0)" },
+            { "kind": "sub", "text": "各象限符号（口诀：一全正、二正弦、三正切、四余弦）" },
+            {
+              "kind": "table",
+              "headers": ["象限", "sin", "cos", "tan"],
+              "rows": [
+                ["第一", "+", "+", "+"],
+                ["第二", "+", "−", "−"],
+                ["第三", "−", "−", "+"],
+                ["第四", "−", "+", "−"]
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "原理与方法",
+          "blocks": [
+            { "kind": "sub", "text": "同角三角函数的基本关系" },
+            { "kind": "formula", "text": "\\sin^{2}\\alpha+\\cos^{2}\\alpha=1,\\qquad \\tan\\alpha=\\frac{\\sin\\alpha}{\\cos\\alpha}" },
+            { "kind": "note", "text": "已知一个三角函数值求其他值：先由平方关系求出另一个的绝对值，再由角所在象限定符号——“定象限、再定号”不可省。" }
+          ]
+        },
+        {
+          "heading": "例题详解",
+          "blocks": [
+            {
+              "kind": "eg",
+              "label": "例1（由定义求值）",
+              "text": "已知角 $\\alpha$ 终边过点 $P(-3,4)$，求 $\\sin\\alpha,\\cos\\alpha,\\tan\\alpha$。",
+              "solution": [
+                "$r=\\sqrt{(-3)^2+4^2}=5$。",
+                "$\\sin\\alpha=\\dfrac{y}{r}=\\dfrac{4}{5}$，$\\cos\\alpha=\\dfrac{x}{r}=-\\dfrac{3}{5}$，$\\tan\\alpha=\\dfrac{y}{x}=-\\dfrac{4}{3}$。"
+              ]
+            },
+            {
+              "kind": "eg",
+              "label": "例2（同角关系，定象限）",
+              "text": "已知 $\\sin\\alpha=\\dfrac{3}{5}$，且 $\\alpha$ 是第二象限角，求 $\\cos\\alpha$ 与 $\\tan\\alpha$。",
+              "solution": [
+                "由 $\\sin^2\\alpha+\\cos^2\\alpha=1$ 得 $\\cos^2\\alpha=1-\\dfrac{9}{25}=\\dfrac{16}{25}$，$\\cos\\alpha=\\pm\\dfrac45$。",
+                "第二象限余弦为负，故 $\\cos\\alpha=-\\dfrac45$。",
+                "$\\tan\\alpha=\\dfrac{\\sin\\alpha}{\\cos\\alpha}=\\dfrac{3/5}{-4/5}=-\\dfrac34$。"
+              ]
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        { "q": "角 α 终边过点 (1,1)，则 $\\tan\\alpha$=？", "answer": "1", "tip": "y/x=1", "level": "基础" },
+        { "q": "若 α 是第三象限角，则 $\\sin\\alpha$ 的符号是（正/负）？", "answer": "负", "tip": "三象限只有正切为正", "level": "基础" },
+        { "q": "已知 $\\cos\\alpha=\\dfrac{4}{5}$，α 为第四象限角，则 $\\sin\\alpha$=？", "answer": "-3/5", "tip": "sin=-√(1-16/25)", "level": "中档" },
+        { "q": "已知 $\\sin\\alpha=\\dfrac{1}{2}$ 且 α 为第二象限角，则 $\\cos\\alpha$=？", "answer": "-√3/2", "tip": "二象限cos负", "level": "中档" },
+        { "q": "$\\sin^2 40^\\circ+\\cos^2 40^\\circ$=？", "answer": "1", "tip": "同角平方关系", "level": "基础" }
+      ]
+    },
+    {
+      "id": "5.3",
+      "category": "三角函数",
+      "subcategory": "任意角与三角函数概念",
+      "title": "诱导公式",
+      "sections": [
+        {
+          "heading": "知识点",
+          "blocks": [
+            { "kind": "para", "text": "诱导公式用于把任意角的三角函数化为锐角三角函数。核心口诀：“奇变偶不变，符号看象限”。" },
+            { "kind": "bullet", "text": "“奇变偶不变”：指 $\\dfrac{\\pi}{2}$ 的奇数倍时函数名改变（sin↔cos），偶数倍（即 π 的倍数）时函数名不变。" },
+            { "kind": "bullet", "text": "“符号看象限”：把 $\\alpha$ 看成锐角，判断原角所在象限，取该象限原函数的符号。" }
+          ]
+        },
+        {
+          "heading": "原理与方法",
+          "blocks": [
+            { "kind": "sub", "text": "常用诱导公式" },
+            { "kind": "formula", "text": "\\sin(2k\\pi+\\alpha)=\\sin\\alpha,\\quad \\cos(2k\\pi+\\alpha)=\\cos\\alpha" },
+            { "kind": "formula", "text": "\\sin(\\pi-\\alpha)=\\sin\\alpha,\\quad \\cos(\\pi-\\alpha)=-\\cos\\alpha" },
+            { "kind": "formula", "text": "\\sin(\\pi+\\alpha)=-\\sin\\alpha,\\quad \\cos(\\pi+\\alpha)=-\\cos\\alpha" },
+            { "kind": "formula", "text": "\\sin(-\\alpha)=-\\sin\\alpha,\\quad \\cos(-\\alpha)=\\cos\\alpha" },
+            { "kind": "formula", "text": "\\sin\\!\\left(\\frac{\\pi}{2}-\\alpha\\right)=\\cos\\alpha,\\quad \\cos\\!\\left(\\frac{\\pi}{2}-\\alpha\\right)=\\sin\\alpha" }
+          ]
+        },
+        {
+          "heading": "例题详解",
+          "blocks": [
+            {
+              "kind": "eg",
+              "label": "例1（求特殊角函数值）",
+              "text": "求 $\\sin 210^{\\circ}$ 与 $\\cos\\dfrac{2\\pi}{3}$。",
+              "solution": [
+                "$\\sin 210^\\circ=\\sin(180^\\circ+30^\\circ)=-\\sin30^\\circ=-\\dfrac12$。",
+                "$\\cos\\dfrac{2\\pi}{3}=\\cos\\left(\\pi-\\dfrac{\\pi}{3}\\right)=-\\cos\\dfrac{\\pi}{3}=-\\dfrac12$。"
+              ]
+            },
+            {
+              "kind": "eg",
+              "label": "例2（化简）",
+              "text": "化简 $\\dfrac{\\sin(\\pi-\\alpha)\\cos(-\\alpha)}{\\cos(\\pi+\\alpha)}$。",
+              "solution": [
+                "$\\sin(\\pi-\\alpha)=\\sin\\alpha$，$\\cos(-\\alpha)=\\cos\\alpha$，$\\cos(\\pi+\\alpha)=-\\cos\\alpha$。",
+                "原式 $=\\dfrac{\\sin\\alpha\\cdot\\cos\\alpha}{-\\cos\\alpha}=-\\sin\\alpha$。"
+              ]
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        { "q": "$\\sin(-30^\\circ)$=？", "answer": "-1/2", "tip": "sin(-α)=-sinα", "level": "基础" },
+        { "q": "$\\cos 120^\\circ$=？", "answer": "-1/2", "tip": "cos(180-60)=-cos60°", "level": "中档" },
+        { "q": "$\\sin 150^\\circ$=？", "answer": "1/2", "tip": "sin(180-30)=sin30°", "level": "中档" },
+        { "q": "$\\tan(\\pi+\\alpha)$ 化简为？（用 tanα 表示）", "answer": "tanα", "tip": "正切周期π", "level": "中档" },
+        { "q": "$\\cos(2\\pi-\\alpha)$ 化简为？", "answer": "cosα", "tip": "等价于cos(-α)", "level": "中档" }
+      ]
+    },
+    {
+      "id": "5.4",
+      "category": "三角函数",
+      "subcategory": "三角恒等变换",
+      "title": "两角和与差、二倍角公式",
+      "sections": [
+        {
+          "heading": "知识点",
+          "blocks": [
+            { "kind": "sub", "text": "两角和与差公式" },
+            { "kind": "formula", "text": "\\sin(\\alpha\\pm\\beta)=\\sin\\alpha\\cos\\beta\\pm\\cos\\alpha\\sin\\beta" },
+            { "kind": "formula", "text": "\\cos(\\alpha\\pm\\beta)=\\cos\\alpha\\cos\\beta\\mp\\sin\\alpha\\sin\\beta" },
+            { "kind": "formula", "text": "\\tan(\\alpha\\pm\\beta)=\\frac{\\tan\\alpha\\pm\\tan\\beta}{1\\mp\\tan\\alpha\\tan\\beta}" }
+          ]
+        },
+        {
+          "heading": "原理与方法",
+          "blocks": [
+            { "kind": "sub", "text": "二倍角公式（由和角令 β=α 得到）" },
+            { "kind": "formula", "text": "\\sin 2\\alpha=2\\sin\\alpha\\cos\\alpha" },
+            { "kind": "formula", "text": "\\cos 2\\alpha=\\cos^{2}\\alpha-\\sin^{2}\\alpha=2\\cos^{2}\\alpha-1=1-2\\sin^{2}\\alpha" },
+            { "kind": "sub", "text": "降幂公式（由 cos2α 变形，积分/化简常用）" },
+            { "kind": "formula", "text": "\\cos^{2}\\alpha=\\frac{1+\\cos 2\\alpha}{2},\\qquad \\sin^{2}\\alpha=\\frac{1-\\cos 2\\alpha}{2}" },
+            { "kind": "note", "text": "$\\cos2\\alpha$ 有三种形式，做题时“缺 sin 用 $2\\cos^2-1$、缺 cos 用 $1-2\\sin^2$”灵活选取。辅助角公式 $a\\sin x+b\\cos x=\\sqrt{a^2+b^2}\\sin(x+\\varphi)$ 是化一角的关键。" }
+          ]
+        },
+        {
+          "heading": "例题详解",
+          "blocks": [
+            {
+              "kind": "eg",
+              "label": "例1（两角差求值）",
+              "text": "求 $\\cos 15^{\\circ}$。",
+              "solution": [
+                "$\\cos15^\\circ=\\cos(45^\\circ-30^\\circ)=\\cos45^\\circ\\cos30^\\circ+\\sin45^\\circ\\sin30^\\circ$",
+                "$=\\dfrac{\\sqrt2}{2}\\cdot\\dfrac{\\sqrt3}{2}+\\dfrac{\\sqrt2}{2}\\cdot\\dfrac12=\\dfrac{\\sqrt6+\\sqrt2}{4}$。"
+              ]
+            },
+            {
+              "kind": "eg",
+              "label": "例2（二倍角）",
+              "text": "已知 $\\sin\\alpha=\\dfrac35$，$\\alpha\\in\\left(0,\\dfrac{\\pi}{2}\\right)$，求 $\\sin 2\\alpha$ 与 $\\cos 2\\alpha$。",
+              "solution": [
+                "$\\alpha$ 在第一象限，$\\cos\\alpha=\\sqrt{1-\\sin^2\\alpha}=\\dfrac45$。",
+                "$\\sin2\\alpha=2\\sin\\alpha\\cos\\alpha=2\\cdot\\dfrac35\\cdot\\dfrac45=\\dfrac{24}{25}$。",
+                "$\\cos2\\alpha=1-2\\sin^2\\alpha=1-2\\cdot\\dfrac{9}{25}=\\dfrac{7}{25}$。"
+              ]
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        { "q": "$\\sin 2\\alpha=2\\sin\\alpha\\cdot$____（填 cosα）？", "answer": "cosα", "tip": "二倍角正弦", "level": "基础" },
+        { "q": "已知 $\\cos\\alpha=\\dfrac35$，α∈(0,π/2)，则 $\\sin2\\alpha$=？", "answer": "24/25", "tip": "sinα=4/5，2·(4/5)(3/5)", "level": "中档" },
+        { "q": "$\\sin 15^\\circ\\cos15^\\circ$=？", "answer": "1/4", "tip": "=½sin30°=¼", "level": "中档" },
+        { "q": "$\\cos^2 15^\\circ-\\sin^2 15^\\circ$=？", "answer": "√3/2", "tip": "=cos30°", "level": "中档" },
+        { "q": "$\\dfrac{1+\\cos 2\\alpha}{2}$ 等于（填 cos²α 或 sin²α）？", "answer": "cos²α/cos^2α", "tip": "降幂公式", "level": "较难" }
+      ]
+    },
+    {
+      "id": "5.5",
+      "category": "三角函数",
+      "subcategory": "三角函数的图象与性质",
+      "title": "正弦、余弦、正切函数的图象与性质",
+      "sections": [
+        {
+          "heading": "知识点",
+          "blocks": [
+            { "kind": "para", "text": "正弦、余弦函数是周期函数，周期 $T=2\\pi$；正切函数周期 $T=\\pi$。" },
+            {
+              "kind": "svg",
+              "caption": "图1  y=sin x 在 [0, 2π] 上的图象（五点法关键点：0、π/2、π、3π/2、2π）",
+              "svg": "<svg viewBox='0 0 300 170' xmlns='http://www.w3.org/2000/svg'><line x1='25' y1='110' x2='290' y2='110' stroke='#333' stroke-width='1.2'/><line x1='40' y1='45' x2='40' y2='165' stroke='#333' stroke-width='1.2'/><polyline points='40,110 70,78 100,65 130,78 160,110 190,142 220,155 250,142 280,110' fill='none' stroke='#2e5b9e' stroke-width='2.2'/><circle cx='100' cy='65' r='2.5' fill='#c00000'/><circle cx='160' cy='110' r='2.5' fill='#c00000'/><circle cx='220' cy='155' r='2.5' fill='#c00000'/><text x='150' y='126' font-size='11'>π</text><text x='272' y='126' font-size='11'>2π</text><text x='44' y='60' font-size='11'>1</text><text x='283' y='106' font-size='11'>x</text></svg>"
+            }
+          ]
+        },
+        {
+          "heading": "原理与方法",
+          "blocks": [
+            {
+              "kind": "table",
+              "headers": ["函数", "定义域", "值域", "周期", "奇偶性"],
+              "rows": [
+                ["$y=\\sin x$", "$\\mathbf{R}$", "$[-1,1]$", "$2\\pi$", "奇"],
+                ["$y=\\cos x$", "$\\mathbf{R}$", "$[-1,1]$", "$2\\pi$", "偶"],
+                ["$y=\\tan x$", "$x\\ne\\frac{\\pi}{2}+k\\pi$", "$\\mathbf{R}$", "$\\pi$", "奇"]
+              ]
+            },
+            { "kind": "bullet", "text": "$y=\\sin x$ 增区间 $\\left[-\\dfrac{\\pi}{2}+2k\\pi,\\ \\dfrac{\\pi}{2}+2k\\pi\\right]$；$y=\\cos x$ 增区间 $[-\\pi+2k\\pi,\\ 2k\\pi]$。" },
+            { "kind": "note", "text": "求单调区间、对称轴、最值都以“整体代入”为核心：把 $\\omega x+\\varphi$ 看成一个整体，套 $\\sin$/$\\cos$ 的标准区间求解。" }
+          ]
+        },
+        {
+          "heading": "例题详解",
+          "blocks": [
+            {
+              "kind": "eg",
+              "label": "例1（求最值与取值点）",
+              "text": "求 $y=2\\sin x+1$ 的最大值、最小值。",
+              "solution": [
+                "$\\sin x\\in[-1,1]$。",
+                "当 $\\sin x=1$ 时 $y_{\\max}=2\\times1+1=3$；",
+                "当 $\\sin x=-1$ 时 $y_{\\min}=2\\times(-1)+1=-1$。"
+              ]
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        { "q": "$y=\\sin x$ 的最小正周期是（用含 π 表示）？", "answer": "2π", "tip": "正弦周期2π", "level": "基础" },
+        { "q": "$y=\\tan x$ 的最小正周期是？", "answer": "π", "tip": "正切周期π", "level": "基础" },
+        { "q": "$y=\\cos x$ 的值域是（用区间表示）？", "answer": "[-1,1]", "tip": "余弦有界", "level": "基础" },
+        { "q": "$y=3\\sin x$ 的最大值是？", "answer": "3", "tip": "sinx最大为1", "level": "基础" },
+        { "q": "$y=2\\cos x-1$ 的最小值是？", "answer": "-3", "tip": "cosx=-1时", "level": "中档" }
+      ]
+    },
+    {
+      "id": "5.6",
+      "category": "三角函数",
+      "subcategory": "三角函数的图象与性质",
+      "title": "函数 y=Asin(ωx+φ) 的图象与性质",
+      "sections": [
+        {
+          "heading": "知识点",
+          "blocks": [
+            { "kind": "para", "text": "对 $y=A\\sin(\\omega x+\\varphi)+k$（$A>0,\\ \\omega>0$）：" },
+            { "kind": "bullet", "text": "$A$ 为振幅，值域为 $[k-A,\\ k+A]$；" },
+            { "kind": "bullet", "text": "周期 $T=\\dfrac{2\\pi}{\\omega}$；" },
+            { "kind": "bullet", "text": "$\\varphi$ 为初相，$-\\dfrac{\\varphi}{\\omega}$ 决定左右平移量。" },
+            {
+              "kind": "svg",
+              "caption": "图1  y=Asin(ωx+φ) 的图象：振幅为 A（最大 A、最小 −A），一个周期长 T=2π/ω",
+              "svg": "<svg viewBox='0 0 300 180' xmlns='http://www.w3.org/2000/svg'><defs><marker id='ahp' markerWidth='8' markerHeight='8' refX='4' refY='3' orient='auto'><path d='M0,0 L7,3 L0,6 Z' fill='#c0641c'/></marker></defs><line x1='25' y1='95' x2='290' y2='95' stroke='#333' stroke-width='1.3'/><line x1='40' y1='28' x2='40' y2='162' stroke='#333' stroke-width='1.3'/><line x1='40' y1='50' x2='285' y2='50' stroke='#ccc' stroke-dasharray='4 3'/><line x1='40' y1='140' x2='285' y2='140' stroke='#ccc' stroke-dasharray='4 3'/><polyline points='40,95 55,68 70,50 85,68 100,95 115,122 130,140 145,122 160,95 175,68 190,50 205,68 220,95 235,122 250,140 265,122 280,95' fill='none' stroke='#2e5b9e' stroke-width='2.4'/><line x1='70' y1='40' x2='190' y2='40' stroke='#c0641c' stroke-width='1.4' marker-start='url(#ahp)' marker-end='url(#ahp)'/><text x='108' y='36' font-size='12' fill='#c0641c'>T=2π/ω</text><text x='20' y='54' font-size='11' fill='#c00000'>A</text><text x='14' y='144' font-size='11' fill='#c00000'>−A</text><text x='274' y='91' font-size='11'>x</text></svg>"
+            }
+          ]
+        },
+        {
+          "heading": "原理与方法",
+          "blocks": [
+            { "kind": "sub", "text": "由 y=sin x 变换得到（两种顺序都要会）" },
+            { "kind": "bullet", "text": "先相位后周期：$y=\\sin x\\xrightarrow{\\text{左移}\\varphi}\\sin(x+\\varphi)\\xrightarrow{\\text{横坐标变}\\frac{1}{\\omega}}\\sin(\\omega x+\\varphi)\\xrightarrow{\\text{纵}\\times A}A\\sin(\\omega x+\\varphi)$。" },
+            { "kind": "note", "text": "先周期后相位时，平移量是 $\\dfrac{\\varphi}{\\omega}$ 而非 $\\varphi$，这是最常见的陷阱。求单调区间令 $-\\dfrac{\\pi}{2}+2k\\pi\\le\\omega x+\\varphi\\le\\dfrac{\\pi}{2}+2k\\pi$ 解 $x$。" }
+          ]
+        },
+        {
+          "heading": "例题详解",
+          "blocks": [
+            {
+              "kind": "eg",
+              "label": "例1（求周期与最值）",
+              "text": "对函数 $y=2\\sin\\!\\left(2x+\\dfrac{\\pi}{6}\\right)$，求振幅、周期及最大值。",
+              "solution": [
+                "振幅 $A=2$。",
+                "周期 $T=\\dfrac{2\\pi}{\\omega}=\\dfrac{2\\pi}{2}=\\pi$。",
+                "最大值为 $A=2$（当 $2x+\\dfrac{\\pi}{6}=\\dfrac{\\pi}{2}+2k\\pi$ 时取得）。"
+              ]
+            },
+            {
+              "kind": "eg",
+              "label": "例2（平移变换）",
+              "text": "将 $y=\\sin x$ 的图象向左平移 $\\dfrac{\\pi}{3}$ 个单位，所得函数解析式是什么？",
+              "solution": [
+                "向左平移 $\\dfrac{\\pi}{3}$：$x\\to x+\\dfrac{\\pi}{3}$。",
+                "所得函数为 $y=\\sin\\!\\left(x+\\dfrac{\\pi}{3}\\right)$。"
+              ]
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        { "q": "函数 $y=3\\sin(2x)$ 的振幅是？", "answer": "3", "tip": "A=3", "level": "基础" },
+        { "q": "函数 $y=\\sin(2x+\\frac{\\pi}{3})$ 的最小正周期是（含 π）？", "answer": "π", "tip": "T=2π/2=π", "level": "中档" },
+        { "q": "函数 $y=2\\sin(\\frac{1}{2}x)$ 的最小正周期是？", "answer": "4π", "tip": "T=2π/(1/2)=4π", "level": "中档" },
+        { "q": "$y=4\\sin(x)-1$ 的最大值是？", "answer": "3", "tip": "4×1-1", "level": "中档" },
+        { "q": "把 $y=\\sin x$ 向右平移 $\\frac{\\pi}{2}$ 得到的函数是（用 cos 或 sin 表示）？", "answer": "-cosx/sin(x-π/2)", "tip": "sin(x-π/2)=-cosx", "level": "较难" }
+      ]
+    },
+
+    {
+      "id": "6.1",
+      "category": "平面向量及其应用",
+      "subcategory": "向量的概念与线性运算",
+      "title": "平面向量的概念与线性运算",
+      "sections": [
+        {
+          "heading": "知识点",
+          "blocks": [
+            { "kind": "para", "text": "既有大小又有方向的量叫做向量，记作 $\\vec{a}$ 或 $\\overrightarrow{AB}$。$|\\vec{a}|$ 表示模（长度）。长度为 0 的向量叫零向量 $\\vec{0}$；长度为 1 的叫单位向量。方向相同或相反的非零向量叫共线（平行）向量。" },
+            {
+              "kind": "svg",
+              "caption": "图1  向量加法的三角形法则：a 的终点接 b 的起点，和为从 a 起点到 b 终点",
+              "svg": "<svg viewBox='0 0 260 150' xmlns='http://www.w3.org/2000/svg'><defs><marker id='ah6' markerWidth='9' markerHeight='9' refX='7' refY='3' orient='auto'><path d='M0,0 L7,3 L0,6 Z' fill='#555'/></marker></defs><line x1='30' y1='120' x2='143' y2='55' stroke='#2e5b9e' stroke-width='2.2' marker-end='url(#ah6)'/><line x1='150' y1='52' x2='224' y2='100' stroke='#1a8a4a' stroke-width='2.2' marker-end='url(#ah6)'/><line x1='30' y1='120' x2='222' y2='106' stroke='#c00000' stroke-width='2' stroke-dasharray='6 4' marker-end='url(#ah6)'/><text x='78' y='80' font-size='14' fill='#2e5b9e'>a</text><text x='190' y='68' font-size='14' fill='#1a8a4a'>b</text><text x='120' y='128' font-size='14' fill='#c00000'>a+b</text></svg>"
+            }
+          ]
+        },
+        {
+          "heading": "原理与方法",
+          "blocks": [
+            { "kind": "sub", "text": "线性运算与共线定理" },
+            { "kind": "bullet", "text": "加法：三角形法则、平行四边形法则；减法：$\\overrightarrow{AB}-\\overrightarrow{AC}=\\overrightarrow{CB}$（共起点，指向被减向量终点）。" },
+            { "kind": "bullet", "text": "数乘：$\\lambda\\vec{a}$ 与 $\\vec{a}$ 共线，$|\\lambda\\vec{a}|=|\\lambda||\\vec{a}|$。" },
+            { "kind": "formula", "text": "\\text{共线定理：}\\ \\vec{b}\\parallel\\vec{a}\\,(\\vec a\\ne\\vec0)\\ \\Leftrightarrow\\ \\exists\\lambda,\\ \\vec{b}=\\lambda\\vec{a}" },
+            { "kind": "note", "text": "三点 $A,B,C$ 共线 $\\Leftrightarrow \\overrightarrow{AB}=\\lambda\\overrightarrow{AC}$。凡“证明三点共线/求分点”优先用共线定理，避免坐标硬算。" }
+          ]
+        },
+        {
+          "heading": "例题详解",
+          "blocks": [
+            {
+              "kind": "eg",
+              "label": "例1（向量线性表示）",
+              "text": "在 $\\triangle ABC$ 中，$D$ 是 $BC$ 中点，用 $\\overrightarrow{AB},\\overrightarrow{AC}$ 表示 $\\overrightarrow{AD}$。",
+              "solution": [
+                "$D$ 为 $BC$ 中点，$\\overrightarrow{AD}=\\overrightarrow{AB}+\\overrightarrow{BD}=\\overrightarrow{AB}+\\dfrac12\\overrightarrow{BC}$。",
+                "$\\overrightarrow{BC}=\\overrightarrow{AC}-\\overrightarrow{AB}$，代入：",
+                "$\\overrightarrow{AD}=\\overrightarrow{AB}+\\dfrac12(\\overrightarrow{AC}-\\overrightarrow{AB})=\\dfrac12\\overrightarrow{AB}+\\dfrac12\\overrightarrow{AC}$。"
+              ]
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        { "q": "$\\overrightarrow{AB}+\\overrightarrow{BC}$ 化简为？（形如 向量AC，答 AC）", "answer": "AC/向量AC", "tip": "首尾相接", "level": "基础" },
+        { "q": "$\\overrightarrow{AB}-\\overrightarrow{AC}$ 化简为？（答形如 CB）", "answer": "CB/向量CB", "tip": "共起点指向被减向量终点", "level": "中档" },
+        { "q": "单位向量的模等于？", "answer": "1", "tip": "定义", "level": "基础" },
+        { "q": "若 $\\vec{b}=3\\vec{a}$，则 $\\vec a$ 与 $\\vec b$ 是否共线（是/否）？", "answer": "是", "tip": "数乘向量共线", "level": "基础" }
+      ]
+    },
+    {
+      "id": "6.2",
+      "category": "平面向量及其应用",
+      "subcategory": "平面向量基本定理与坐标运算",
+      "title": "平面向量基本定理与坐标运算",
+      "sections": [
+        {
+          "heading": "知识点",
+          "blocks": [
+            { "kind": "para", "text": "平面向量基本定理：若 $\\vec{e_1},\\vec{e_2}$ 不共线，则平面内任一向量 $\\vec{a}$ 都可唯一表示为 $\\vec{a}=\\lambda_1\\vec{e_1}+\\lambda_2\\vec{e_2}$。" },
+            { "kind": "para", "text": "在直角坐标系中取基底为单位正交向量，$\\vec{a}=(x,y)$。设 $\\vec{a}=(x_1,y_1),\\vec{b}=(x_2,y_2)$：" },
+            { "kind": "formula", "text": "\\vec{a}\\pm\\vec{b}=(x_1\\pm x_2,\\ y_1\\pm y_2),\\qquad \\lambda\\vec{a}=(\\lambda x_1,\\ \\lambda y_1)" }
+          ]
+        },
+        {
+          "heading": "原理与方法",
+          "blocks": [
+            { "kind": "sub", "text": "坐标形式的模、共线条件" },
+            { "kind": "formula", "text": "|\\vec{a}|=\\sqrt{x_1^{2}+y_1^{2}};\\qquad \\vec{a}\\parallel\\vec{b}\\ \\Leftrightarrow\\ x_1y_2-x_2y_1=0" },
+            { "kind": "bullet", "text": "由两点求向量：$\\overrightarrow{AB}=(x_B-x_A,\\ y_B-y_A)$。" },
+            { "kind": "note", "text": "共线用“交叉相乘相等”$x_1y_2=x_2y_1$，垂直用数量积为 0（见下一节）。两者不要混淆。" }
+          ]
+        },
+        {
+          "heading": "例题详解",
+          "blocks": [
+            {
+              "kind": "eg",
+              "label": "例1（坐标运算与共线）",
+              "text": "已知 $\\vec{a}=(1,2)$，$\\vec{b}=(x,4)$，且 $\\vec{a}\\parallel\\vec{b}$，求 $x$。",
+              "solution": [
+                "由共线条件 $x_1y_2-x_2y_1=0$：$1\\times4-x\\times2=0$。",
+                "$4-2x=0\\Rightarrow x=2$。"
+              ]
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        { "q": "已知 $\\vec a=(1,2),\\vec b=(3,-1)$，则 $\\vec a+\\vec b$=？（形如 (4,1)）", "answer": "(4,1)", "tip": "对应相加", "level": "基础" },
+        { "q": "向量 $\\vec a=(3,4)$ 的模 $|\\vec a|$=？", "answer": "5", "tip": "√(9+16)", "level": "基础" },
+        { "q": "已知 A(1,2),B(4,6)，则 $\\overrightarrow{AB}$=？", "answer": "(3,4)", "tip": "终点减起点", "level": "中档" },
+        { "q": "若 $(2,3)$ 与 $(4,m)$ 共线，则 m=？", "answer": "6", "tip": "2m-12=0", "level": "中档" }
+      ]
+    },
+    {
+      "id": "6.3",
+      "category": "平面向量及其应用",
+      "subcategory": "平面向量的数量积",
+      "title": "平面向量的数量积",
+      "sections": [
+        {
+          "heading": "知识点",
+          "blocks": [
+            { "kind": "para", "text": "两非零向量夹角为 $\\theta$，数量积定义为：" },
+            { "kind": "formula", "text": "\\vec{a}\\cdot\\vec{b}=|\\vec{a}|\\,|\\vec{b}|\\cos\\theta" },
+            { "kind": "para", "text": "坐标形式（$\\vec a=(x_1,y_1),\\vec b=(x_2,y_2)$）：" },
+            { "kind": "formula", "text": "\\vec{a}\\cdot\\vec{b}=x_1x_2+y_1y_2" }
+          ]
+        },
+        {
+          "heading": "原理与方法",
+          "blocks": [
+            { "kind": "sub", "text": "夹角、垂直与模的公式" },
+            { "kind": "formula", "text": "\\cos\\theta=\\frac{\\vec a\\cdot\\vec b}{|\\vec a||\\vec b|}=\\frac{x_1x_2+y_1y_2}{\\sqrt{x_1^2+y_1^2}\\sqrt{x_2^2+y_2^2}}" },
+            { "kind": "formula", "text": "\\vec a\\perp\\vec b\\ \\Leftrightarrow\\ \\vec a\\cdot\\vec b=0\\ \\Leftrightarrow\\ x_1x_2+y_1y_2=0" },
+            { "kind": "note", "text": "$\\vec a\\cdot\\vec a=|\\vec a|^2$，常用来把“模的平方”转成数量积展开：$|\\vec a\\pm\\vec b|^2=|\\vec a|^2\\pm2\\vec a\\cdot\\vec b+|\\vec b|^2$。垂直用点积为 0，平行用坐标交叉积为 0。" }
+          ]
+        },
+        {
+          "heading": "例题详解",
+          "blocks": [
+            {
+              "kind": "eg",
+              "label": "例1（数量积与夹角）",
+              "text": "已知 $\\vec a=(1,0),\\vec b=(1,\\sqrt3)$，求 $\\vec a\\cdot\\vec b$ 及夹角 $\\theta$。",
+              "solution": [
+                "$\\vec a\\cdot\\vec b=1\\times1+0\\times\\sqrt3=1$。",
+                "$|\\vec a|=1,\\ |\\vec b|=\\sqrt{1+3}=2$。",
+                "$\\cos\\theta=\\dfrac{1}{1\\times2}=\\dfrac12$，故 $\\theta=60^\\circ$。"
+              ]
+            },
+            {
+              "kind": "eg",
+              "label": "例2（垂直求参数）",
+              "text": "已知 $\\vec a=(2,1),\\vec b=(m,-2)$，且 $\\vec a\\perp\\vec b$，求 $m$。",
+              "solution": [
+                "$\\vec a\\perp\\vec b\\Rightarrow \\vec a\\cdot\\vec b=0$。",
+                "$2m+1\\times(-2)=0\\Rightarrow 2m-2=0\\Rightarrow m=1$。"
+              ]
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        { "q": "$\\vec a=(1,2),\\vec b=(3,4)$，则 $\\vec a\\cdot\\vec b$=？", "answer": "11", "tip": "1×3+2×4", "level": "基础" },
+        { "q": "若 $\\vec a\\cdot\\vec b=0$，则 $\\vec a$ 与 $\\vec b$ 的位置关系是（垂直/平行）？", "answer": "垂直", "tip": "点积为0", "level": "基础" },
+        { "q": "$\\vec a=(1,0),\\vec b=(0,1)$，夹角为（填数字，单位度）？", "answer": "90", "tip": "点积0，垂直", "level": "中档" },
+        { "q": "已知 $|\\vec a|=2$，则 $\\vec a\\cdot\\vec a$=？", "answer": "4", "tip": "=|a|²", "level": "中档" },
+        { "q": "$\\vec a=(1,1),\\vec b=(k,-1)$ 垂直，则 k=？", "answer": "1", "tip": "k-1=0", "level": "中档" }
+      ]
+    },
+    {
+      "id": "6.4",
+      "category": "平面向量及其应用",
+      "subcategory": "解三角形",
+      "title": "正弦定理与余弦定理",
+      "sections": [
+        {
+          "heading": "知识点",
+          "blocks": [
+            { "kind": "para", "text": "在 $\\triangle ABC$ 中，$a,b,c$ 分别为角 $A,B,C$ 的对边，$R$ 为外接圆半径。" },
+            { "kind": "sub", "text": "正弦定理" },
+            { "kind": "formula", "text": "\\frac{a}{\\sin A}=\\frac{b}{\\sin B}=\\frac{c}{\\sin C}=2R" },
+            { "kind": "sub", "text": "余弦定理" },
+            { "kind": "formula", "text": "a^{2}=b^{2}+c^{2}-2bc\\cos A,\\qquad \\cos A=\\frac{b^{2}+c^{2}-a^{2}}{2bc}" }
+          ]
+        },
+        {
+          "heading": "原理与方法",
+          "blocks": [
+            { "kind": "bullet", "text": "已知两角及一边、或两边及一边对角 → 用正弦定理。" },
+            { "kind": "bullet", "text": "已知两边及夹角、或三边 → 用余弦定理。" },
+            { "kind": "sub", "text": "三角形面积" },
+            { "kind": "formula", "text": "S=\\frac12 ab\\sin C=\\frac12 bc\\sin A=\\frac12 ac\\sin B" },
+            { "kind": "note", "text": "已知两边及一边对角（SSA）用正弦定理求角时可能有两解，要用“大边对大角”和三角形内角和检验，舍去不合理的解。" }
+          ]
+        },
+        {
+          "heading": "例题详解",
+          "blocks": [
+            {
+              "kind": "eg",
+              "label": "例1（余弦定理求边）",
+              "text": "在 $\\triangle ABC$ 中，$b=2,\\ c=3,\\ A=60^{\\circ}$，求 $a$。",
+              "solution": [
+                "由余弦定理 $a^2=b^2+c^2-2bc\\cos A$：",
+                "$a^2=4+9-2\\times2\\times3\\times\\cos60^\\circ=13-12\\times\\dfrac12=13-6=7$。",
+                "$a=\\sqrt7$。"
+              ]
+            },
+            {
+              "kind": "eg",
+              "label": "例2（面积公式）",
+              "text": "在 $\\triangle ABC$ 中，$a=3,\\ b=4,\\ C=30^{\\circ}$，求面积 $S$。",
+              "solution": [
+                "$S=\\dfrac12 ab\\sin C=\\dfrac12\\times3\\times4\\times\\sin30^\\circ=6\\times\\dfrac12=3$。"
+              ]
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        { "q": "在 △ABC 中，$a=2,b=2,C=60°$，则 c=？", "answer": "2", "tip": "c²=4+4-8·½=4", "level": "中档" },
+        { "q": "△ABC 中 $a=1,b=1,C=90°$，面积 S=？", "answer": "1/2", "tip": "½·1·1·sin90°", "level": "基础" },
+        { "q": "△ABC 外接圆半径 R=1，则 $\\dfrac{a}{\\sin A}$=？", "answer": "2", "tip": "=2R", "level": "中档" },
+        { "q": "△ABC 中三边 3,4,5，则最大角是（填数字，单位度）？", "answer": "90", "tip": "3²+4²=5²，直角", "level": "较难" },
+        { "q": "△ABC 中 $b=2,c=2\\sqrt3,A=30°$，面积 S=？", "answer": "√3", "tip": "½·2·2√3·½", "level": "中档" }
+      ]
+    },
+
+    {
+      "id": "7.1",
+      "category": "复数",
+      "subcategory": "复数的概念",
+      "title": "复数的概念与几何意义",
+      "sections": [
+        {
+          "heading": "知识点",
+          "blocks": [
+            { "kind": "para", "text": "形如 $z=a+bi$（$a,b\\in\\mathbf{R}$，$i^{2}=-1$）的数叫复数，$a$ 为实部，$b$ 为虚部。" },
+            { "kind": "bullet", "text": "$b=0$ 时为实数；$b\\ne0$ 时为虚数；$a=0$ 且 $b\\ne0$ 时为纯虚数。" },
+            { "kind": "bullet", "text": "复数 $z=a+bi$ 与复平面内点 $Z(a,b)$、向量 $\\overrightarrow{OZ}$ 一一对应。" },
+            { "kind": "bullet", "text": "共轭复数：$\\overline{z}=a-bi$；模：$|z|=\\sqrt{a^{2}+b^{2}}$。" },
+            {
+              "kind": "svg",
+              "caption": "图1  复平面：复数 z=a+bi 对应点 Z(a,b) 与向量 OZ，模 |z| 即 OZ 的长度",
+              "svg": "<svg viewBox='0 0 260 200' xmlns='http://www.w3.org/2000/svg'><defs><marker id='ahz' markerWidth='9' markerHeight='9' refX='7' refY='3' orient='auto'><path d='M0,0 L7,3 L0,6 Z' fill='#c00000'/></marker></defs><line x1='20' y1='150' x2='248' y2='150' stroke='#333' stroke-width='1.3'/><line x1='90' y1='18' x2='90' y2='178' stroke='#333' stroke-width='1.3'/><line x1='180' y1='150' x2='180' y2='70' stroke='#bbb' stroke-dasharray='4 3'/><line x1='90' y1='70' x2='180' y2='70' stroke='#bbb' stroke-dasharray='4 3'/><line x1='90' y1='150' x2='178' y2='71' stroke='#c00000' stroke-width='2' marker-end='url(#ahz)'/><circle cx='180' cy='70' r='3' fill='#c00000'/><text x='185' y='66' font-size='12' fill='#c00000'>Z(a,b)</text><text x='175' y='165' font-size='11'>a</text><text x='72' y='74' font-size='11'>b</text><text x='222' y='145' font-size='11'>实轴</text><text x='58' y='28' font-size='11'>虚轴</text><text x='94' y='164' font-size='11'>O</text></svg>"
+            }
+          ]
+        },
+        {
+          "heading": "原理与方法",
+          "blocks": [
+            { "kind": "sub", "text": "复数相等与分类的处理" },
+            { "kind": "formula", "text": "a+bi=c+di\\ \\Leftrightarrow\\ a=c\\ \\text{且}\\ b=d" },
+            { "kind": "note", "text": "判断纯虚数：实部 $=0$ 且虚部 $\\ne0$（两个条件缺一不可，常漏掉“虚部非零”）。$|z|=|\\overline z|$，且 $z\\cdot\\overline z=|z|^2$。" }
+          ]
+        },
+        {
+          "heading": "例题详解",
+          "blocks": [
+            {
+              "kind": "eg",
+              "label": "例1（复数分类求参数）",
+              "text": "已知 $z=(m^{2}-1)+(m-1)i$ 为纯虚数，求实数 $m$。",
+              "solution": [
+                "纯虚数要求实部为 0 且虚部非 0。",
+                "实部：$m^2-1=0\\Rightarrow m=\\pm1$。",
+                "虚部非零：$m-1\\ne0\\Rightarrow m\\ne1$。",
+                "故 $m=-1$。"
+              ]
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        { "q": "复数 $3+4i$ 的实部是？", "answer": "3", "tip": "a=3", "level": "基础" },
+        { "q": "复数 $3+4i$ 的模 $|z|$=？", "answer": "5", "tip": "√(9+16)", "level": "基础" },
+        { "q": "复数 $2-5i$ 的共轭复数是？（形如 2+5i）", "answer": "2+5i", "tip": "虚部变号", "level": "基础" },
+        { "q": "若 $a+bi=3-2i$，则 b=？", "answer": "-2", "tip": "虚部相等", "level": "中档" },
+        { "q": "复数 $0+2i$ 是（实数/虚数/纯虚数）？", "answer": "纯虚数", "tip": "实部0虚部非0", "level": "中档" }
+      ]
+    },
+    {
+      "id": "7.2",
+      "category": "复数",
+      "subcategory": "复数的运算",
+      "title": "复数的四则运算",
+      "sections": [
+        {
+          "heading": "知识点",
+          "blocks": [
+            { "kind": "para", "text": "设 $z_1=a+bi,\\ z_2=c+di$：" },
+            { "kind": "formula", "text": "z_1\\pm z_2=(a\\pm c)+(b\\pm d)i" },
+            { "kind": "formula", "text": "z_1\\cdot z_2=(ac-bd)+(ad+bc)i" },
+            { "kind": "para", "text": "除法：分子分母同乘分母的共轭复数，使分母实数化。" },
+            { "kind": "formula", "text": "\\frac{z_1}{z_2}=\\frac{(a+bi)(c-di)}{(c+di)(c-di)}=\\frac{(ac+bd)+(bc-ad)i}{c^{2}+d^{2}}" }
+          ]
+        },
+        {
+          "heading": "原理与方法",
+          "blocks": [
+            { "kind": "sub", "text": "i 的幂周期性（周期 4）" },
+            { "kind": "formula", "text": "i^{1}=i,\\ i^{2}=-1,\\ i^{3}=-i,\\ i^{4}=1,\\quad i^{n}=i^{\\,n\\bmod 4}" },
+            { "kind": "note", "text": "乘法按多项式展开并用 $i^2=-1$；除法务必“分母实数化”。求 $i^n$ 先把 $n$ 除以 4 取余数。" }
+          ]
+        },
+        {
+          "heading": "例题详解",
+          "blocks": [
+            {
+              "kind": "eg",
+              "label": "例1（乘法）",
+              "text": "计算 $(2+i)(1-3i)$。",
+              "solution": [
+                "$(2+i)(1-3i)=2\\times1+2\\times(-3i)+i\\times1+i\\times(-3i)$",
+                "$=2-6i+i-3i^2=2-5i-3(-1)=2-5i+3=5-5i$。"
+              ]
+            },
+            {
+              "kind": "eg",
+              "label": "例2（除法，分母实数化）",
+              "text": "计算 $\\dfrac{1+i}{1-i}$。",
+              "solution": [
+                "分子分母同乘 $(1+i)$：$\\dfrac{(1+i)(1+i)}{(1-i)(1+i)}=\\dfrac{1+2i+i^2}{1-i^2}$。",
+                "$=\\dfrac{1+2i-1}{1+1}=\\dfrac{2i}{2}=i$。"
+              ]
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        { "q": "$(1+i)+(2-3i)$=？（形如 3-2i）", "answer": "3-2i", "tip": "实虚部分别相加", "level": "基础" },
+        { "q": "$i^2$=？", "answer": "-1", "tip": "定义", "level": "基础" },
+        { "q": "$(1+i)^2$=？（形如 2i）", "answer": "2i", "tip": "1+2i+i²=2i", "level": "中档" },
+        { "q": "$i^{4}$=？", "answer": "1", "tip": "周期4", "level": "基础" },
+        { "q": "$\\dfrac{2}{i}$=？（形如 -2i）", "answer": "-2i", "tip": "分母乘 -i：2·(-i)/1", "level": "较难" },
+        { "q": "$i^{2025}$=？", "answer": "i", "tip": "2025÷4余1", "level": "较难" }
+      ]
+    },
+
+    {
+      "id": "8.1",
+      "category": "立体几何初步",
+      "subcategory": "空间几何体",
+      "title": "空间几何体的表面积与体积",
+      "sections": [
+        {
+          "heading": "知识点",
+          "blocks": [
+            { "kind": "para", "text": "常见旋转体：圆柱、圆锥、圆台、球；多面体：棱柱、棱锥、棱台。下图以圆柱为例（底面半径 r，高 h）。" },
+            {
+              "kind": "svg",
+              "caption": "图1  圆柱：底面半径 r、高 h，侧面展开是矩形（长 2πr，宽 h）",
+              "svg": "<svg viewBox='0 0 200 210' xmlns='http://www.w3.org/2000/svg'><ellipse cx='100' cy='45' rx='55' ry='17' fill='#eaf1fb' stroke='#2e5b9e' stroke-width='1.6'/><path d='M45 45 A55 17 0 0 0 155 45' fill='none' stroke='#2e5b9e' stroke-width='1.6'/><path d='M45 165 A55 17 0 0 0 155 165' fill='none' stroke='#2e5b9e' stroke-width='1.6'/><path d='M45 165 A55 17 0 0 1 155 165' fill='none' stroke='#2e5b9e' stroke-width='1.6' stroke-dasharray='4 3'/><line x1='45' y1='45' x2='45' y2='165' stroke='#2e5b9e' stroke-width='1.6'/><line x1='155' y1='45' x2='155' y2='165' stroke='#2e5b9e' stroke-width='1.6'/><line x1='100' y1='45' x2='155' y2='45' stroke='#c00000' stroke-width='1.4'/><text x='120' y='40' font-size='12' fill='#c00000'>r</text><line x1='170' y1='45' x2='170' y2='165' stroke='#1a8a4a' stroke-width='1.2' stroke-dasharray='3 3'/><text x='175' y='110' font-size='12' fill='#1a8a4a'>h</text><circle cx='100' cy='45' r='2' fill='#c00000'/></svg>"
+            }
+          ]
+        },
+        {
+          "heading": "原理与方法",
+          "blocks": [
+            { "kind": "sub", "text": "表面积公式（r 为底面半径，l 为母线，h 为高）" },
+            { "kind": "formula", "text": "\\text{圆柱：}\\ S=2\\pi r^{2}+2\\pi rh;\\qquad \\text{圆锥：}\\ S=\\pi r^{2}+\\pi rl;\\qquad \\text{球：}\\ S=4\\pi r^{2}" },
+            { "kind": "sub", "text": "体积公式" },
+            { "kind": "formula", "text": "V_{\\text{柱}}=Sh,\\quad V_{\\text{锥}}=\\frac13 Sh,\\quad V_{\\text{球}}=\\frac43\\pi r^{3}" },
+            { "kind": "note", "text": "锥体体积是同底等高柱体的 $\\dfrac13$。圆锥中母线 $l$、高 $h$、半径 $r$ 构成直角三角形：$l^2=r^2+h^2$，求侧面积常需先由此求 $l$。" }
+          ]
+        },
+        {
+          "heading": "例题详解",
+          "blocks": [
+            {
+              "kind": "eg",
+              "label": "例1（圆柱表面积与体积）",
+              "text": "圆柱底面半径 $r=2$，高 $h=5$，求它的体积与表面积。",
+              "solution": [
+                "体积 $V=\\pi r^2 h=\\pi\\times4\\times5=20\\pi$。",
+                "表面积 $S=2\\pi r^2+2\\pi rh=2\\pi\\times4+2\\pi\\times2\\times5=8\\pi+20\\pi=28\\pi$。"
+              ]
+            },
+            {
+              "kind": "eg",
+              "label": "例2（圆锥，先求母线）",
+              "text": "圆锥底面半径 $r=3$，高 $h=4$，求侧面积。",
+              "solution": [
+                "母线 $l=\\sqrt{r^2+h^2}=\\sqrt{9+16}=5$。",
+                "侧面积 $S_{\\text{侧}}=\\pi r l=\\pi\\times3\\times5=15\\pi$。"
+              ]
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        { "q": "半径为 3 的球的表面积是（含 π）？", "answer": "36π", "tip": "4πr²=4π·9", "level": "基础" },
+        { "q": "半径为 3 的球的体积是（含 π）？", "answer": "36π", "tip": "(4/3)π·27", "level": "中档" },
+        { "q": "底面半径 1、高 3 的圆柱体积是（含 π）？", "answer": "3π", "tip": "πr²h=π·1·3", "level": "基础" },
+        { "q": "底面半径 3、高 4 的圆锥体积是（含 π）？", "answer": "12π", "tip": "(1/3)π·9·4", "level": "中档" },
+        { "q": "圆锥底面半径 6、母线 10，则高 h=？", "answer": "8", "tip": "√(10²-6²)", "level": "较难" }
+      ]
+    },
+    {
+      "id": "8.2",
+      "category": "立体几何初步",
+      "subcategory": "点、直线、平面的位置关系",
+      "title": "空间点、直线、平面的位置关系",
+      "sections": [
+        {
+          "heading": "知识点",
+          "blocks": [
+            { "kind": "sub", "text": "三个基本事实（公理）" },
+            { "kind": "bullet", "text": "基本事实1：过不在一条直线上的三个点，有且只有一个平面（三点定面）。" },
+            { "kind": "bullet", "text": "基本事实2：若一条直线上的两点在一个平面内，则这条直线在此平面内。" },
+            { "kind": "bullet", "text": "基本事实3：两个不重合平面若有一个公共点，则有且只有一条过该点的公共直线（交线）。" }
+          ]
+        },
+        {
+          "heading": "原理与方法",
+          "blocks": [
+            { "kind": "sub", "text": "空间两直线的三种关系" },
+            { "kind": "bullet", "text": "相交（有唯一公共点，共面）、平行（无公共点，共面）、异面（不同在任何一个平面内）。" },
+            { "kind": "sub", "text": "等角定理与异面直线所成角" },
+            { "kind": "para", "text": "异面直线所成角：把其中一条平移到与另一条相交，所得锐角（或直角）即为所成角，范围 $\\left(0,\\dfrac{\\pi}{2}\\right]$。" },
+            { "kind": "note", "text": "判断异面：既不相交也不平行。常用反证法或“过直线外一点作平行线”把异面角转化为平面角。" }
+          ]
+        },
+        {
+          "heading": "例题详解",
+          "blocks": [
+            {
+              "kind": "eg",
+              "label": "例1（正方体中的异面直线）",
+              "text": "正方体 $ABCD\\text{-}A_1B_1C_1D_1$ 中，判断 $AB$ 与 $CC_1$ 的位置关系。",
+              "solution": [
+                "$AB$ 在底面 $ABCD$ 内，$CC_1$ 是竖直棱。",
+                "两者无公共点，且不存在同时包含它们的平面。",
+                "故 $AB$ 与 $CC_1$ 是异面直线。"
+              ]
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        { "q": "过不共线的三点可确定几个平面？", "answer": "1", "tip": "基本事实1", "level": "基础" },
+        { "q": "空间两条直线若无公共点，则它们平行或____？", "answer": "异面", "tip": "无公共点可能异面", "level": "中档" },
+        { "q": "异面直线所成角的取值范围是（用区间，含 π）？", "answer": "(0,π/2]", "tip": "锐角或直角", "level": "中档" }
+      ]
+    },
+    {
+      "id": "8.3",
+      "category": "立体几何初步",
+      "subcategory": "平行与垂直",
+      "title": "直线、平面平行的判定与性质",
+      "sections": [
+        {
+          "heading": "知识点",
+          "blocks": [
+            { "kind": "sub", "text": "线面平行" },
+            { "kind": "bullet", "text": "判定：平面外一条直线与此平面内的一条直线平行，则该直线与此平面平行（线线平行 ⇒ 线面平行）。" },
+            { "kind": "bullet", "text": "性质：一条直线与一个平面平行，若过该直线的平面与此平面相交，则该直线与交线平行（线面平行 ⇒ 线线平行）。" },
+            { "kind": "sub", "text": "面面平行" },
+            { "kind": "bullet", "text": "判定：一个平面内两条相交直线分别与另一个平面平行，则两平面平行。" },
+            { "kind": "bullet", "text": "性质：两平行平面被第三个平面所截，两条交线平行。" }
+          ]
+        },
+        {
+          "heading": "原理与方法",
+          "blocks": [
+            { "kind": "note", "text": "证线面平行的通法：在平面内“找/作”一条与已知直线平行的直线（常借助中位线、平行四边形对边）。核心链条：线线平行 ⇄ 线面平行 ⇄ 面面平行，判定与性质互为转化。" }
+          ]
+        },
+        {
+          "heading": "例题详解",
+          "blocks": [
+            {
+              "kind": "eg",
+              "label": "例1（中位线证线面平行）",
+              "text": "四面体 $ABCD$ 中，$E,F$ 分别是 $AB,AC$ 的中点。求证：$EF\\parallel$ 平面 $BCD$。",
+              "solution": [
+                "$E,F$ 分别为 $AB,AC$ 中点，由三角形中位线定理 $EF\\parallel BC$。",
+                "$BC\\subset$ 平面 $BCD$，而 $EF\\not\\subset$ 平面 $BCD$。",
+                "由线面平行判定定理，$EF\\parallel$ 平面 $BCD$。"
+              ]
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        { "q": "线面平行判定定理需要在平面内找一条与已知直线____的直线（填 平行）？", "answer": "平行", "tip": "线线平行推线面平行", "level": "基础" },
+        { "q": "两个平面平行，被第三个平面所截，两交线的关系是（平行/相交）？", "answer": "平行", "tip": "面面平行性质", "level": "中档" },
+        { "q": "证明面面平行，需一个面内两条____直线都平行于另一个面（填 相交）？", "answer": "相交", "tip": "两相交直线", "level": "中档" }
+      ]
+    },
+    {
+      "id": "8.4",
+      "category": "立体几何初步",
+      "subcategory": "平行与垂直",
+      "title": "直线、平面垂直的判定与性质",
+      "sections": [
+        {
+          "heading": "知识点",
+          "blocks": [
+            { "kind": "sub", "text": "线面垂直" },
+            { "kind": "bullet", "text": "判定：若一条直线与平面内两条相交直线都垂直，则该直线与此平面垂直。" },
+            { "kind": "bullet", "text": "性质：垂直于同一平面的两条直线平行。" },
+            {
+              "kind": "svg",
+              "caption": "图1  线面垂直：l 垂直于平面 α 内两条相交直线 a、b，则 l⊥α",
+              "svg": "<svg viewBox='0 0 240 190' xmlns='http://www.w3.org/2000/svg'><polygon points='30,150 170,150 210,110 70,110' fill='#eef4fc' stroke='#2e5b9e' stroke-width='1.4'/><line x1='120' y1='130' x2='120' y2='30' stroke='#c00000' stroke-width='2.2'/><line x1='70' y1='130' x2='175' y2='130' stroke='#1a8a4a' stroke-width='1.6'/><line x1='95' y1='145' x2='150' y2='112' stroke='#1a8a4a' stroke-width='1.6'/><rect x='120' y='123' width='7' height='7' fill='none' stroke='#c00000' stroke-width='1'/><text x='125' y='28' font-size='13' fill='#c00000'>l</text><text x='178' y='132' font-size='12' fill='#1a8a4a'>a</text><text x='150' y='108' font-size='12' fill='#1a8a4a'>b</text><text x='196' y='128' font-size='13' fill='#2e5b9e'>α</text></svg>"
+            }
+          ]
+        },
+        {
+          "heading": "原理与方法",
+          "blocks": [
+            { "kind": "sub", "text": "面面垂直" },
+            { "kind": "bullet", "text": "判定：若一个平面过另一个平面的一条垂线，则两平面垂直。" },
+            { "kind": "bullet", "text": "性质：两平面垂直，则一个平面内垂直于交线的直线垂直于另一个平面。" },
+            { "kind": "note", "text": "线面垂直判定的关键是“两条相交直线”，只垂直于一条不够。证明线面垂直往往先在平面内找到两条相交直线分别与目标线垂直。" }
+          ]
+        },
+        {
+          "heading": "例题详解",
+          "blocks": [
+            {
+              "kind": "eg",
+              "label": "例1（线面垂直判定）",
+              "text": "正方体 $ABCD\\text{-}A_1B_1C_1D_1$ 中，求证：$DD_1\\perp$ 平面 $ABCD$。",
+              "solution": [
+                "$DD_1$ 是竖直棱，$DA,DC$ 是底面内两条相交直线。",
+                "由正方体性质 $DD_1\\perp DA$，$DD_1\\perp DC$。",
+                "$DA\\cap DC=D$，由线面垂直判定定理，$DD_1\\perp$ 平面 $ABCD$。"
+              ]
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        { "q": "线面垂直判定需直线垂直于平面内____条相交直线（填数字）？", "answer": "2", "tip": "两条相交直线", "level": "基础" },
+        { "q": "垂直于同一平面的两条直线一定____（填 平行）？", "answer": "平行", "tip": "线面垂直性质", "level": "中档" },
+        { "q": "若直线 l 垂直于平面 α，则 l 与 α 内任意直线的关系是（垂直/平行）？", "answer": "垂直", "tip": "线面垂直定义", "level": "中档" }
+      ]
+    },
+
+    {
+      "id": "9.1",
+      "category": "统计",
+      "subcategory": "抽样",
+      "title": "简单随机抽样与分层抽样",
+      "sections": [
+        {
+          "heading": "知识点",
+          "blocks": [
+            { "kind": "bullet", "text": "简单随机抽样：逐个不放回、每个个体被抽到的概率相等，适用于总体个数较少且个体差异不大。方法有抽签法、随机数表法。" },
+            { "kind": "bullet", "text": "分层随机抽样：总体由差异明显的几层组成时，按各层所占比例抽取，使样本更有代表性。" }
+          ]
+        },
+        {
+          "heading": "原理与方法",
+          "blocks": [
+            { "kind": "sub", "text": "分层抽样的比例关系" },
+            { "kind": "formula", "text": "\\frac{\\text{某层抽取人数}}{\\text{该层总人数}}=\\frac{\\text{样本容量 }n}{\\text{总体容量 }N}" },
+            { "kind": "note", "text": "分层抽样各层抽样比相同；先算抽样比 $\\dfrac{n}{N}$，再乘各层人数。总体差异大用分层，差异小用简单随机。" }
+          ]
+        },
+        {
+          "heading": "例题详解",
+          "blocks": [
+            {
+              "kind": "eg",
+              "label": "例1（分层抽样）",
+              "text": "某校高一 500 人、高二 400 人、高三 300 人，用分层抽样抽取 60 人，各年级抽多少？",
+              "solution": [
+                "总体 $N=500+400+300=1200$，抽样比 $\\dfrac{60}{1200}=\\dfrac{1}{20}$。",
+                "高一 $500\\times\\dfrac{1}{20}=25$ 人；高二 $400\\times\\dfrac{1}{20}=20$ 人；高三 $300\\times\\dfrac{1}{20}=15$ 人。"
+              ]
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        { "q": "总体 1000 人抽 50 人，抽样比是（写成分数如 1/20）？", "answer": "1/20", "tip": "50/1000", "level": "基础" },
+        { "q": "某层有 200 人，抽样比 1/10，该层抽取几人？", "answer": "20", "tip": "200×1/10", "level": "基础" },
+        { "q": "男生 600、女生 400，分层抽 50 人，抽取男生几人？", "answer": "30", "tip": "600×50/1000", "level": "中档" }
+      ]
+    },
+    {
+      "id": "9.2",
+      "category": "统计",
+      "subcategory": "用样本估计总体",
+      "title": "频率分布直方图与数字特征",
+      "sections": [
+        {
+          "heading": "知识点",
+          "blocks": [
+            { "kind": "para", "text": "频率分布直方图中，纵轴是“频率/组距”，每个小矩形面积 = 该组频率，所有矩形面积之和为 1。" },
+            {
+              "kind": "svg",
+              "caption": "图1  频率分布直方图（纵轴为频率/组距，矩形面积=频率，总面积=1）",
+              "svg": "<svg viewBox='0 0 280 180' xmlns='http://www.w3.org/2000/svg'><line x1='35' y1='150' x2='265' y2='150' stroke='#333' stroke-width='1.3'/><line x1='35' y1='20' x2='35' y2='150' stroke='#333' stroke-width='1.3'/><rect x='35' y='120' width='38' height='30' fill='#cfe0f6' stroke='#2e5b9e'/><rect x='73' y='80' width='38' height='70' fill='#cfe0f6' stroke='#2e5b9e'/><rect x='111' y='55' width='38' height='95' fill='#9dc0ec' stroke='#2e5b9e'/><rect x='149' y='95' width='38' height='55' fill='#cfe0f6' stroke='#2e5b9e'/><rect x='187' y='130' width='38' height='20' fill='#cfe0f6' stroke='#2e5b9e'/><text x='18' y='30' font-size='10'>频率/组距</text><text x='250' y='165' font-size='11'>x</text></svg>"
+            }
+          ]
+        },
+        {
+          "heading": "原理与方法",
+          "blocks": [
+            { "kind": "sub", "text": "数字特征" },
+            { "kind": "formula", "text": "\\bar{x}=\\frac1n\\sum_{i=1}^{n}x_i,\\qquad s^{2}=\\frac1n\\sum_{i=1}^{n}(x_i-\\bar{x})^{2}" },
+            { "kind": "bullet", "text": "标准差 $s=\\sqrt{s^2}$，反映数据的离散程度（越大越分散）。" },
+            { "kind": "bullet", "text": "中位数：从小到大排序后处于中间位置的数；众数：出现次数最多的数。" },
+            { "kind": "note", "text": "在直方图中，中位数左右两侧小矩形面积各为 0.5；用直方图估计平均数时，用各组“组中值 × 频率”求和。" }
+          ]
+        },
+        {
+          "heading": "例题详解",
+          "blocks": [
+            {
+              "kind": "eg",
+              "label": "例1（平均数与方差）",
+              "text": "数据 $2,4,4,6$ 的平均数与方差。",
+              "solution": [
+                "平均数 $\\bar x=\\dfrac{2+4+4+6}{4}=4$。",
+                "方差 $s^2=\\dfrac14[(2-4)^2+(4-4)^2+(4-4)^2+(6-4)^2]=\\dfrac14(4+0+0+4)=2$。"
+              ]
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        { "q": "频率分布直方图中所有小矩形面积之和等于？", "answer": "1", "tip": "总频率为1", "level": "基础" },
+        { "q": "数据 1,2,3,4,5 的平均数是？", "answer": "3", "tip": "15/5", "level": "基础" },
+        { "q": "数据 1,3,5 的方差是？", "answer": "8/3", "tip": "均值3，[(4+0+4)]/3", "level": "中档" },
+        { "q": "数据 3,5,7,9 的中位数是？", "answer": "6", "tip": "中间两数(5+7)/2", "level": "中档" },
+        { "q": "一组数据方差为 0，说明这组数据（各不相同/完全相同）？", "answer": "完全相同", "tip": "方差0无波动", "level": "较难" }
+      ]
+    },
+
+    {
+      "id": "10.1",
+      "category": "概率",
+      "subcategory": "事件与概率",
+      "title": "随机事件、事件的关系与运算",
+      "sections": [
+        {
+          "heading": "知识点",
+          "blocks": [
+            { "kind": "bullet", "text": "在一定条件下必然发生的是必然事件，不可能发生的是不可能事件，可能发生也可能不发生的是随机事件。" },
+            { "kind": "bullet", "text": "互斥事件：不能同时发生（$A\\cap B=\\varnothing$）；对立事件：互斥且必有一个发生（$A\\cup B=$ 全集）。" }
+          ]
+        },
+        {
+          "heading": "原理与方法",
+          "blocks": [
+            { "kind": "sub", "text": "概率的基本性质" },
+            { "kind": "formula", "text": "0\\le P(A)\\le 1,\\quad P(\\text{必然})=1,\\quad P(\\text{不可能})=0" },
+            { "kind": "formula", "text": "\\text{互斥时：}P(A\\cup B)=P(A)+P(B);\\qquad \\text{对立：}P(\\bar A)=1-P(A)" },
+            { "kind": "note", "text": "“互斥”不一定“对立”，但“对立”一定“互斥”。求“至少”“至多”类概率，常用对立事件 $1-P(\\bar A)$ 更简便。" }
+          ]
+        },
+        {
+          "heading": "例题详解",
+          "blocks": [
+            {
+              "kind": "eg",
+              "label": "例1（对立事件求概率）",
+              "text": "某射手命中的概率为 $0.8$，求至少一次不中在“打一枪”里……即求“未命中”的概率。",
+              "solution": [
+                "“命中”与“未命中”是对立事件。",
+                "$P(\\text{未命中})=1-P(\\text{命中})=1-0.8=0.2$。"
+              ]
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        { "q": "任何事件的概率 P(A) 的取值范围是（用区间）？", "answer": "[0,1]", "tip": "0≤P≤1", "level": "基础" },
+        { "q": "必然事件的概率是？", "answer": "1", "tip": "一定发生", "level": "基础" },
+        { "q": "若 P(A)=0.3，则其对立事件概率是？", "answer": "0.7", "tip": "1-0.3", "level": "基础" },
+        { "q": "A、B 互斥，P(A)=0.2,P(B)=0.5，则 P(A∪B)=？", "answer": "0.7", "tip": "互斥相加", "level": "中档" }
+      ]
+    },
+    {
+      "id": "10.2",
+      "category": "概率",
+      "subcategory": "古典概型",
+      "title": "古典概型",
+      "sections": [
+        {
+          "heading": "知识点",
+          "blocks": [
+            { "kind": "para", "text": "若试验的样本点有限且每个样本点发生的可能性相等，则称为古典概型。" },
+            { "kind": "formula", "text": "P(A)=\\frac{A\\text{ 包含的样本点数}}{\\text{样本空间的样本点总数}}=\\frac{m}{n}" }
+          ]
+        },
+        {
+          "heading": "原理与方法",
+          "blocks": [
+            { "kind": "bullet", "text": "关键是数清“总数 n”和“有利数 m”，常用列举法、列表法、树状图。" },
+            { "kind": "note", "text": "“取两个”要分清“有序/无序、放回/不放回”。掷两枚骰子总数是 36（有序），不要误算成 21。" }
+          ]
+        },
+        {
+          "heading": "例题详解",
+          "blocks": [
+            {
+              "kind": "eg",
+              "label": "例1（掷两枚骰子）",
+              "text": "掷两枚均匀骰子，求点数之和为 5 的概率。",
+              "solution": [
+                "样本点总数 $n=6\\times6=36$。",
+                "和为 5 的：$(1,4),(2,3),(3,2),(4,1)$ 共 $m=4$ 个。",
+                "$P=\\dfrac{4}{36}=\\dfrac19$。"
+              ]
+            },
+            {
+              "kind": "eg",
+              "label": "例2（不放回摸球）",
+              "text": "袋中 3 红 2 白，任取 2 球，求都是红球的概率。",
+              "solution": [
+                "从 5 个中取 2 个，总数 $C_5^2=10$。",
+                "取 2 红：$C_3^2=3$。",
+                "$P=\\dfrac{3}{10}$。"
+              ]
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        { "q": "掷一枚骰子，出现偶数的概率是（分数）？", "answer": "1/2", "tip": "3/6", "level": "基础" },
+        { "q": "掷两枚骰子，点数相同的概率是（分数）？", "answer": "1/6", "tip": "6/36", "level": "中档" },
+        { "q": "掷两枚骰子，和为 7 的概率是（分数）？", "answer": "1/6", "tip": "6种/36", "level": "中档" },
+        { "q": "从 1,2,3,4 中任取 2 个不同数，和为奇数的概率是（分数）？", "answer": "2/3", "tip": "共6种，一奇一偶4种", "level": "较难" }
+      ]
+    },
+    {
+      "id": "10.3",
+      "category": "概率",
+      "subcategory": "事件的独立性",
+      "title": "事件的相互独立性",
+      "sections": [
+        {
+          "heading": "知识点",
+          "blocks": [
+            { "kind": "para", "text": "若事件 $A$ 发生与否不影响 $B$ 的概率，则 $A,B$ 相互独立。" },
+            { "kind": "formula", "text": "A,B\\text{ 相互独立 }\\Leftrightarrow P(AB)=P(A)P(B)" }
+          ]
+        },
+        {
+          "heading": "原理与方法",
+          "blocks": [
+            { "kind": "bullet", "text": "$n$ 个独立事件都发生：$P=P(A_1)P(A_2)\\cdots P(A_n)$。" },
+            { "kind": "note", "text": "“相互独立”用乘法、“互斥”用加法，切勿混淆。多次独立重复试验（如多次投篮）恰好 k 次成功用二项分布（选择性必修三）。" }
+          ]
+        },
+        {
+          "heading": "例题详解",
+          "blocks": [
+            {
+              "kind": "eg",
+              "label": "例1（独立事件同时发生）",
+              "text": "甲命中率 $0.8$，乙命中率 $0.7$，两人各射一次且相互独立，求两人都命中的概率。",
+              "solution": [
+                "两人是否命中相互独立，用乘法：",
+                "$P=0.8\\times0.7=0.56$。"
+              ]
+            },
+            {
+              "kind": "eg",
+              "label": "例2（至少一人命中）",
+              "text": "条件同上，求至少一人命中的概率。",
+              "solution": [
+                "对立事件是“两人都不中”，$P(\\text{都不中})=(1-0.8)(1-0.7)=0.2\\times0.3=0.06$。",
+                "$P(\\text{至少一人中})=1-0.06=0.94$。"
+              ]
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        { "q": "A、B 独立，P(A)=0.5,P(B)=0.4，则 P(AB)=？", "answer": "0.2", "tip": "0.5×0.4", "level": "基础" },
+        { "q": "两独立事件 P(A)=0.6,P(B)=0.5，都不发生的概率是？", "answer": "0.2", "tip": "0.4×0.5", "level": "中档" },
+        { "q": "甲乙命中率均 0.9 且独立，都命中概率是？", "answer": "0.81", "tip": "0.9×0.9", "level": "中档" },
+        { "q": "甲乙命中率各 0.5 且独立，至少一人命中的概率是？", "answer": "0.75", "tip": "1-0.5×0.5", "level": "较难" }
+      ]
+    },
+
+    {
+      "id": "11.1",
+      "category": "空间向量与立体几何",
+      "subcategory": "空间向量及其运算",
+      "title": "空间向量的坐标运算与数量积",
+      "sections": [
+        {
+          "heading": "知识点",
+          "blocks": [
+            { "kind": "para", "text": "空间直角坐标系中，向量 $\\vec a=(x_1,y_1,z_1),\\ \\vec b=(x_2,y_2,z_2)$：" },
+            { "kind": "formula", "text": "\\vec a\\pm\\vec b=(x_1\\pm x_2,\\ y_1\\pm y_2,\\ z_1\\pm z_2),\\qquad \\vec a\\cdot\\vec b=x_1x_2+y_1y_2+z_1z_2" },
+            { "kind": "formula", "text": "|\\vec a|=\\sqrt{x_1^{2}+y_1^{2}+z_1^{2}},\\qquad \\cos\\langle\\vec a,\\vec b\\rangle=\\frac{\\vec a\\cdot\\vec b}{|\\vec a||\\vec b|}" }
+          ]
+        },
+        {
+          "heading": "原理与方法",
+          "blocks": [
+            { "kind": "bullet", "text": "平行：$\\vec a\\parallel\\vec b\\Leftrightarrow \\vec a=\\lambda\\vec b$（坐标成比例）。" },
+            { "kind": "bullet", "text": "垂直：$\\vec a\\perp\\vec b\\Leftrightarrow \\vec a\\cdot\\vec b=0$。" },
+            { "kind": "note", "text": "建立空间直角坐标系是解立体几何题的通法：找三条两两垂直的棱做坐标轴，写出各点坐标后一切转化为坐标运算。" }
+          ]
+        },
+        {
+          "heading": "例题详解",
+          "blocks": [
+            {
+              "kind": "eg",
+              "label": "例1（数量积与夹角）",
+              "text": "已知 $\\vec a=(1,0,1),\\ \\vec b=(0,1,1)$，求 $\\vec a\\cdot\\vec b$ 与夹角余弦。",
+              "solution": [
+                "$\\vec a\\cdot\\vec b=1\\times0+0\\times1+1\\times1=1$。",
+                "$|\\vec a|=\\sqrt2,\\ |\\vec b|=\\sqrt2$。",
+                "$\\cos\\langle\\vec a,\\vec b\\rangle=\\dfrac{1}{\\sqrt2\\cdot\\sqrt2}=\\dfrac12$。"
+              ]
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        { "q": "$\\vec a=(1,2,2)$ 的模是？", "answer": "3", "tip": "√(1+4+4)", "level": "基础" },
+        { "q": "$\\vec a=(1,0,0),\\vec b=(0,0,1)$，则 $\\vec a\\cdot\\vec b$=？", "answer": "0", "tip": "对应相乘求和", "level": "基础" },
+        { "q": "$\\vec a=(1,1,0),\\vec b=(2,2,0)$ 是否平行（是/否）？", "answer": "是", "tip": "b=2a", "level": "中档" },
+        { "q": "$\\vec a=(1,-1,2),\\vec b=(2,k,-1)$ 垂直，则 k=？", "answer": "0", "tip": "2-k-2=0", "level": "较难" }
+      ]
+    },
+    {
+      "id": "11.2",
+      "category": "空间向量与立体几何",
+      "subcategory": "空间向量的应用",
+      "title": "法向量与空间角的向量求法",
+      "sections": [
+        {
+          "heading": "知识点",
+          "blocks": [
+            { "kind": "para", "text": "平面的法向量：与平面垂直的向量 $\\vec n$。求法：设 $\\vec n=(x,y,z)$，令它与平面内两个不共线向量的数量积为 0，解方程组。" }
+          ]
+        },
+        {
+          "heading": "原理与方法",
+          "blocks": [
+            { "kind": "sub", "text": "空间角的向量公式" },
+            { "kind": "formula", "text": "\\text{线面角 }\\theta:\\ \\sin\\theta=\\frac{|\\vec a\\cdot\\vec n|}{|\\vec a||\\vec n|}\\ (\\vec a\\text{ 为直线方向向量})" },
+            { "kind": "formula", "text": "\\text{二面角 }\\varphi:\\ \\cos\\varphi=\\pm\\frac{\\vec n_1\\cdot\\vec n_2}{|\\vec n_1||\\vec n_2|}\\ (\\text{符号由图形定})" },
+            { "kind": "note", "text": "线面角用“正弦”（与法向量夹角互余），二面角用“余弦”，且要根据二面角是锐还是钝确定正负号——这是失分重灾区。" }
+          ]
+        },
+        {
+          "heading": "例题详解",
+          "blocks": [
+            {
+              "kind": "eg",
+              "label": "例1（求平面法向量）",
+              "text": "平面过点，含向量 $\\vec u=(1,0,1)$ 与 $\\vec v=(0,1,1)$，求一个法向量 $\\vec n$。",
+              "solution": [
+                "设 $\\vec n=(x,y,z)$，由 $\\vec n\\cdot\\vec u=0$ 得 $x+z=0$；由 $\\vec n\\cdot\\vec v=0$ 得 $y+z=0$。",
+                "取 $z=-1$，则 $x=1,\\ y=1$。",
+                "故 $\\vec n=(1,1,-1)$（不唯一，任意非零倍数均可）。"
+              ]
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        { "q": "平面法向量与该平面的位置关系是（垂直/平行）？", "answer": "垂直", "tip": "法向量定义", "level": "基础" },
+        { "q": "线面角用法向量时，公式里用 sin 还是 cos？", "answer": "sin", "tip": "与法向量夹角互余", "level": "中档" },
+        { "q": "若两平面法向量垂直，则两平面的关系是（垂直/平行）？", "answer": "垂直", "tip": "法向量垂直⇒面垂直", "level": "中档" }
+      ]
+    },
+
+    {
+      "id": "12.1",
+      "category": "直线和圆的方程",
+      "subcategory": "直线的方程",
+      "title": "直线的倾斜角、斜率与方程",
+      "sections": [
+        {
+          "heading": "知识点",
+          "blocks": [
+            { "kind": "para", "text": "直线倾斜角 $\\alpha\\in[0,\\pi)$，斜率 $k=\\tan\\alpha$（$\\alpha=90^\\circ$ 时斜率不存在）。过两点的斜率：" },
+            { "kind": "formula", "text": "k=\\frac{y_2-y_1}{x_2-x_1}\\ (x_1\\ne x_2)" },
+            { "kind": "sub", "text": "直线方程的几种形式" },
+            { "kind": "formula", "text": "\\text{点斜式：}y-y_0=k(x-x_0);\\quad \\text{斜截式：}y=kx+b;\\quad \\text{一般式：}Ax+By+C=0" }
+          ]
+        },
+        {
+          "heading": "原理与方法",
+          "blocks": [
+            { "kind": "sub", "text": "两直线平行与垂直（斜率存在时）" },
+            { "kind": "formula", "text": "l_1\\parallel l_2\\Leftrightarrow k_1=k_2;\\qquad l_1\\perp l_2\\Leftrightarrow k_1k_2=-1" },
+            { "kind": "note", "text": "用斜率讨论平行/垂直时，要单独考虑斜率不存在（竖直线）的情形。一般式判定：$A_1B_2-A_2B_1=0$ 平行，$A_1A_2+B_1B_2=0$ 垂直，可避免漏解。" }
+          ]
+        },
+        {
+          "heading": "例题详解",
+          "blocks": [
+            {
+              "kind": "eg",
+              "label": "例1（求直线方程）",
+              "text": "求过点 $(1,2)$ 且斜率为 $3$ 的直线方程（写成一般式）。",
+              "solution": [
+                "点斜式：$y-2=3(x-1)$。",
+                "整理：$y-2=3x-3$，即 $3x-y-1=0$。"
+              ]
+            },
+            {
+              "kind": "eg",
+              "label": "例2（垂直关系求斜率）",
+              "text": "直线 $l_1$ 斜率为 $2$，$l_2\\perp l_1$，求 $l_2$ 的斜率。",
+              "solution": [
+                "$k_1k_2=-1$，$2k_2=-1$，$k_2=-\\dfrac12$。"
+              ]
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        { "q": "过点 (0,1) 和 (2,5) 的直线斜率是？", "answer": "2", "tip": "(5-1)/(2-0)", "level": "基础" },
+        { "q": "直线 y=3x-2 的斜率是？", "answer": "3", "tip": "斜截式k", "level": "基础" },
+        { "q": "与 y=2x+1 平行的直线斜率是？", "answer": "2", "tip": "平行斜率相等", "level": "基础" },
+        { "q": "与 y=2x 垂直的直线斜率是？", "answer": "-1/2", "tip": "k₁k₂=-1", "level": "中档" },
+        { "q": "倾斜角为 45° 的直线斜率是？", "answer": "1", "tip": "tan45°", "level": "中档" }
+      ]
+    },
+    {
+      "id": "12.2",
+      "category": "直线和圆的方程",
+      "subcategory": "直线的方程",
+      "title": "距离公式（两点、点到直线、平行线）",
+      "sections": [
+        {
+          "heading": "知识点",
+          "blocks": [
+            { "kind": "formula", "text": "\\text{两点间：}|P_1P_2|=\\sqrt{(x_2-x_1)^{2}+(y_2-y_1)^{2}}" },
+            { "kind": "formula", "text": "\\text{点 }(x_0,y_0)\\text{ 到直线 }Ax+By+C=0:\\ d=\\frac{|Ax_0+By_0+C|}{\\sqrt{A^{2}+B^{2}}}" }
+          ]
+        },
+        {
+          "heading": "原理与方法",
+          "blocks": [
+            { "kind": "sub", "text": "两平行线间距离" },
+            { "kind": "formula", "text": "l_1:Ax+By+C_1=0,\\ l_2:Ax+By+C_2=0\\ \\Rightarrow\\ d=\\frac{|C_1-C_2|}{\\sqrt{A^{2}+B^{2}}}" },
+            { "kind": "note", "text": "用点到直线公式前须把直线化为一般式；用平行线间距离公式前，两直线的 $x,y$ 系数 $A,B$ 必须完全相同（先统一系数）。" }
+          ]
+        },
+        {
+          "heading": "例题详解",
+          "blocks": [
+            {
+              "kind": "eg",
+              "label": "例1（点到直线距离）",
+              "text": "求点 $(1,2)$ 到直线 $3x+4y-1=0$ 的距离。",
+              "solution": [
+                "$d=\\dfrac{|3\\times1+4\\times2-1|}{\\sqrt{3^2+4^2}}=\\dfrac{|3+8-1|}{5}=\\dfrac{10}{5}=2$。"
+              ]
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        { "q": "点 (0,0) 到直线 3x+4y-10=0 的距离是？", "answer": "2", "tip": "10/5", "level": "基础" },
+        { "q": "两点 (1,1) 与 (4,5) 间的距离是？", "answer": "5", "tip": "√(9+16)", "level": "基础" },
+        { "q": "点 (1,0) 到直线 x+y-3=0 的距离是（含 √2）？", "answer": "√2", "tip": "|1-3|/√2", "level": "中档" },
+        { "q": "平行线 x+y=0 与 x+y-2=0 的距离是（含 √2）？", "answer": "√2", "tip": "|0-(-2)|/√2", "level": "较难" }
+      ]
+    },
+    {
+      "id": "12.3",
+      "category": "直线和圆的方程",
+      "subcategory": "圆的方程",
+      "title": "圆的方程",
+      "sections": [
+        {
+          "heading": "知识点",
+          "blocks": [
+            { "kind": "formula", "text": "\\text{标准方程：}(x-a)^{2}+(y-b)^{2}=r^{2}\\ (\\text{圆心 }(a,b),\\ \\text{半径 }r)" },
+            { "kind": "formula", "text": "\\text{一般方程：}x^{2}+y^{2}+Dx+Ey+F=0\\ \\left(D^{2}+E^{2}-4F>0\\right)" },
+            {
+              "kind": "svg",
+              "caption": "图1  圆：圆心 C(a,b)，半径 r，圆上任一点到圆心距离都等于 r",
+              "svg": "<svg viewBox='0 0 210 190' xmlns='http://www.w3.org/2000/svg'><line x1='15' y1='150' x2='200' y2='150' stroke='#333' stroke-width='1.2'/><line x1='40' y1='20' x2='40' y2='175' stroke='#333' stroke-width='1.2'/><circle cx='120' cy='90' r='55' fill='none' stroke='#2e5b9e' stroke-width='2'/><circle cx='120' cy='90' r='2.5' fill='#c00000'/><line x1='120' y1='90' x2='175' y2='90' stroke='#c00000' stroke-width='1.5'/><text x='142' y='84' font-size='12' fill='#c00000'>r</text><text x='124' y='103' font-size='11'>C(a,b)</text></svg>"
+            }
+          ]
+        },
+        {
+          "heading": "原理与方法",
+          "blocks": [
+            { "kind": "para", "text": "一般式配方可得圆心 $\\left(-\\dfrac{D}{2},-\\dfrac{E}{2}\\right)$，半径 $r=\\dfrac{\\sqrt{D^{2}+E^{2}-4F}}{2}$。" },
+            { "kind": "note", "text": "一般方程表示圆的条件是 $D^2+E^2-4F>0$（否则是点或无轨迹）。求圆方程常用待定系数法：设标准式或一般式，代入已知条件解参数。" }
+          ]
+        },
+        {
+          "heading": "例题详解",
+          "blocks": [
+            {
+              "kind": "eg",
+              "label": "例1（由一般式求圆心半径）",
+              "text": "求圆 $x^{2}+y^{2}-4x+6y-3=0$ 的圆心与半径。",
+              "solution": [
+                "配方：$(x^2-4x)+(y^2+6y)=3$，即 $(x-2)^2-4+(y+3)^2-9=3$。",
+                "$(x-2)^2+(y+3)^2=16$。",
+                "圆心 $(2,-3)$，半径 $r=4$。"
+              ]
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        { "q": "圆 $(x-1)^2+(y-2)^2=9$ 的圆心坐标是？", "answer": "(1,2)", "tip": "标准式读出", "level": "基础" },
+        { "q": "圆 $(x-1)^2+(y-2)^2=9$ 的半径是？", "answer": "3", "tip": "r²=9", "level": "基础" },
+        { "q": "圆 $x^2+y^2=25$ 的半径是？", "answer": "5", "tip": "r²=25", "level": "基础" },
+        { "q": "圆 $x^2+y^2-2x=0$ 的圆心是？", "answer": "(1,0)", "tip": "配方(x-1)²+y²=1", "level": "中档" },
+        { "q": "圆 $x^2+y^2-6y=0$ 的半径是？", "answer": "3", "tip": "x²+(y-3)²=9", "level": "较难" }
+      ]
+    },
+    {
+      "id": "12.4",
+      "category": "直线和圆的方程",
+      "subcategory": "圆的方程",
+      "title": "直线与圆、圆与圆的位置关系",
+      "sections": [
+        {
+          "heading": "知识点",
+          "blocks": [
+            { "kind": "sub", "text": "直线与圆（比较圆心到直线距离 d 与半径 r）" },
+            {
+              "kind": "table",
+              "headers": ["d 与 r", "位置关系", "公共点"],
+              "rows": [
+                ["d<r", "相交", "2 个"],
+                ["d=r", "相切", "1 个"],
+                ["d>r", "相离", "0 个"]
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "原理与方法",
+          "blocks": [
+            { "kind": "sub", "text": "两圆位置关系（比较圆心距 d 与 r₁、r₂）" },
+            { "kind": "bullet", "text": "$d>r_1+r_2$ 外离；$d=r_1+r_2$ 外切；$|r_1-r_2|<d<r_1+r_2$ 相交；$d=|r_1-r_2|$ 内切；$d<|r_1-r_2|$ 内含。" },
+            { "kind": "sub", "text": "相交弦长" },
+            { "kind": "formula", "text": "\\text{弦长}=2\\sqrt{r^{2}-d^{2}}" },
+            { "kind": "note", "text": "判断直线与圆关系优先用“几何法”（点到直线距离 d 与 r 比较），比联立方程判别式更快。" }
+          ]
+        },
+        {
+          "heading": "例题详解",
+          "blocks": [
+            {
+              "kind": "eg",
+              "label": "例1（直线与圆的位置关系）",
+              "text": "判断直线 $3x+4y-15=0$ 与圆 $x^{2}+y^{2}=9$ 的位置关系。",
+              "solution": [
+                "圆心 $(0,0)$，半径 $r=3$。",
+                "圆心到直线距离 $d=\\dfrac{|3\\cdot0+4\\cdot0-15|}{\\sqrt{9+16}}=\\dfrac{15}{5}=3$。",
+                "$d=r$，故直线与圆相切。"
+              ]
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        { "q": "圆心到直线距离 d=2，半径 r=3，直线与圆（相交/相切/相离）？", "answer": "相交", "tip": "d<r", "level": "基础" },
+        { "q": "d=r 时直线与圆的关系是？", "answer": "相切", "tip": "唯一公共点", "level": "基础" },
+        { "q": "半径 5、圆心到直线距离 3，则弦长为？", "answer": "8", "tip": "2√(25-9)=8", "level": "中档" },
+        { "q": "两圆半径 2、3，圆心距 5，位置关系是（外切/相交/外离）？", "answer": "外切", "tip": "d=r₁+r₂", "level": "较难" }
+      ]
+    },
+
+    {
+      "id": "13.1",
+      "category": "圆锥曲线的方程",
+      "subcategory": "椭圆",
+      "title": "椭圆的定义、方程与性质",
+      "sections": [
+        {
+          "heading": "知识点",
+          "blocks": [
+            { "kind": "para", "text": "椭圆定义：平面内到两定点 $F_1,F_2$ 的距离之和为常数（$>|F_1F_2|$）的点的轨迹。" },
+            { "kind": "formula", "text": "\\frac{x^{2}}{a^{2}}+\\frac{y^{2}}{b^{2}}=1\\ (a>b>0),\\qquad c^{2}=a^{2}-b^{2}" },
+            {
+              "kind": "svg",
+              "caption": "图1  焦点在 x 轴的椭圆：长半轴 a、短半轴 b、半焦距 c，焦点 F₁、F₂",
+              "svg": "<svg viewBox='0 0 280 170' xmlns='http://www.w3.org/2000/svg'><line x1='15' y1='90' x2='265' y2='90' stroke='#333' stroke-width='1.2'/><line x1='140' y1='18' x2='140' y2='162' stroke='#333' stroke-width='1.2'/><ellipse cx='140' cy='90' rx='100' ry='52' fill='none' stroke='#2e5b9e' stroke-width='2'/><circle cx='55' cy='90' r='2.5' fill='#c00000'/><circle cx='225' cy='90' r='2.5' fill='#c00000'/><text x='44' y='105' font-size='11' fill='#c00000'>F₁</text><text x='218' y='105' font-size='11' fill='#c00000'>F₂</text><text x='195' y='84' font-size='11'>a</text><text x='146' y='48' font-size='11'>b</text></svg>"
+            }
+          ]
+        },
+        {
+          "heading": "原理与方法",
+          "blocks": [
+            { "kind": "bullet", "text": "焦点在 x 轴（分母大的在 $x^2$ 下）：焦点 $(\\pm c,0)$；焦点在 y 轴则形如 $\\dfrac{x^2}{b^2}+\\dfrac{y^2}{a^2}=1$。" },
+            { "kind": "formula", "text": "\\text{离心率 }e=\\frac{c}{a}\\in(0,1)" },
+            { "kind": "note", "text": "先看 $x^2,y^2$ 分母哪个大，大的对应长轴，焦点就在那个坐标轴上。$a$ 最大且 $a^2=b^2+c^2$，切勿记成 $b^2=a^2+c^2$（那是双曲线）。" }
+          ]
+        },
+        {
+          "heading": "例题详解",
+          "blocks": [
+            {
+              "kind": "eg",
+              "label": "例1（求焦点与离心率）",
+              "text": "椭圆 $\\dfrac{x^{2}}{25}+\\dfrac{y^{2}}{16}=1$，求 $a,b,c$、焦点坐标与离心率。",
+              "solution": [
+                "$a^2=25\\Rightarrow a=5$，$b^2=16\\Rightarrow b=4$。",
+                "$c^2=a^2-b^2=25-16=9\\Rightarrow c=3$。",
+                "$x^2$ 下分母大，焦点在 x 轴：$(\\pm3,0)$。离心率 $e=\\dfrac{c}{a}=\\dfrac35$。"
+              ]
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        { "q": "椭圆 $\\frac{x^2}{9}+\\frac{y^2}{4}=1$ 的长半轴 a=？", "answer": "3", "tip": "a²=9", "level": "基础" },
+        { "q": "上式椭圆的 c=？", "answer": "√5", "tip": "c²=9-4=5", "level": "中档" },
+        { "q": "椭圆 $\\frac{x^2}{25}+\\frac{y^2}{9}=1$ 的离心率是？", "answer": "4/5", "tip": "c=4,a=5", "level": "中档" },
+        { "q": "椭圆离心率的取值范围是（用区间）？", "answer": "(0,1)", "tip": "0<e<1", "level": "基础" },
+        { "q": "椭圆 $\\frac{x^2}{4}+y^2=1$ 上点到两焦点距离之和为？", "answer": "4", "tip": "2a，a=2", "level": "较难" }
+      ]
+    },
+    {
+      "id": "13.2",
+      "category": "圆锥曲线的方程",
+      "subcategory": "双曲线",
+      "title": "双曲线的定义、方程与性质",
+      "sections": [
+        {
+          "heading": "知识点",
+          "blocks": [
+            { "kind": "para", "text": "双曲线定义：到两定点距离之差的绝对值为常数（$<|F_1F_2|$）的点的轨迹。" },
+            { "kind": "formula", "text": "\\frac{x^{2}}{a^{2}}-\\frac{y^{2}}{b^{2}}=1\\ (a>0,b>0),\\qquad c^{2}=a^{2}+b^{2}" },
+            {
+              "kind": "svg",
+              "caption": "图1  双曲线（焦点在 x 轴）与两条渐近线 y=±(b/a)x",
+              "svg": "<svg viewBox='0 0 280 190' xmlns='http://www.w3.org/2000/svg'><line x1='15' y1='95' x2='265' y2='95' stroke='#333' stroke-width='1.2'/><line x1='140' y1='18' x2='140' y2='172' stroke='#333' stroke-width='1.2'/><line x1='45' y1='25' x2='235' y2='165' stroke='#bbb' stroke-dasharray='4 3'/><line x1='45' y1='165' x2='235' y2='25' stroke='#bbb' stroke-dasharray='4 3'/><path d='M180 25 Q150 95 180 165' fill='none' stroke='#2e5b9e' stroke-width='2'/><path d='M100 25 Q130 95 100 165' fill='none' stroke='#2e5b9e' stroke-width='2'/><circle cx='168' cy='95' r='2.2' fill='#c00000'/><circle cx='112' cy='95' r='2.2' fill='#c00000'/><text x='150' y='110' font-size='10'>a</text></svg>"
+            }
+          ]
+        },
+        {
+          "heading": "原理与方法",
+          "blocks": [
+            { "kind": "formula", "text": "\\text{渐近线：}\\frac{x^2}{a^2}-\\frac{y^2}{b^2}=0\\Rightarrow y=\\pm\\frac{b}{a}x;\\qquad e=\\frac{c}{a}>1" },
+            { "kind": "note", "text": "双曲线 $c^2=a^2+b^2$（与椭圆相反）。焦点看正项：$x^2$ 项为正则焦点在 x 轴。求渐近线把方程右边的 1 改成 0 即可。" }
+          ]
+        },
+        {
+          "heading": "例题详解",
+          "blocks": [
+            {
+              "kind": "eg",
+              "label": "例1（求焦点与渐近线）",
+              "text": "双曲线 $\\dfrac{x^{2}}{9}-\\dfrac{y^{2}}{16}=1$，求 $c$、焦点与渐近线。",
+              "solution": [
+                "$a^2=9,\\ b^2=16$，$c^2=a^2+b^2=25\\Rightarrow c=5$。",
+                "$x^2$ 项为正，焦点在 x 轴：$(\\pm5,0)$。",
+                "渐近线 $y=\\pm\\dfrac{b}{a}x=\\pm\\dfrac43 x$。"
+              ]
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        { "q": "双曲线 $\\frac{x^2}{16}-\\frac{y^2}{9}=1$ 的 c=？", "answer": "5", "tip": "c²=16+9", "level": "中档" },
+        { "q": "上式双曲线的渐近线是 y=±____x（填分数）？", "answer": "3/4", "tip": "b/a=3/4", "level": "中档" },
+        { "q": "双曲线离心率的取值范围是（用区间）？", "answer": "(1,+∞)", "tip": "e>1", "level": "基础" },
+        { "q": "双曲线 $x^2-y^2=1$ 的渐近线是 y=±____x？", "answer": "1", "tip": "a=b=1", "level": "较难" }
+      ]
+    },
+    {
+      "id": "13.3",
+      "category": "圆锥曲线的方程",
+      "subcategory": "抛物线",
+      "title": "抛物线的定义、方程与性质",
+      "sections": [
+        {
+          "heading": "知识点",
+          "blocks": [
+            { "kind": "para", "text": "抛物线定义：到定点 $F$（焦点）与到定直线 $l$（准线）距离相等的点的轨迹。" },
+            { "kind": "formula", "text": "y^{2}=2px\\ (p>0):\\ \\text{焦点 }\\left(\\frac{p}{2},0\\right),\\ \\text{准线 }x=-\\frac{p}{2}" },
+            {
+              "kind": "svg",
+              "caption": "图1  抛物线 y²=2px：焦点 F 在对称轴上，准线 l 与之关于顶点对称，曲线上点到 F 与到 l 距离相等",
+              "svg": "<svg viewBox='0 0 260 190' xmlns='http://www.w3.org/2000/svg'><line x1='20' y1='100' x2='245' y2='100' stroke='#333' stroke-width='1.2'/><line x1='75' y1='20' x2='75' y2='180' stroke='#c0641c' stroke-width='1.5' stroke-dasharray='5 3'/><polyline points='190,32 152,50 122,66 104,82 95,100 104,118 122,134 152,150 190,168' fill='none' stroke='#2e5b9e' stroke-width='2.2'/><circle cx='115' cy='100' r='2.6' fill='#c00000'/><text x='118' y='95' font-size='11' fill='#c00000'>F</text><text x='58' y='34' font-size='12' fill='#c0641c'>l</text><text x='96' y='118' font-size='10'>O</text></svg>"
+            }
+          ]
+        },
+        {
+          "heading": "原理与方法",
+          "blocks": [
+            { "kind": "bullet", "text": "四种标准形式：$y^2=\\pm2px$（开口左右）、$x^2=\\pm2py$（开口上下），$p>0$。" },
+            { "kind": "formula", "text": "\\text{焦半径（}y^2=2px\\text{）：}|PF|=x_0+\\frac{p}{2}" },
+            { "kind": "note", "text": "抛物线只有一个焦点、一条准线，没有离心率概念（$e=1$）。焦半径把“到焦点距离”转化为“横（纵）坐标 + p/2”，是求最值的利器。" }
+          ]
+        },
+        {
+          "heading": "例题详解",
+          "blocks": [
+            {
+              "kind": "eg",
+              "label": "例1（求焦点与准线）",
+              "text": "求抛物线 $y^{2}=8x$ 的焦点坐标与准线方程。",
+              "solution": [
+                "对比 $y^2=2px$，$2p=8\\Rightarrow p=4$，$\\dfrac{p}{2}=2$。",
+                "焦点 $(2,0)$，准线 $x=-2$。"
+              ]
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        { "q": "抛物线 $y^2=4x$ 的焦点坐标是？", "answer": "(1,0)", "tip": "2p=4,p/2=1", "level": "基础" },
+        { "q": "抛物线 $y^2=4x$ 的准线方程是？（形如 x=-1）", "answer": "x=-1", "tip": "x=-p/2", "level": "基础" },
+        { "q": "抛物线 $x^2=8y$ 的焦点坐标是？", "answer": "(0,2)", "tip": "开口向上,p=4", "level": "中档" },
+        { "q": "抛物线 $y^2=8x$ 上点到准线距离为 5，则其到焦点距离为？", "answer": "5", "tip": "定义:两距离相等", "level": "较难" }
+      ]
+    },
+
+    {
+      "id": "14.1",
+      "category": "数列",
+      "subcategory": "数列的概念",
+      "title": "数列的概念与通项公式",
+      "sections": [
+        {
+          "heading": "知识点",
+          "blocks": [
+            { "kind": "para", "text": "按一定顺序排列的一列数叫数列，第 $n$ 项记作 $a_n$，$\\{a_n\\}$ 表示数列。用 $n$ 表示 $a_n$ 的式子叫通项公式。" },
+            { "kind": "sub", "text": "前 n 项和与通项的关系" },
+            { "kind": "formula", "text": "a_n=\\begin{cases}S_1, & n=1\\\\ S_n-S_{n-1}, & n\\ge 2\\end{cases}" }
+          ]
+        },
+        {
+          "heading": "原理与方法",
+          "blocks": [
+            { "kind": "note", "text": "由 $S_n$ 求 $a_n$ 必须“分段”：先求 $n\\ge2$ 的通式，再单独验证 $n=1$ 是否符合，能合并才写成一个式子。这是最常见的陷阱。" }
+          ]
+        },
+        {
+          "heading": "例题详解",
+          "blocks": [
+            {
+              "kind": "eg",
+              "label": "例1（由 Sₙ 求 aₙ）",
+              "text": "已知数列 $\\{a_n\\}$ 的前 $n$ 项和 $S_n=n^{2}+n$，求 $a_n$。",
+              "solution": [
+                "当 $n\\ge2$：$a_n=S_n-S_{n-1}=(n^2+n)-[(n-1)^2+(n-1)]=2n$。",
+                "当 $n=1$：$a_1=S_1=2$，与 $2n$ 在 $n=1$ 时的值 $2$ 一致。",
+                "故 $a_n=2n$。"
+              ]
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        { "q": "数列 $a_n=2n-1$ 的第 5 项 $a_5$=？", "answer": "9", "tip": "2×5-1", "level": "基础" },
+        { "q": "数列 1,4,9,16,… 的通项 $a_n$=？（形如 n^2）", "answer": "n²/n^2", "tip": "平方数", "level": "中档" },
+        { "q": "若 $S_n=n^2$，则 $a_1$=？", "answer": "1", "tip": "S₁=1", "level": "中档" },
+        { "q": "若 $S_n=n^2$，则 n≥2 时 $a_n$=？（形如 2n-1）", "answer": "2n-1", "tip": "Sₙ-Sₙ₋₁", "level": "较难" }
+      ]
+    },
+    {
+      "id": "14.2",
+      "category": "数列",
+      "subcategory": "等差数列",
+      "title": "等差数列的通项与前 n 项和",
+      "sections": [
+        {
+          "heading": "知识点",
+          "blocks": [
+            { "kind": "para", "text": "从第 2 项起每项与前一项的差为同一常数 $d$（公差），即 $a_{n+1}-a_n=d$。" },
+            { "kind": "formula", "text": "a_n=a_1+(n-1)d" },
+            { "kind": "formula", "text": "S_n=\\frac{n(a_1+a_n)}{2}=na_1+\\frac{n(n-1)}{2}d" }
+          ]
+        },
+        {
+          "heading": "原理与方法",
+          "blocks": [
+            { "kind": "bullet", "text": "等差中项：若 $a,b,c$ 成等差，则 $2b=a+c$。" },
+            { "kind": "bullet", "text": "性质：若 $m+n=p+q$，则 $a_m+a_n=a_p+a_q$。" },
+            { "kind": "note", "text": "$S_n$ 是关于 $n$ 的二次函数（无常数项）。已知两个量常联立 $a_1,d$ 求解；善用“$m+n=p+q$”性质可简化计算。" }
+          ]
+        },
+        {
+          "heading": "例题详解",
+          "blocks": [
+            {
+              "kind": "eg",
+              "label": "例1（求通项与和）",
+              "text": "等差数列中 $a_1=2,\\ d=3$，求 $a_{10}$ 与 $S_{10}$。",
+              "solution": [
+                "$a_{10}=a_1+9d=2+27=29$。",
+                "$S_{10}=\\dfrac{10(a_1+a_{10})}{2}=\\dfrac{10(2+29)}{2}=5\\times31=155$。"
+              ]
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        { "q": "等差数列 a₁=1,d=2，则 a₄=？", "answer": "7", "tip": "1+3×2", "level": "基础" },
+        { "q": "等差数列 2,5,8,… 的公差 d=？", "answer": "3", "tip": "5-2", "level": "基础" },
+        { "q": "等差数列 a₁=1,d=2，前 5 项和 S₅=？", "answer": "25", "tip": "5×1+10×2", "level": "中档" },
+        { "q": "等差数列中 a₃=5,a₇=13，则公差 d=？", "answer": "2", "tip": "(13-5)/4", "level": "中档" },
+        { "q": "等差数列 a₂+a₈=10，则 a₅=？", "answer": "5", "tip": "2a₅=a₂+a₈", "level": "较难" }
+      ]
+    },
+    {
+      "id": "14.3",
+      "category": "数列",
+      "subcategory": "等比数列",
+      "title": "等比数列的通项与前 n 项和",
+      "sections": [
+        {
+          "heading": "知识点",
+          "blocks": [
+            { "kind": "para", "text": "从第 2 项起每项与前一项的比为同一非零常数 $q$（公比），即 $\\dfrac{a_{n+1}}{a_n}=q$。" },
+            { "kind": "formula", "text": "a_n=a_1 q^{\\,n-1}" },
+            { "kind": "formula", "text": "S_n=\\begin{cases}na_1, & q=1\\\\[4pt] \\dfrac{a_1(1-q^{n})}{1-q}, & q\\ne 1\\end{cases}" }
+          ]
+        },
+        {
+          "heading": "原理与方法",
+          "blocks": [
+            { "kind": "bullet", "text": "等比中项：若 $a,b,c$ 成等比，则 $b^2=ac$（$b$ 与 $a,c$ 同号）。" },
+            { "kind": "note", "text": "求和时务必先讨论 $q=1$！公比可正可负，等比数列各项与 $a_1$ 均非零。" }
+          ]
+        },
+        {
+          "heading": "例题详解",
+          "blocks": [
+            {
+              "kind": "eg",
+              "label": "例1（求通项与和）",
+              "text": "等比数列 $a_1=2,\\ q=3$，求 $a_4$ 与 $S_4$。",
+              "solution": [
+                "$a_4=a_1q^3=2\\times27=54$。",
+                "$S_4=\\dfrac{a_1(1-q^4)}{1-q}=\\dfrac{2(1-81)}{1-3}=\\dfrac{2\\times(-80)}{-2}=80$。"
+              ]
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        { "q": "等比数列 a₁=1,q=2，则 a₄=？", "answer": "8", "tip": "1×2³", "level": "基础" },
+        { "q": "等比数列 2,6,18,… 的公比 q=？", "answer": "3", "tip": "6/2", "level": "基础" },
+        { "q": "等比数列 a₁=1,q=2，前 4 项和 S₄=？", "answer": "15", "tip": "1+2+4+8", "level": "中档" },
+        { "q": "3 和 12 的等比中项（正值）是？", "answer": "6", "tip": "b²=36", "level": "中档" },
+        { "q": "等比数列 a₁=1,q=1/2，无穷项和 S=？", "answer": "2", "tip": "a₁/(1-q)", "level": "较难" }
+      ]
+    },
+
+    {
+      "id": "15.1",
+      "category": "一元函数的导数及其应用",
+      "subcategory": "导数的概念",
+      "title": "导数的概念与几何意义",
+      "sections": [
+        {
+          "heading": "知识点",
+          "blocks": [
+            { "kind": "para", "text": "函数 $y=f(x)$ 在 $x_0$ 处的导数是平均变化率的极限：" },
+            { "kind": "formula", "text": "f'(x_0)=\\lim_{\\Delta x\\to 0}\\frac{f(x_0+\\Delta x)-f(x_0)}{\\Delta x}" },
+            { "kind": "para", "text": "几何意义：$f'(x_0)$ 是曲线在点 $(x_0,f(x_0))$ 处切线的斜率。" },
+            {
+              "kind": "svg",
+              "caption": "图1  导数的几何意义：曲线在点 P 处切线的斜率等于 f′(x₀)",
+              "svg": "<svg viewBox='0 0 280 180' xmlns='http://www.w3.org/2000/svg'><line x1='25' y1='150' x2='265' y2='150' stroke='#333' stroke-width='1.2'/><line x1='45' y1='20' x2='45' y2='160' stroke='#333' stroke-width='1.2'/><path d='M55 145 C120 140 160 95 255 30' fill='none' stroke='#2e5b9e' stroke-width='2.4'/><line x1='90' y1='150' x2='250' y2='58' stroke='#c00000' stroke-width='1.8'/><circle cx='168' cy='102' r='3' fill='#c00000'/><text x='172' y='98' font-size='12' fill='#c00000'>P</text><text x='205' y='70' font-size='11' fill='#c00000'>切线</text><text x='250' y='146' font-size='11'>x</text></svg>"
+            }
+          ]
+        },
+        {
+          "heading": "原理与方法",
+          "blocks": [
+            { "kind": "sub", "text": "切线方程" },
+            { "kind": "formula", "text": "y-f(x_0)=f'(x_0)(x-x_0)" },
+            { "kind": "note", "text": "区分“在点 P 处”与“过点 P”的切线：前者 P 是切点；后者 P 未必是切点，需设切点 $(t,f(t))$ 再求。" }
+          ]
+        },
+        {
+          "heading": "例题详解",
+          "blocks": [
+            {
+              "kind": "eg",
+              "label": "例1（求切线方程）",
+              "text": "求曲线 $y=x^{2}$ 在点 $(1,1)$ 处的切线方程。",
+              "solution": [
+                "$y'=2x$，在 $x=1$ 处斜率 $k=f'(1)=2$。",
+                "切线：$y-1=2(x-1)$，即 $y=2x-1$。"
+              ]
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        { "q": "$f(x)=x^2$，则 $f'(3)$=？", "answer": "6", "tip": "f'=2x", "level": "基础" },
+        { "q": "导数 f'(x₀) 表示曲线在该点处切线的什么？", "answer": "斜率", "tip": "几何意义", "level": "基础" },
+        { "q": "曲线 y=x² 在 (2,4) 处切线斜率是？", "answer": "4", "tip": "2×2", "level": "中档" },
+        { "q": "曲线 y=x³ 在 x=1 处切线斜率是？", "answer": "3", "tip": "y'=3x²", "level": "中档" }
+      ]
+    },
+    {
+      "id": "15.2",
+      "category": "一元函数的导数及其应用",
+      "subcategory": "导数的运算",
+      "title": "导数的运算法则与常见函数导数",
+      "sections": [
+        {
+          "heading": "知识点",
+          "blocks": [
+            { "kind": "sub", "text": "基本初等函数的导数" },
+            { "kind": "formula", "text": "(C)'=0,\\quad (x^{n})'=nx^{n-1},\\quad (\\sin x)'=\\cos x,\\quad (\\cos x)'=-\\sin x" },
+            { "kind": "formula", "text": "(e^{x})'=e^{x},\\quad (a^{x})'=a^{x}\\ln a,\\quad (\\ln x)'=\\frac1x,\\quad (\\log_a x)'=\\frac{1}{x\\ln a}" }
+          ]
+        },
+        {
+          "heading": "原理与方法",
+          "blocks": [
+            { "kind": "sub", "text": "四则运算与复合函数求导法则" },
+            { "kind": "formula", "text": "(u\\pm v)'=u'\\pm v',\\quad (uv)'=u'v+uv',\\quad \\left(\\frac{u}{v}\\right)'=\\frac{u'v-uv'}{v^{2}}" },
+            { "kind": "formula", "text": "\\text{复合：}[f(g(x))]'=f'(g(x))\\cdot g'(x)\\ (\\text{链式法则})" },
+            { "kind": "note", "text": "复合函数求导“由外到内层层求导再相乘”，最易漏乘内层导数 $g'(x)$。" }
+          ]
+        },
+        {
+          "heading": "例题详解",
+          "blocks": [
+            {
+              "kind": "eg",
+              "label": "例1（多项式与乘积求导）",
+              "text": "求 $f(x)=x^{3}-2x^{2}+3x$ 的导数，并求 $f'(1)$。",
+              "solution": [
+                "$f'(x)=3x^2-4x+3$。",
+                "$f'(1)=3-4+3=2$。"
+              ]
+            },
+            {
+              "kind": "eg",
+              "label": "例2（复合函数）",
+              "text": "求 $y=(2x+1)^{3}$ 的导数。",
+              "solution": [
+                "外层 $u^3$ 求导 $3u^2$，内层 $u=2x+1$ 求导 $2$。",
+                "$y'=3(2x+1)^2\\cdot2=6(2x+1)^2$。"
+              ]
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        { "q": "$(x^5)'$=？（形如 5x^4）", "answer": "5x⁴/5x^4", "tip": "nxⁿ⁻¹", "level": "基础" },
+        { "q": "$(\\sin x)'$=？", "answer": "cosx", "tip": "基本导数", "level": "基础" },
+        { "q": "$(\\ln x)'$=？（形如 1/x）", "answer": "1/x", "tip": "对数导数", "level": "基础" },
+        { "q": "$f(x)=x^2+2x$，$f'(x)$=？（形如 2x+2）", "answer": "2x+2", "tip": "逐项求导", "level": "中档" },
+        { "q": "$(e^x)'$=？", "answer": "eˣ/e^x", "tip": "指数导数", "level": "中档" }
+      ]
+    },
+    {
+      "id": "15.3",
+      "category": "一元函数的导数及其应用",
+      "subcategory": "导数的应用",
+      "title": "导数与函数的单调性、极值与最值",
+      "sections": [
+        {
+          "heading": "知识点",
+          "blocks": [
+            { "kind": "sub", "text": "单调性判定" },
+            { "kind": "bullet", "text": "在区间内 $f'(x)>0\\Rightarrow f(x)$ 单调递增；$f'(x)<0\\Rightarrow$ 单调递减。" },
+            { "kind": "sub", "text": "极值" },
+            { "kind": "bullet", "text": "若 $f'(x_0)=0$ 且左侧 $f'>0$、右侧 $f'<0$，则 $x_0$ 为极大值点；反之为极小值点。" }
+          ]
+        },
+        {
+          "heading": "原理与方法",
+          "blocks": [
+            { "kind": "sub", "text": "求最值步骤（闭区间 [a,b]）" },
+            { "kind": "bullet", "text": "求 $f'(x)=0$ 的根（驻点），算出各驻点与端点 $a,b$ 的函数值，最大者为最大值、最小者为最小值。" },
+            { "kind": "note", "text": "$f'(x_0)=0$ 只是取极值的必要条件，不是充分条件（如 $y=x^3$ 在 0 处 $f'=0$ 却无极值），必须检验导数符号是否变化。" }
+          ]
+        },
+        {
+          "heading": "例题详解",
+          "blocks": [
+            {
+              "kind": "eg",
+              "label": "例1（求单调区间与极值）",
+              "text": "求 $f(x)=x^{3}-3x$ 的单调区间与极值。",
+              "solution": [
+                "$f'(x)=3x^2-3=3(x-1)(x+1)$。",
+                "令 $f'(x)>0$：$x<-1$ 或 $x>1$，为增区间；$-1<x<1$ 为减区间。",
+                "$x=-1$ 处极大值 $f(-1)=-1+3=2$；$x=1$ 处极小值 $f(1)=1-3=-2$。"
+              ]
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        { "q": "若在某区间 f'(x)>0，则 f(x) 在该区间单调（增/减）？", "answer": "增", "tip": "导数正则增", "level": "基础" },
+        { "q": "$f(x)=x^2$ 的极小值点是 x=？", "answer": "0", "tip": "f'=2x=0", "level": "基础" },
+        { "q": "$f(x)=x^3-3x$ 的极大值是？", "answer": "2", "tip": "x=-1处", "level": "中档" },
+        { "q": "$f(x)=x^3-3x$ 的极小值是？", "answer": "-2", "tip": "x=1处", "level": "中档" },
+        { "q": "$f(x)=x^3$ 在 x=0 处（有/无）极值？", "answer": "无", "tip": "导数不变号", "level": "较难" }
+      ]
+    },
+
+    {
+      "id": "16.1",
+      "category": "计数原理",
+      "subcategory": "两个计数原理",
+      "title": "分类加法与分步乘法计数原理",
+      "sections": [
+        {
+          "heading": "知识点",
+          "blocks": [
+            { "kind": "bullet", "text": "分类加法原理：完成一件事有 $n$ 类办法，各类方法数为 $m_1,m_2,\\dots$，则总数 $N=m_1+m_2+\\cdots$。" },
+            { "kind": "bullet", "text": "分步乘法原理：完成一件事需 $n$ 个步骤，各步方法数为 $m_1,m_2,\\dots$，则总数 $N=m_1\\times m_2\\times\\cdots$。" }
+          ]
+        },
+        {
+          "heading": "原理与方法",
+          "blocks": [
+            { "kind": "note", "text": "“分类”用加法（每类都能独立完成整件事），“分步”用乘法（缺一步都完不成）。区分二者是计数问题的第一步。" }
+          ]
+        },
+        {
+          "heading": "例题详解",
+          "blocks": [
+            {
+              "kind": "eg",
+              "label": "例1（分步乘法）",
+              "text": "从 A 地到 B 地有 3 条路，从 B 地到 C 地有 2 条路，求从 A 经 B 到 C 的走法数。",
+              "solution": [
+                "分两步：A→B 有 3 种，B→C 有 2 种。",
+                "由分步乘法原理，$N=3\\times2=6$ 种。"
+              ]
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        { "q": "分类计数用（加法/乘法）？", "answer": "加法", "tip": "每类独立完成", "level": "基础" },
+        { "q": "分步计数用（加法/乘法）？", "answer": "乘法", "tip": "步步相乘", "level": "基础" },
+        { "q": "3 件上衣、4 条裤子，搭配一套的方法数是？", "answer": "12", "tip": "3×4", "level": "中档" }
+      ]
+    },
+    {
+      "id": "16.2",
+      "category": "计数原理",
+      "subcategory": "排列与组合",
+      "title": "排列与组合",
+      "sections": [
+        {
+          "heading": "知识点",
+          "blocks": [
+            { "kind": "para", "text": "排列（有序）与组合（无序）：" },
+            { "kind": "formula", "text": "A_n^m=\\frac{n!}{(n-m)!},\\qquad C_n^m=\\frac{n!}{m!(n-m)!}" },
+            { "kind": "formula", "text": "C_n^m=C_n^{\\,n-m},\\qquad C_{n+1}^{m}=C_n^{m}+C_n^{m-1}" }
+          ]
+        },
+        {
+          "heading": "原理与方法",
+          "blocks": [
+            { "kind": "note", "text": "判断用排列还是组合：与顺序有关（如排队、排数字）用排列 A；与顺序无关（如选人、取球）用组合 C。“先选后排”是常见策略。特殊元素/位置优先安排，相邻用“捆绑法”，不相邻用“插空法”。" }
+          ]
+        },
+        {
+          "heading": "例题详解",
+          "blocks": [
+            {
+              "kind": "eg",
+              "label": "例1（排列）",
+              "text": "从 5 人中选 3 人排成一排，有多少种排法？",
+              "solution": [
+                "有序，用排列：$A_5^3=\\dfrac{5!}{2!}=5\\times4\\times3=60$ 种。"
+              ]
+            },
+            {
+              "kind": "eg",
+              "label": "例2（组合）",
+              "text": "从 5 人中选 3 人组成一个小组，有多少种选法？",
+              "solution": [
+                "无序，用组合：$C_5^3=\\dfrac{5!}{3!\\,2!}=10$ 种。"
+              ]
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        { "q": "$A_4^2$=？", "answer": "12", "tip": "4×3", "level": "基础" },
+        { "q": "$C_4^2$=？", "answer": "6", "tip": "4!/(2!2!)", "level": "基础" },
+        { "q": "$C_5^0$=？", "answer": "1", "tip": "规定为1", "level": "基础" },
+        { "q": "从 6 人中选 2 人的选法数是？", "answer": "15", "tip": "C(6,2)", "level": "中档" },
+        { "q": "5 人排成一排的排法数是？", "answer": "120", "tip": "5!=120", "level": "中档" }
+      ]
+    },
+    {
+      "id": "16.3",
+      "category": "计数原理",
+      "subcategory": "二项式定理",
+      "title": "二项式定理",
+      "sections": [
+        {
+          "heading": "知识点",
+          "blocks": [
+            { "kind": "formula", "text": "(a+b)^{n}=\\sum_{k=0}^{n}C_n^{k}a^{\\,n-k}b^{k}" },
+            { "kind": "formula", "text": "\\text{通项：}T_{k+1}=C_n^{k}a^{\\,n-k}b^{k}\\ (k=0,1,\\dots,n)" }
+          ]
+        },
+        {
+          "heading": "原理与方法",
+          "blocks": [
+            { "kind": "bullet", "text": "二项式系数 $C_n^k$ 关于中间对称，$\\sum_{k=0}^n C_n^k=2^n$。" },
+            { "kind": "note", "text": "求某项（如常数项、含 $x^r$ 项）用通项 $T_{k+1}$，令 $x$ 的指数满足条件解出 $k$。注意区分“二项式系数 $C_n^k$”与“项的系数”（含常数因子）。" }
+          ]
+        },
+        {
+          "heading": "例题详解",
+          "blocks": [
+            {
+              "kind": "eg",
+              "label": "例1（求指定项）",
+              "text": "求 $(x+2)^{4}$ 展开式中 $x^{2}$ 的系数。",
+              "solution": [
+                "通项 $T_{k+1}=C_4^k x^{4-k}2^k$。",
+                "令 $4-k=2\\Rightarrow k=2$。",
+                "系数为 $C_4^2\\cdot2^2=6\\times4=24$。"
+              ]
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        { "q": "$(a+b)^n$ 展开式共有几项？（用 n 表示，形如 n+1）", "answer": "n+1", "tip": "k从0到n", "level": "基础" },
+        { "q": "二项式系数之和 $\\sum C_n^k$=？（用 2 的幂表示）", "answer": "2ⁿ/2^n", "tip": "令a=b=1", "level": "中档" },
+        { "q": "$(1+x)^4$ 展开式中 x² 的系数是？", "answer": "6", "tip": "C(4,2)", "level": "中档" },
+        { "q": "$(x+1)^3$ 展开式中常数项是？", "answer": "1", "tip": "x⁰项C(3,3)", "level": "较难" }
+      ]
+    },
+
+    {
+      "id": "17.1",
+      "category": "随机变量及其分布",
+      "subcategory": "条件概率",
+      "title": "条件概率与全概率公式",
+      "sections": [
+        {
+          "heading": "知识点",
+          "blocks": [
+            { "kind": "formula", "text": "P(B\\mid A)=\\frac{P(AB)}{P(A)}\\ (P(A)>0)" },
+            { "kind": "formula", "text": "\\text{乘法公式：}P(AB)=P(A)P(B\\mid A)" }
+          ]
+        },
+        {
+          "heading": "原理与方法",
+          "blocks": [
+            { "kind": "sub", "text": "全概率公式（A₁,…,Aₙ 为一组互斥且完备的事件）" },
+            { "kind": "formula", "text": "P(B)=\\sum_{i}P(A_i)P(B\\mid A_i)" },
+            { "kind": "note", "text": "条件概率 $P(B\\mid A)$ 是在 A 已发生的前提下求 B，相当于把样本空间缩小到 A。若 $A,B$ 独立，则 $P(B\\mid A)=P(B)$。" }
+          ]
+        },
+        {
+          "heading": "例题详解",
+          "blocks": [
+            {
+              "kind": "eg",
+              "label": "例1（条件概率）",
+              "text": "掷一枚骰子，已知出现的点数为偶数，求它是 2 的概率。",
+              "solution": [
+                "$A$=“偶数”={2,4,6}，$P(A)=\\dfrac36=\\dfrac12$。",
+                "$AB$=“是2且偶数”={2}，$P(AB)=\\dfrac16$。",
+                "$P(B\\mid A)=\\dfrac{P(AB)}{P(A)}=\\dfrac{1/6}{1/2}=\\dfrac13$。"
+              ]
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        { "q": "$P(A)=0.5,P(AB)=0.2$，则 $P(B|A)$=？", "answer": "0.4", "tip": "0.2/0.5", "level": "中档" },
+        { "q": "若 A、B 独立，则 P(B|A) 等于？（用 P(B) 表示）", "answer": "P(B)", "tip": "独立不影响", "level": "中档" },
+        { "q": "掷骰子已知点数大于 3，是 4 的概率是（分数）？", "answer": "1/3", "tip": "{4,5,6}中取4", "level": "较难" }
+      ]
+    },
+    {
+      "id": "17.2",
+      "category": "随机变量及其分布",
+      "subcategory": "分布列与数字特征",
+      "title": "离散型随机变量的分布列、期望与方差",
+      "sections": [
+        {
+          "heading": "知识点",
+          "blocks": [
+            { "kind": "para", "text": "离散型随机变量 $X$ 取值 $x_i$ 的概率 $p_i=P(X=x_i)$，满足 $p_i\\ge0$ 且 $\\sum p_i=1$。" },
+            { "kind": "formula", "text": "E(X)=\\sum_i x_i p_i,\\qquad D(X)=\\sum_i (x_i-E(X))^{2}p_i" }
+          ]
+        },
+        {
+          "heading": "原理与方法",
+          "blocks": [
+            { "kind": "sub", "text": "线性性质" },
+            { "kind": "formula", "text": "E(aX+b)=aE(X)+b,\\qquad D(aX+b)=a^{2}D(X)" },
+            { "kind": "note", "text": "分布列要“列全所有取值且概率和为 1”，这是验算利器。方差也可用 $D(X)=E(X^2)-[E(X)]^2$ 计算，往往更快。" }
+          ]
+        },
+        {
+          "heading": "例题详解",
+          "blocks": [
+            {
+              "kind": "eg",
+              "label": "例1（求期望）",
+              "text": "随机变量 $X$ 的分布列为 $P(X=0)=0.2,\\ P(X=1)=0.5,\\ P(X=2)=0.3$，求 $E(X)$。",
+              "solution": [
+                "$E(X)=0\\times0.2+1\\times0.5+2\\times0.3=0.5+0.6=1.1$。"
+              ]
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        { "q": "分布列中所有概率之和等于？", "answer": "1", "tip": "归一性", "level": "基础" },
+        { "q": "X 取 1、2 概率各 0.5，则 E(X)=？", "answer": "1.5", "tip": "1×0.5+2×0.5", "level": "中档" },
+        { "q": "已知 E(X)=2，则 E(3X+1)=？", "answer": "7", "tip": "3×2+1", "level": "中档" },
+        { "q": "已知 D(X)=2，则 D(2X)=？", "answer": "8", "tip": "2²×2", "level": "较难" }
+      ]
+    },
+    {
+      "id": "17.3",
+      "category": "随机变量及其分布",
+      "subcategory": "常见分布",
+      "title": "二项分布与超几何分布",
+      "sections": [
+        {
+          "heading": "知识点",
+          "blocks": [
+            { "kind": "para", "text": "$n$ 次独立重复试验中事件发生次数 $X\\sim B(n,p)$：" },
+            { "kind": "formula", "text": "P(X=k)=C_n^{k}p^{k}(1-p)^{n-k},\\quad E(X)=np,\\quad D(X)=np(1-p)" }
+          ]
+        },
+        {
+          "heading": "原理与方法",
+          "blocks": [
+            { "kind": "bullet", "text": "二项分布：有放回/独立重复，每次成功概率相同。" },
+            { "kind": "bullet", "text": "超几何分布：不放回抽取（如次品抽检），$P(X=k)=\\dfrac{C_M^k C_{N-M}^{n-k}}{C_N^n}$。" },
+            { "kind": "note", "text": "判别关键：“有放回/独立”用二项分布；“不放回”用超几何分布。二项分布期望 $E(X)=np$ 要牢记。" }
+          ]
+        },
+        {
+          "heading": "例题详解",
+          "blocks": [
+            {
+              "kind": "eg",
+              "label": "例1（二项分布）",
+              "text": "某射手命中率 $0.8$，独立射击 5 次，记命中次数 $X$，求 $E(X)$ 与恰好命中 5 次的概率。",
+              "solution": [
+                "$X\\sim B(5,0.8)$，$E(X)=np=5\\times0.8=4$。",
+                "$P(X=5)=C_5^5(0.8)^5=0.8^5=0.32768$。"
+              ]
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        { "q": "$X\\sim B(10,0.5)$，则 E(X)=？", "answer": "5", "tip": "np=10×0.5", "level": "基础" },
+        { "q": "$X\\sim B(10,0.5)$，则 D(X)=？", "answer": "2.5", "tip": "np(1-p)", "level": "中档" },
+        { "q": "$X\\sim B(3,1/3)$，则 E(X)=？", "answer": "1", "tip": "3×1/3", "level": "中档" },
+        { "q": "有放回还是不放回对应超几何分布？", "answer": "不放回", "tip": "抽检模型", "level": "较难" }
+      ]
+    },
+    {
+      "id": "17.4",
+      "category": "随机变量及其分布",
+      "subcategory": "正态分布",
+      "title": "正态分布",
+      "sections": [
+        {
+          "heading": "知识点",
+          "blocks": [
+            { "kind": "para", "text": "正态分布 $X\\sim N(\\mu,\\sigma^{2})$ 的密度曲线关于直线 $x=\\mu$ 对称，$\\mu$ 决定位置、$\\sigma$ 决定“胖瘦”（越小越集中）。" },
+            {
+              "kind": "svg",
+              "caption": "图1  正态分布密度曲线：关于 x=μ 对称，呈钟形，两侧无限接近 x 轴",
+              "svg": "<svg viewBox='0 0 280 160' xmlns='http://www.w3.org/2000/svg'><line x1='20' y1='138' x2='262' y2='138' stroke='#333' stroke-width='1.2'/><polyline points='30,136 60,132 85,120 105,92 122,58 140,46 158,58 175,92 195,120 220,132 250,136' fill='none' stroke='#2e5b9e' stroke-width='2.4'/><line x1='140' y1='138' x2='140' y2='50' stroke='#c00000' stroke-dasharray='4 3'/><text x='134' y='152' font-size='12' fill='#c00000'>μ</text></svg>"
+            }
+          ]
+        },
+        {
+          "heading": "原理与方法",
+          "blocks": [
+            { "kind": "sub", "text": "3σ 原则（常用概率）" },
+            { "kind": "formula", "text": "P(\\mu-\\sigma<X<\\mu+\\sigma)\\approx0.6827" },
+            { "kind": "formula", "text": "P(\\mu-2\\sigma<X<\\mu+2\\sigma)\\approx0.9545,\\quad P(\\mu-3\\sigma<X<\\mu+3\\sigma)\\approx0.9973" },
+            { "kind": "note", "text": "利用对称性：$P(X>\\mu)=P(X<\\mu)=0.5$；求区间概率常把已知区间与对称轴结合，用“总-两尾”或对称相减。" }
+          ]
+        },
+        {
+          "heading": "例题详解",
+          "blocks": [
+            {
+              "kind": "eg",
+              "label": "例1（对称性求概率）",
+              "text": "设 $X\\sim N(3,\\sigma^{2})$，已知 $P(X<3)=0.5$，若 $P(X<5)=0.8$，求 $P(3<X<5)$。",
+              "solution": [
+                "$P(3<X<5)=P(X<5)-P(X<3)=0.8-0.5=0.3$。"
+              ]
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        { "q": "正态曲线关于直线 x=____对称（填 μ）？", "answer": "μ", "tip": "对称轴", "level": "基础" },
+        { "q": "$X\\sim N(0,1)$，则 P(X>0)=？", "answer": "0.5", "tip": "对称", "level": "基础" },
+        { "q": "$X\\sim N(2,σ²)$，P(X<2)=？", "answer": "0.5", "tip": "均值处对称", "level": "中档" },
+        { "q": "$P(μ-σ<X<μ+σ)$≈？（保留4位小数）", "answer": "0.6827", "tip": "3σ原则", "level": "较难" }
+      ]
+    },
+
+    {
+      "id": "18.1",
+      "category": "成对数据的统计分析",
+      "subcategory": "相关与回归",
+      "title": "相关关系与一元线性回归",
+      "sections": [
+        {
+          "heading": "知识点",
+          "blocks": [
+            { "kind": "para", "text": "两个变量间的不确定关系叫相关关系。散点大致落在一条直线附近时称线性相关。" },
+            {
+              "kind": "svg",
+              "caption": "图1  散点图与回归直线：点大致沿一条上升直线分布（正相关）",
+              "svg": "<svg viewBox='0 0 260 170' xmlns='http://www.w3.org/2000/svg'><line x1='30' y1='140' x2='240' y2='140' stroke='#333' stroke-width='1.2'/><line x1='40' y1='20' x2='40' y2='150' stroke='#333' stroke-width='1.2'/><line x1='45' y1='128' x2='230' y2='40' stroke='#c00000' stroke-width='1.8'/><circle cx='60' cy='122' r='2.6' fill='#2e5b9e'/><circle cx='85' cy='118' r='2.6' fill='#2e5b9e'/><circle cx='110' cy='100' r='2.6' fill='#2e5b9e'/><circle cx='135' cy='95' r='2.6' fill='#2e5b9e'/><circle cx='160' cy='78' r='2.6' fill='#2e5b9e'/><circle cx='185' cy='66' r='2.6' fill='#2e5b9e'/><circle cx='210' cy='50' r='2.6' fill='#2e5b9e'/><text x='222' y='42' font-size='10' fill='#c00000'>ŷ=bx+a</text></svg>"
+            }
+          ]
+        },
+        {
+          "heading": "原理与方法",
+          "blocks": [
+            { "kind": "sub", "text": "回归方程与相关系数" },
+            { "kind": "formula", "text": "\\hat{y}=\\hat{b}x+\\hat{a},\\qquad \\hat{a}=\\bar{y}-\\hat{b}\\bar{x}" },
+            { "kind": "bullet", "text": "相关系数 $r\\in[-1,1]$：$|r|$ 越接近 1 线性相关越强，$r>0$ 正相关，$r<0$ 负相关。" },
+            { "kind": "note", "text": "回归直线必过样本中心点 $(\\bar x,\\bar y)$，这是求 $\\hat a$ 和验算的关键。相关关系不等于因果关系。" }
+          ]
+        },
+        {
+          "heading": "例题详解",
+          "blocks": [
+            {
+              "kind": "eg",
+              "label": "例1（用回归方程预测）",
+              "text": "某回归方程为 $\\hat{y}=2x+1$，预测 $x=10$ 时 $y$ 的估计值。",
+              "solution": [
+                "代入 $x=10$：$\\hat y=2\\times10+1=21$。"
+              ]
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        { "q": "相关系数 r 的取值范围是（用区间）？", "answer": "[-1,1]", "tip": "-1≤r≤1", "level": "基础" },
+        { "q": "r>0 表示两变量（正/负）相关？", "answer": "正", "tip": "同增同减", "level": "基础" },
+        { "q": "回归直线一定经过点（用坐标表示样本中心）？", "answer": "(x̄,ȳ)", "tip": "样本中心", "level": "中档" },
+        { "q": "回归方程 ŷ=3x-2，x=4 时预测值是？", "answer": "10", "tip": "3×4-2", "level": "中档" }
+      ]
+    },
+    {
+      "id": "18.2",
+      "category": "成对数据的统计分析",
+      "subcategory": "独立性检验",
+      "title": "2×2 列联表与独立性检验",
+      "sections": [
+        {
+          "heading": "知识点",
+          "blocks": [
+            { "kind": "para", "text": "用 $2\\times2$ 列联表研究两个分类变量是否有关联，构造统计量 $\\chi^{2}$（或 $K^2$）：" },
+            { "kind": "formula", "text": "\\chi^{2}=\\frac{n(ad-bc)^{2}}{(a+b)(c+d)(a+c)(b+d)}\\ ,\\quad n=a+b+c+d" }
+          ]
+        },
+        {
+          "heading": "原理与方法",
+          "blocks": [
+            { "kind": "sub", "text": "常用临界值" },
+            {
+              "kind": "table",
+              "headers": ["显著性水平 α", "临界值 xₐ"],
+              "rows": [
+                ["0.05", "3.841"],
+                ["0.01", "6.635"],
+                ["0.001", "10.828"]
+              ]
+            },
+            { "kind": "note", "text": "$\\chi^2$ 越大，越有理由认为两变量有关。若 $\\chi^2>x_\\alpha$，则在该显著性水平下认为两变量有关联（拒绝“独立”假设）。" }
+          ]
+        },
+        {
+          "heading": "例题详解",
+          "blocks": [
+            {
+              "kind": "eg",
+              "label": "例1（判断关联性）",
+              "text": "某次检验算得 $\\chi^{2}=5.2$，对照临界值表，能否在 $\\alpha=0.05$ 下认为两变量有关？",
+              "solution": [
+                "$\\alpha=0.05$ 的临界值为 $3.841$。",
+                "$\\chi^2=5.2>3.841$，故有 $95\\%$ 的把握认为两变量有关联。"
+              ]
+            }
+          ]
+        }
+      ],
+      "exercises": [
+        { "q": "独立性检验中 χ² 越大，越（支持/反对）两变量有关？", "answer": "支持", "tip": "χ²大则相关", "level": "中档" },
+        { "q": "α=0.05 对应的临界值是？", "answer": "3.841", "tip": "常用临界值", "level": "基础" },
+        { "q": "α=0.01 对应的临界值是？", "answer": "6.635", "tip": "常用临界值", "level": "中档" },
+        { "q": "若 χ²=7>6.635，有多大把握认为有关（填百分数如 99%）？", "answer": "99%", "tip": "对应α=0.01", "level": "较难" }
+      ]
+    }
+  ]
+}

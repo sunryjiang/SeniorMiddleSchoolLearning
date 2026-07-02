@@ -1,0 +1,74 @@
+{
+  "items": [
+    {
+      "day": 1, "week": 1, "group": "对话", "level": 2, "theme": "周末计划",
+      "title": "Weekend Plans",
+      "sentences": [
+        { "en": "A: Hi, Tom. Do you have any plans for this weekend?", "cn": "A：嗨，汤姆。这个周末有什么计划吗？" },
+        { "en": "B: Not yet. I was thinking about going hiking. Would you like to join me?", "cn": "B：还没有。我在想去徒步。你想一起来吗？" },
+        { "en": "A: That sounds great! Where shall we go?", "cn": "A：听起来不错！我们去哪儿？" },
+        { "en": "B: How about Green Mountain? The view there is amazing in spring.", "cn": "B：青山怎么样？那里春天的风景很美。" },
+        { "en": "A: Perfect. What time should we meet?", "cn": "A：太好了。我们几点碰面？" },
+        { "en": "B: Let's meet at the school gate at eight in the morning.", "cn": "B：早上八点在学校门口见吧。" },
+        { "en": "A: OK. Don't forget to bring some water and snacks.", "cn": "A：好的。别忘了带些水和零食。" }
+      ],
+      "words": [
+        { "word": "hiking", "pos": "n.", "ipa": "ˈhaɪkɪŋ", "cn": "徒步" },
+        { "word": "view", "pos": "n.", "ipa": "vjuː", "cn": "景色" },
+        { "word": "snack", "pos": "n.", "ipa": "snæk", "cn": "零食" }
+      ],
+      "questions": [
+        { "q": "What will they probably do this weekend? (go ______)", "a": "hiking", "tip": "going hiking" },
+        { "q": "Where will they meet? (at the school ______)", "a": "gate", "tip": "meet at the school gate" },
+        { "q": "What time will they meet? (用数字，英文单词皆可)", "a": "eight/8/8:00/eight o'clock", "tip": "at eight in the morning" }
+      ]
+    },
+    {
+      "day": 2, "week": 1, "group": "对话", "level": 2, "theme": "问路",
+      "title": "Asking the Way",
+      "sentences": [
+        { "en": "A: Excuse me, could you tell me how to get to the library?", "cn": "A：打扰一下，你能告诉我怎么去图书馆吗？" },
+        { "en": "B: Sure. Go straight ahead and turn left at the second crossing.", "cn": "B：当然。一直往前走，在第二个路口左转。" },
+        { "en": "A: Turn left at the second crossing. And then?", "cn": "A：在第二个路口左转。然后呢？" },
+        { "en": "B: The library is on your right, next to the bank.", "cn": "B：图书馆在你右手边，银行旁边。" },
+        { "en": "A: Is it far from here?", "cn": "A：离这儿远吗？" },
+        { "en": "B: No, it's about five minutes' walk.", "cn": "B：不远，大约步行五分钟。" },
+        { "en": "A: Thank you so much for your help!", "cn": "A：非常感谢你的帮助！" }
+      ],
+      "words": [
+        { "word": "straight", "pos": "adv.", "ipa": "streɪt", "cn": "笔直地" },
+        { "word": "crossing", "pos": "n.", "ipa": "ˈkrɒsɪŋ", "cn": "十字路口" },
+        { "word": "next to", "pos": "phr.", "ipa": "nekst tuː", "cn": "紧挨着" }
+      ],
+      "questions": [
+        { "q": "Where does A want to go? (the ______)", "a": "library", "tip": "how to get to the library" },
+        { "q": "Where should A turn left? (at the second ______)", "a": "crossing", "tip": "turn left at the second crossing" },
+        { "q": "How long does it take to walk there? (about ______ minutes)", "a": "five/5", "tip": "about five minutes' walk" }
+      ]
+    },
+    {
+      "day": 3, "week": 2, "group": "独白", "level": 3, "theme": "校园广播",
+      "title": "A School Announcement",
+      "sentences": [
+        { "en": "Good afternoon, everyone. Here is an important announcement.", "cn": "大家下午好。这里有一则重要通知。" },
+        { "en": "Our school will hold an English Speech Contest next Friday.", "cn": "我们学校将于下周五举办英语演讲比赛。" },
+        { "en": "The contest will take place in the school hall at two o'clock.", "cn": "比赛将于下午两点在学校礼堂举行。" },
+        { "en": "All students who are interested are welcome to sign up.", "cn": "欢迎所有感兴趣的同学报名。" },
+        { "en": "Please give your name to your English teacher before Wednesday.", "cn": "请在周三前把名字报给你的英语老师。" },
+        { "en": "The topic of this year's contest is \"My Dream\".", "cn": "今年比赛的主题是“我的梦想”。" },
+        { "en": "We look forward to your active participation. Thank you!", "cn": "我们期待你的积极参与。谢谢！" }
+      ],
+      "words": [
+        { "word": "announcement", "pos": "n.", "ipa": "əˈnaʊnsmənt", "cn": "通知，公告" },
+        { "word": "contest", "pos": "n.", "ipa": "ˈkɒntest", "cn": "比赛" },
+        { "word": "sign up", "pos": "phr.", "ipa": "saɪn ʌp", "cn": "报名" },
+        { "word": "participation", "pos": "n.", "ipa": "pɑːˌtɪsɪˈpeɪʃn", "cn": "参与" }
+      ],
+      "questions": [
+        { "q": "What contest will the school hold? (English Speech ______)", "a": "contest", "tip": "English Speech Contest" },
+        { "q": "Where will the contest take place? (the school ______)", "a": "hall", "tip": "in the school hall" },
+        { "q": "What is the topic of the contest? (My ______)", "a": "dream", "tip": "the topic is My Dream" }
+      ]
+    }
+  ]
+}

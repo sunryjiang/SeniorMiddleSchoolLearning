@@ -1,0 +1,230 @@
+{
+  "subject": "高频短语",
+  "categories": [
+    "常见动词短语",
+    "介词搭配",
+    "固定搭配与句型"
+  ],
+  "items": [
+    {
+      "id": "1.1",
+      "category": "常见动词短语",
+      "subcategory": "get / take / make",
+      "title": "get、take、make 高频短语",
+      "sections": [
+        {
+          "heading": "知识点",
+          "blocks": [
+            {
+              "kind": "table",
+              "headers": ["短语", "含义", "例句"],
+              "rows": [
+                ["get along with", "与…相处", "I get along well with my classmates. 我和同学相处融洽"],
+                ["get rid of", "摆脱，除掉", "It's hard to get rid of a bad habit. 很难改掉坏习惯"],
+                ["get used to", "习惯于", "I got used to the weather. 我习惯了这天气"],
+                ["take part in", "参加", "He took part in the contest. 他参加了比赛"],
+                ["take care of", "照顾", "She takes care of her sister. 她照顾妹妹"],
+                ["make up one's mind", "下定决心", "I made up my mind to study abroad. 我决心出国"],
+                ["make progress", "取得进步", "You've made great progress. 你进步很大"]
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "原理与方法",
+          "blocks": [
+            { "kind": "note", "text": "get used to / be used to 后接名词或动名词（doing）；used to do 意为“过去常常”，注意区分。take part in（参加活动）与 join（加入组织/团体）不同。" }
+          ]
+        },
+        {
+          "heading": "例题详解",
+          "blocks": [
+            { "kind": "eg", "label": "例1", "text": "I have got used to ______ (get) up early.", "solution": ["be/get used to 后接动名词。", "答案：getting。"] }
+          ]
+        }
+      ],
+      "exercises": [
+        { "q": "填空：He took part ______ the sports meeting.（参加）", "answer": "in", "tip": "take part in", "level": "基础" },
+        { "q": "填空：We should get ______ of pollution.（除掉）", "answer": "rid", "tip": "get rid of", "level": "中档" },
+        { "q": "填空：I get ______ well with my friends.（相处）", "answer": "along/on", "tip": "get along/on with", "level": "中档" },
+        { "q": "填空：She made ______ her mind to win.（下决心）", "answer": "up", "tip": "make up one's mind", "level": "较难" }
+      ]
+    },
+    {
+      "id": "1.2",
+      "category": "常见动词短语",
+      "subcategory": "come / go / turn / put",
+      "title": "come、go、turn、put 高频短语",
+      "sections": [
+        {
+          "heading": "知识点",
+          "blocks": [
+            {
+              "kind": "table",
+              "headers": ["短语", "含义", "例句"],
+              "rows": [
+                ["come up with", "想出（主意）", "She came up with a good idea. 她想出个好主意"],
+                ["come true", "实现", "My dream came true. 我的梦想实现了"],
+                ["go on (doing)", "继续", "Go on with your work. 继续你的工作"],
+                ["turn up / down", "调高/调低；出现/拒绝", "Turn down the radio, please. 请把收音机调小声"],
+                ["turn out", "结果是", "It turned out to be true. 结果证明是真的"],
+                ["put off", "推迟", "Don't put off till tomorrow. 别拖到明天"],
+                ["put up with", "忍受", "I can't put up with the noise. 我受不了噪音"]
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "原理与方法",
+          "blocks": [
+            { "kind": "note", "text": "put off = delay（推迟）后接名词/doing；turn down 既可“调低音量”，也可“拒绝(邀请/请求)”。多义短语要结合语境判断。" }
+          ]
+        },
+        {
+          "heading": "例题详解",
+          "blocks": [
+            { "kind": "eg", "label": "例1", "text": "We had to put ______ the meeting because of the rain.", "solution": ["“推迟”用 put off。", "答案：off。"] }
+          ]
+        }
+      ],
+      "exercises": [
+        { "q": "填空：He came ______ with a clever plan.（想出）", "answer": "up", "tip": "come up with", "level": "中档" },
+        { "q": "填空：My wish finally came ______ .（实现）", "answer": "true", "tip": "come true", "level": "基础" },
+        { "q": "填空：I can't put ______ with his rudeness.（忍受）", "answer": "up", "tip": "put up with", "level": "较难" },
+        { "q": "填空：Please turn ______ the music; it's too loud.（调低）", "answer": "down", "tip": "turn down", "level": "中档" }
+      ]
+    },
+    {
+      "id": "2.1",
+      "category": "介词搭配",
+      "subcategory": "形容词+介词",
+      "title": "形容词 + 介词固定搭配",
+      "sections": [
+        {
+          "heading": "知识点",
+          "blocks": [
+            {
+              "kind": "table",
+              "headers": ["搭配", "含义", "例句"],
+              "rows": [
+                ["be good at", "擅长", "She is good at English. 她擅长英语"],
+                ["be interested in", "对…感兴趣", "I'm interested in history. 我对历史感兴趣"],
+                ["be proud of", "为…自豪", "We are proud of our country. 我们为祖国自豪"],
+                ["be afraid of", "害怕", "He is afraid of dogs. 他怕狗"],
+                ["be famous for", "以…闻名", "The city is famous for its food. 这城市以美食闻名"],
+                ["be different from", "与…不同", "This is different from that. 这个和那个不同"],
+                ["be full of", "充满", "The room is full of people. 房间挤满了人"]
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "原理与方法",
+          "blocks": [
+            { "kind": "note", "text": "be famous for（以…闻名，后接原因）≠ be famous as（作为…而闻名，后接身份）。介词后接名词或动名词。" }
+          ]
+        },
+        {
+          "heading": "例题详解",
+          "blocks": [
+            { "kind": "eg", "label": "例1", "text": "He is good ______ playing basketball.", "solution": ["be good at + doing。", "答案：at。"] }
+          ]
+        }
+      ],
+      "exercises": [
+        { "q": "填介词：I'm interested ______ music.", "answer": "in", "tip": "interested in", "level": "基础" },
+        { "q": "填介词：They are proud ______ their team.", "answer": "of", "tip": "proud of", "level": "基础" },
+        { "q": "填介词：Beijing is famous ______ the Great Wall.", "answer": "for", "tip": "famous for", "level": "中档" },
+        { "q": "填介词：My idea is different ______ yours.", "answer": "from", "tip": "different from", "level": "中档" }
+      ]
+    },
+    {
+      "id": "2.2",
+      "category": "介词搭配",
+      "subcategory": "动词+介词",
+      "title": "动词 + 介词固定搭配",
+      "sections": [
+        {
+          "heading": "知识点",
+          "blocks": [
+            {
+              "kind": "table",
+              "headers": ["搭配", "含义", "例句"],
+              "rows": [
+                ["depend on", "依靠，取决于", "It depends on the weather. 这取决于天气"],
+                ["belong to", "属于", "This book belongs to me. 这书是我的"],
+                ["deal with", "处理", "How do you deal with stress? 你怎么应对压力？"],
+                ["look forward to", "期待", "I look forward to seeing you. 我期待见到你"],
+                ["pay attention to", "注意", "Pay attention to your spelling. 注意拼写"],
+                ["take pride in", "以…自豪", "She takes pride in her work. 她以工作为荣"],
+                ["succeed in", "成功做…", "He succeeded in passing. 他成功通过了"]
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "原理与方法",
+          "blocks": [
+            { "kind": "note", "text": "look forward to / pay attention to / get used to 中的 to 是介词，后接动名词(doing)，不是动词原形——这是高频陷阱。" }
+          ]
+        },
+        {
+          "heading": "例题详解",
+          "blocks": [
+            { "kind": "eg", "label": "例1", "text": "I'm looking forward to ______ (hear) from you.", "solution": ["to 是介词，后接动名词。", "答案：hearing。"] }
+          ]
+        }
+      ],
+      "exercises": [
+        { "q": "填介词：Success depends ______ hard work.", "answer": "on", "tip": "depend on", "level": "中档" },
+        { "q": "填介词：Please pay attention ______ the road.", "answer": "to", "tip": "pay attention to", "level": "中档" },
+        { "q": "填空：He succeeded in ______ (win) the game.（填正确形式）", "answer": "winning", "tip": "succeed in doing", "level": "较难" },
+        { "q": "填介词：This pen belongs ______ Tom.", "answer": "to", "tip": "belong to", "level": "基础" }
+      ]
+    },
+    {
+      "id": "3.1",
+      "category": "固定搭配与句型",
+      "subcategory": "高频句型",
+      "title": "高频固定句型",
+      "sections": [
+        {
+          "heading": "知识点",
+          "blocks": [
+            {
+              "kind": "table",
+              "headers": ["句型", "含义", "例句"],
+              "rows": [
+                ["It takes sb some time to do", "花某人多长时间做", "It took me an hour to do it. 我花了一小时做"],
+                ["so … that …", "如此…以至于", "He was so tired that he slept. 他累得睡着了"],
+                ["too … to do", "太…而不能", "It's too heavy to lift. 太重搬不动"],
+                ["not only … but also …", "不仅…而且…", "She is not only kind but also clever. 她既善良又聪明"],
+                ["as … as …", "和…一样", "He is as tall as me. 他和我一样高"],
+                ["would rather do than do", "宁愿…而不…", "I'd rather walk than wait. 我宁愿走也不等"],
+                ["can't help doing", "忍不住做", "I can't help laughing. 我忍不住笑"]
+              ]
+            }
+          ]
+        },
+        {
+          "heading": "原理与方法",
+          "blocks": [
+            { "kind": "note", "text": "so...that 后接从句，such...that 中 such 修饰名词；too...to 表否定含义（太…不能），不能再加 not。can't help doing = 忍不住。" }
+          ]
+        },
+        {
+          "heading": "例题详解",
+          "blocks": [
+            { "kind": "eg", "label": "例1", "text": "It ______ me two hours to finish the homework.", "solution": ["It takes sb time to do，过去时用 took。", "答案：took。"] }
+          ]
+        }
+      ],
+      "exercises": [
+        { "q": "填空：He was ______ tired ______ he couldn't move.（如此…以至于）", "answer": "so; that", "tip": "so...that", "level": "中档" },
+        { "q": "填空：The box is too heavy ______ (carry).（太重搬不动，填不定式）", "answer": "to carry", "tip": "too...to do", "level": "较难" },
+        { "q": "填空：She is not only beautiful ______ also kind.（不仅…而且）", "answer": "but", "tip": "not only...but also", "level": "中档" },
+        { "q": "填空：I can't help ______ (cry) at the sad film.（忍不住哭）", "answer": "crying", "tip": "can't help doing", "level": "较难" }
+      ]
+    }
+  ]
+}

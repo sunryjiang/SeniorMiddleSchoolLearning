@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>分级阅读 · 高中英语</title>
+  <link rel="stylesheet" href="style.css?v=4" />
+</head>
+<body>
+  <header class="topbar">
+    <button id="backBtn" class="top-back" aria-label="返回">←</button>
+    <button id="menuToggle" class="menu-toggle" aria-label="目录">☰</button>
+    <div class="brand">
+      <span class="brand-title">分级阅读</span>
+      <span class="brand-sub">高中英语</span>
+    </div>
+    <div class="read-controls">
+      <button id="readAll" class="teach-btn" disabled>▶ 朗读全文</button>
+      <button id="readStop" class="teach-btn stop" style="display:none">⏹ 停止</button>
+    </div>
+  </header>
+
+  <nav class="mod-bar">
+    <a href="english.html">英语首页</a>
+    <a href="subject.html?subject=en-grammar&back=english.html">语法</a>
+    <a href="vocab.html">背单词</a>
+    <a href="reading.html" class="active">阅读</a>
+    <a href="subject.html?subject=en-writing&back=english.html">写作</a>
+    <a href="subject.html?subject=en-exam&back=english.html">题型</a>
+    <a href="listening.html">听力</a>
+    <a href="subject.html?subject=en-phrases&back=english.html">短语</a>
+  </nav>
+
+  <div class="layout">
+    <aside id="sidebar" class="sidebar">
+      <nav id="readNav"></nav>
+    </aside>
+    <div id="overlay" class="overlay"></div>
+
+    <main class="content">
+      <article id="reading" class="reading">
+        <div class="vocab-empty">点左上角 ☰ 选择一篇阅读</div>
+      </article>
+    </main>
+  </div>
+
+  <script src="hw-back.js"></script>
+  <script src="tts-bridge.js"></script>
+  <script src="reading.js?v=1"></script>
+</body>
+</html>
