@@ -39,6 +39,7 @@
         ]
       : [
           ["🏠 全科首页", "index.html"],
+          ["语文", "subject.html?subject=chinese"],
           ["数学", "subject.html?subject=math"],
           ["物理", "subject.html?subject=physics"],
           ["化学", "subject.html?subject=chemistry"],
