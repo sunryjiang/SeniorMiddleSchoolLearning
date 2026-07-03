@@ -311,6 +311,84 @@
         { "word": "splendid", "pos": "adj.", "ipa": "ˈsplendɪd", "cn": "极好的", "eg": "We had a splendid time." },
         { "word": "aware", "pos": "adj.", "ipa": "əˈweə", "cn": "意识到的", "eg": "Be aware of the risks." }
       ]
+    },
+    {
+      "id": "hs_core_verbs_2",
+      "title": "高频核心词 · 动词 (2)",
+      "words": [
+        { "word": "examine", "pos": "v.", "ipa": "ɪɡˈzæmɪn", "cn": "检查，检验", "eg": "The doctor examined the patient." },
+        { "word": "indicate", "pos": "v.", "ipa": "ˈɪndɪkeɪt", "cn": "表明，指示", "eg": "The sign indicates the way out." },
+        { "word": "involve", "pos": "v.", "ipa": "ɪnˈvɒlv", "cn": "涉及，使参与", "eg": "The job involves a lot of travel." },
+        { "word": "maintain", "pos": "v.", "ipa": "meɪnˈteɪn", "cn": "维持，保养", "eg": "It's hard to maintain good habits." },
+        { "word": "obtain", "pos": "v.", "ipa": "əbˈteɪn", "cn": "获得", "eg": "She obtained a visa last week." },
+        { "word": "observe", "pos": "v.", "ipa": "əbˈzɜːv", "cn": "观察；遵守", "eg": "Scientists observe the stars." },
+        { "word": "perform", "pos": "v.", "ipa": "pəˈfɔːm", "cn": "表演；执行", "eg": "They performed a play." },
+        { "word": "provide", "pos": "v.", "ipa": "prəˈvaɪd", "cn": "提供", "eg": "The school provides free meals." },
+        { "word": "reduce", "pos": "v.", "ipa": "rɪˈdjuːs", "cn": "减少", "eg": "We must reduce waste." },
+        { "word": "remain", "pos": "v.", "ipa": "rɪˈmeɪn", "cn": "保持，仍是", "eg": "The shop remains open late." },
+        { "word": "require", "pos": "v.", "ipa": "rɪˈkwaɪə", "cn": "需要，要求", "eg": "This job requires patience." },
+        { "word": "seek", "pos": "v.", "ipa": "siːk", "cn": "寻求", "eg": "You should seek help early." },
+        { "word": "suggest", "pos": "v.", "ipa": "səˈdʒest", "cn": "建议；暗示", "eg": "I suggest starting now." },
+        { "word": "suppose", "pos": "v.", "ipa": "səˈpəʊz", "cn": "假设，认为", "eg": "I suppose you are right." },
+        { "word": "tend", "pos": "v.", "ipa": "tend", "cn": "倾向于", "eg": "He tends to be late." },
+        { "word": "ensure", "pos": "v.", "ipa": "ɪnˈʃʊə", "cn": "确保", "eg": "Please ensure the door is locked." },
+        { "word": "reveal", "pos": "v.", "ipa": "rɪˈviːl", "cn": "揭示，透露", "eg": "The study revealed the truth." },
+        { "word": "respond", "pos": "v.", "ipa": "rɪˈspɒnd", "cn": "回应", "eg": "She didn't respond to my email." },
+        { "word": "select", "pos": "v.", "ipa": "sɪˈlekt", "cn": "选择", "eg": "Select the best answer." },
+        { "word": "solve", "pos": "v.", "ipa": "sɒlv", "cn": "解决", "eg": "Let's solve this problem together." }
+      ]
+    },
+    {
+      "id": "hs_topic_time_space",
+      "title": "话题 · 时间与空间",
+      "words": [
+        { "word": "moment", "pos": "n.", "ipa": "ˈməʊmənt", "cn": "时刻，片刻", "eg": "Wait a moment, please." },
+        { "word": "period", "pos": "n.", "ipa": "ˈpɪəriəd", "cn": "时期", "eg": "It was a difficult period." },
+        { "word": "century", "pos": "n.", "ipa": "ˈsentʃəri", "cn": "世纪", "eg": "We live in the 21st century." },
+        { "word": "decade", "pos": "n.", "ipa": "ˈdekeɪd", "cn": "十年", "eg": "The city changed a lot in a decade." },
+        { "word": "recent", "pos": "adj.", "ipa": "ˈriːsnt", "cn": "最近的", "eg": "In recent years, life has changed." },
+        { "word": "current", "pos": "adj.", "ipa": "ˈkʌrənt", "cn": "当前的", "eg": "What is the current situation?" },
+        { "word": "ancient", "pos": "adj.", "ipa": "ˈeɪnʃənt", "cn": "古代的", "eg": "This is an ancient temple." },
+        { "word": "modern", "pos": "adj.", "ipa": "ˈmɒdn", "cn": "现代的", "eg": "Modern life is fast." },
+        { "word": "instant", "pos": "n./adj.", "ipa": "ˈɪnstənt", "cn": "瞬间；立即的", "eg": "In an instant, it was gone." },
+        { "word": "distance", "pos": "n.", "ipa": "ˈdɪstəns", "cn": "距离", "eg": "The distance is about ten miles." },
+        { "word": "surface", "pos": "n.", "ipa": "ˈsɜːfɪs", "cn": "表面", "eg": "Ice formed on the surface." },
+        { "word": "region", "pos": "n.", "ipa": "ˈriːdʒən", "cn": "地区", "eg": "It's the driest region in the country." },
+        { "word": "border", "pos": "n.", "ipa": "ˈbɔːdə", "cn": "边界", "eg": "They crossed the border at night." },
+        { "word": "edge", "pos": "n.", "ipa": "edʒ", "cn": "边缘", "eg": "Don't stand near the edge." },
+        { "word": "central", "pos": "adj.", "ipa": "ˈsentrəl", "cn": "中心的", "eg": "The hotel is in a central location." },
+        { "word": "beyond", "pos": "prep.", "ipa": "bɪˈjɒnd", "cn": "超过，在…那边", "eg": "The mountains lie beyond the river." },
+        { "word": "nearby", "pos": "adj./adv.", "ipa": "ˌnɪəˈbaɪ", "cn": "附近的", "eg": "There is a park nearby." },
+        { "word": "forward", "pos": "adv.", "ipa": "ˈfɔːwəd", "cn": "向前", "eg": "Please step forward." },
+        { "word": "previous", "pos": "adj.", "ipa": "ˈpriːviəs", "cn": "先前的", "eg": "See the previous chapter." },
+        { "word": "temporary", "pos": "adj.", "ipa": "ˈtemprəri", "cn": "暂时的", "eg": "It is only a temporary job." }
+      ]
+    },
+    {
+      "id": "hs_topic_family",
+      "title": "话题 · 家庭与人际",
+      "words": [
+        { "word": "relative", "pos": "n.", "ipa": "ˈrelətɪv", "cn": "亲戚", "eg": "Many relatives came to the wedding." },
+        { "word": "ancestor", "pos": "n.", "ipa": "ˈænsestə", "cn": "祖先", "eg": "Our ancestors lived here." },
+        { "word": "generation", "pos": "n.", "ipa": "ˌdʒenəˈreɪʃn", "cn": "一代人", "eg": "The younger generation loves technology." },
+        { "word": "marriage", "pos": "n.", "ipa": "ˈmærɪdʒ", "cn": "婚姻", "eg": "Their marriage is happy." },
+        { "word": "couple", "pos": "n.", "ipa": "ˈkʌpl", "cn": "夫妇；一对", "eg": "The couple has two children." },
+        { "word": "neighbour", "pos": "n.", "ipa": "ˈneɪbə", "cn": "邻居", "eg": "My neighbour is very kind." },
+        { "word": "companion", "pos": "n.", "ipa": "kəmˈpæniən", "cn": "同伴", "eg": "A dog is a loyal companion." },
+        { "word": "partner", "pos": "n.", "ipa": "ˈpɑːtnə", "cn": "伙伴，搭档", "eg": "She is my study partner." },
+        { "word": "guest", "pos": "n.", "ipa": "ɡest", "cn": "客人", "eg": "We welcomed the guests warmly." },
+        { "word": "host", "pos": "n./v.", "ipa": "həʊst", "cn": "主人；主办", "eg": "China will host the games." },
+        { "word": "friendship", "pos": "n.", "ipa": "ˈfrendʃɪp", "cn": "友谊", "eg": "Our friendship has lasted for years." },
+        { "word": "quarrel", "pos": "n./v.", "ipa": "ˈkwɒrəl", "cn": "争吵", "eg": "They had a quarrel over money." },
+        { "word": "trust", "pos": "n./v.", "ipa": "trʌst", "cn": "信任", "eg": "Trust is the basis of friendship." },
+        { "word": "cousin", "pos": "n.", "ipa": "ˈkʌzn", "cn": "堂/表兄弟姐妹", "eg": "My cousin lives in Shanghai." },
+        { "word": "sibling", "pos": "n.", "ipa": "ˈsɪblɪŋ", "cn": "兄弟姐妹", "eg": "Do you have any siblings?" },
+        { "word": "elder", "pos": "n./adj.", "ipa": "ˈeldə", "cn": "长辈；年长的", "eg": "We should respect our elders." },
+        { "word": "acquaintance", "pos": "n.", "ipa": "əˈkweɪntəns", "cn": "熟人", "eg": "He is just an acquaintance." },
+        { "word": "gathering", "pos": "n.", "ipa": "ˈɡæðərɪŋ", "cn": "聚会", "eg": "We had a family gathering." },
+        { "word": "respect", "pos": "v./n.", "ipa": "rɪˈspekt", "cn": "尊敬", "eg": "Children should respect their parents." },
+        { "word": "support", "pos": "v./n.", "ipa": "səˈpɔːt", "cn": "支持", "eg": "My family always supports me." }
+      ]
     }
   ]
 }

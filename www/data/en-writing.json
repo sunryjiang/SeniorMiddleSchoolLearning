@@ -73,6 +73,20 @@
             { "kind": "eg", "label": "常用开头（背诵）", "text": "I am writing to tell you something about our school life.", "solution": ["“我写信是想告诉你一些关于我们校园生活的事。”", "I am writing to + do 是万能开头。"] },
             { "kind": "eg", "label": "常用结尾（背诵）", "text": "I am looking forward to hearing from you soon.", "solution": ["“期待尽快收到你的回信。”", "look forward to 后接 doing。"] }
           ]
+        },
+        {
+          "heading": "完整范文（邀请信）",
+          "blocks": [
+            { "kind": "sub", "text": "题目：邀请外教 Peter 参加校园中华文化节" },
+            { "kind": "para", "text": "Dear Peter," },
+            { "kind": "para", "text": "I am writing to invite you to a Chinese Culture Festival to be held in our school on Saturday, June 15th." },
+            { "kind": "para", "text": "During the festival, you will experience a variety of activities, such as paper-cutting, calligraphy and a traditional tea ceremony. I'm sure these will help you learn more about Chinese culture and have a lot of fun. The festival will start at 2 p.m. in the school hall and last about two hours." },
+            { "kind": "para", "text": "Could you please let me know whether you can come? I am looking forward to your reply." },
+            { "kind": "para", "text": "Yours,　Li Hua" },
+            { "kind": "sub", "text": "解析" },
+            { "kind": "bullet", "text": "开头一句亮明目的（invite you to…）并交代时间；主体段落写活动内容+时间地点；结尾请求回复。" },
+            { "kind": "note", "text": "高分点：I am writing to invite…、a variety of…、I'm looking forward to your reply 等模板句；人名用题目给定的 Li Hua。" }
+          ]
         }
       ],
       "exercises": [
@@ -139,6 +153,24 @@
           "heading": "例题详解",
           "blocks": [
             { "kind": "eg", "label": "演讲稿开头/结尾（背诵）", "text": "Good morning, everyone! It's a great honour for me to stand here and share my ideas. … That's all. Thank you for listening!", "solution": ["开头：问候 + 表荣幸。", "结尾：That's all. Thank you for listening!"] }
+          ]
+        },
+        {
+          "heading": "完整范文（通知 + 演讲稿）",
+          "blocks": [
+            { "kind": "sub", "text": "范文一：通知（英语演讲比赛）" },
+            { "kind": "para", "text": "NOTICE" },
+            { "kind": "para", "text": "To enrich our school life, the Students' Union will hold an English Speech Contest on Friday, June 20th, from 2:00 p.m. to 4:00 p.m. in the school hall. The theme of this year's contest is \"My Dream\"." },
+            { "kind": "para", "text": "All students who are interested are warmly welcome to take part. Please sign up by giving your name to your class monitor before this Wednesday. Come and show your talent!" },
+            { "kind": "para", "text": "The Students' Union　June 10th" },
+            { "kind": "sub", "text": "范文二：演讲稿（保护环境）" },
+            { "kind": "para", "text": "Good morning, everyone!" },
+            { "kind": "para", "text": "It's a great honour to stand here and share my ideas on protecting the environment. As we all know, our planet is facing serious problems such as air pollution and climate change." },
+            { "kind": "para", "text": "As students, however, we can still do a lot. We can save water and electricity, recycle waste paper, and go to school on foot or by bike. Small as these actions seem, they can make a big difference. Let's join hands and act now to build a greener and more beautiful world." },
+            { "kind": "para", "text": "That's all. Thank you for listening!" },
+            { "kind": "sub", "text": "解析" },
+            { "kind": "bullet", "text": "通知：标题 NOTICE 居中，正文交代活动 5 要素（时间/地点/内容/对象/报名），落款单位+日期。" },
+            { "kind": "note", "text": "演讲稿：问候+表荣幸开头；主体用 we/let's、祈使句号召；结尾固定 That's all. Thank you for listening! 亮点句 Small as these actions seem…（as 引导让步倒装）。" }
           ]
         }
       ],
