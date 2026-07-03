@@ -13,3 +13,7 @@ android/captures/
 # 系统文件
 .DS_Store
 Thumbs.db
+
+# 部署密钥（切勿提交私钥）
+deploy/deploy_key
+deploy/deploy_key.pub
