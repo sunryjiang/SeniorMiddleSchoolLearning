@@ -41,13 +41,18 @@ mkdir -p "/usr/share/nginx/html/$SUB"; cp -rf "$WWW/." "/usr/share/nginx/html/$S
 echo "  ✓ 已复制"
 
 echo "[4/5] 配置 Nginx ..."
-CONF=$(grep -rls "wangxiaoyanjiazheng" /etc/nginx 2>/dev/null)
+# 只改真正启用的配置，排除备份文件(*.bak*)
+CONF=$(grep -rls "wangxiaoyanjiazheng" /etc/nginx 2>/dev/null | grep -v '\.bak')
 echo "  站点配置文件: $CONF"
 for f in $CONF; do
   if grep -q "/$SUB/" "$f"; then echo "  跳过(已配置): $f"; continue; fi
-  cp "$f" "$f.bak.$(date +%s)"
-  awk -v sub="$SUB" -v dest="$DEST" '/server_name[^;]*wangxiaoyanjiazheng/{print; print "    location = /" sub " { return 301 /" sub "/; }"; print "    location ^~ /" sub "/ { alias " dest "/; index index.html; }"; next} {print}' "$f" > "$f.new" && mv "$f.new" "$f"
-  echo "  ✓ 已插入规则: $f"
+  cp "$f" "$f.bak_en4mid"
+  # 注意：不要用变量名 sub（是 awk 内置函数）；用 sp/ds
+  if awk -v sp="$SUB" -v ds="$DEST" '/server_name[^;]*wangxiaoyanjiazheng/{print; print "    location = /" sp " { return 301 /" sp "/; }"; print "    location ^~ /" sp "/ { alias " ds "/; index index.html; }"; next} {print}' "$f" > "$f.new" && [ -s "$f.new" ]; then
+    mv "$f.new" "$f"; echo "  ✓ 已插入规则: $f"
+  else
+    rm -f "$f.new"; echo "  ✗ 插入失败，已保留原文件: $f"
+  fi
 done
 
 echo "[5/5] 测试并重载 Nginx ..."
